@@ -1,10 +1,3 @@
-//
-//  ContentView.swift
-//  Sleep Tracker
-//
-//  Created by Kolya Gribok on 6.05.23.
-//
-
 import SwiftUI
 
 struct ContentView: View {

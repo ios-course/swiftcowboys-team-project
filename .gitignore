@@ -1,0 +1,5 @@
+# Stores custom attributes of its containing folder in macOS
+.DS_Store
+
+# Contains user data and workspace settings for the current user's Xcode project
+xcuserdata/

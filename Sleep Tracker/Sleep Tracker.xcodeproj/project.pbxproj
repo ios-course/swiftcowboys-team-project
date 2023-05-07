@@ -98,7 +98,7 @@
 				0B5026082A06426C004E3671 /* Helpers */,
 				0B5026052A06424E004E3671 /* Model */,
 				0B5026072A06425F004E3671 /* ViewModel */,
-				0B5026062A064259004E3671 /* Views */,
+				0B5026062A064259004E3671 /* View */,
 			);
 			path = "Sleep Tracker";
 			sourceTree = "<group>";
@@ -135,12 +135,12 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
-		0B5026062A064259004E3671 /* Views */ = {
+		0B5026062A064259004E3671 /* View */ = {
 			isa = PBXGroup;
 			children = (
 				0B5025DB2A063F00004E3671 /* ContentView.swift */,
 			);
-			path = Views;
+			path = View;
 			sourceTree = "<group>";
 		};
 		0B5026072A06425F004E3671 /* ViewModel */ = {

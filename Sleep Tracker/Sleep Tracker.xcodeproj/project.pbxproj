@@ -14,6 +14,8 @@
 		0B5025EB2A063F07004E3671 /* Sleep_TrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B5025EA2A063F07004E3671 /* Sleep_TrackerTests.swift */; };
 		0B5025F52A063F07004E3671 /* Sleep_TrackerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B5025F42A063F07004E3671 /* Sleep_TrackerUITests.swift */; };
 		0B5025F72A063F07004E3671 /* Sleep_TrackerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B5025F62A063F07004E3671 /* Sleep_TrackerUITestsLaunchTests.swift */; };
+		0B5026102A085B89004E3671 /* Sleep-TrackerTests-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0B50260F2A085B89004E3671 /* Sleep-TrackerTests-Info.plist */; };
+		0B5026112A085B89004E3671 /* Sleep-TrackerTests-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0B50260F2A085B89004E3671 /* Sleep-TrackerTests-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,7 +46,7 @@
 		0B5025F02A063F07004E3671 /* Sleep TrackerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Sleep TrackerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B5025F42A063F07004E3671 /* Sleep_TrackerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sleep_TrackerUITests.swift; sourceTree = "<group>"; };
 		0B5025F62A063F07004E3671 /* Sleep_TrackerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sleep_TrackerUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		0B50260B2A084FE0004E3671 /* Sleep-TrackerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Sleep-TrackerTests-Info.plist"; sourceTree = SOURCE_ROOT; };
+		0B50260F2A085B89004E3671 /* Sleep-TrackerTests-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Sleep-TrackerTests-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,7 +117,7 @@
 		0B5025E92A063F07004E3671 /* Sleep TrackerTests */ = {
 			isa = PBXGroup;
 			children = (
-				0B50260B2A084FE0004E3671 /* Sleep-TrackerTests-Info.plist */,
+				0B50260F2A085B89004E3671 /* Sleep-TrackerTests-Info.plist */,
 				0B5025EA2A063F07004E3671 /* Sleep_TrackerTests.swift */,
 			);
 			path = "Sleep TrackerTests";
@@ -276,6 +278,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0B5025E12A063F06004E3671 /* Preview Assets.xcassets in Resources */,
+				0B5026102A085B89004E3671 /* Sleep-TrackerTests-Info.plist in Resources */,
 				0B5025DE2A063F06004E3671 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -284,6 +287,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0B5026112A085B89004E3671 /* Sleep-TrackerTests-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

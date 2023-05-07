@@ -6,7 +6,7 @@ Sleep tracker is an application that helps users track the quality and duration 
 
 Contributors names and contact info:
 
-Yegor Meshcheryakov / @meschya
-Marina Tihonovich / @marinkman
-Nik Gribok / @nek-to
-Mikhail Kosarev / @MikhailKosarev
+Yegor Meshcheryakov / [@meschya](https://github.com/meschya)
+Marina Tihonovich / [@marinkman](https://github.com/marinkman)
+Nik Gribok / [@nek-to](https://github.com/nek-to)
+Mikhail Kosarev / [@MikhailKosarev](https://github.com/MikhailKosarev)

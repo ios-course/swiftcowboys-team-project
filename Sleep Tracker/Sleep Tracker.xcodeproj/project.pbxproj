@@ -566,7 +566,6 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 0.0.0;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Sleep-TrackerTests-Info.plist";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.healthcare-fitness";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MARKETING_VERSION = 0.0.0;
@@ -590,7 +589,6 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 0.0.0;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Sleep-TrackerTests-Info.plist";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.healthcare-fitness";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MARKETING_VERSION = 0.0.0;

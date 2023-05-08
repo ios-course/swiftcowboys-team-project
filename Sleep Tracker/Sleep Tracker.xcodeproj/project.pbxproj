@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0B1B0F242A08645B00EF2243 /* Sleep-TrackerTests-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0B1B0F232A08645B00EF2243 /* Sleep-TrackerTests-Info.plist */; };
-		0B1B0F252A08645B00EF2243 /* Sleep-TrackerTests-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0B1B0F232A08645B00EF2243 /* Sleep-TrackerTests-Info.plist */; };
 		0B5025DA2A063EFF004E3671 /* SleepTrackerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B5025D92A063EFF004E3671 /* SleepTrackerApp.swift */; };
 		0B5025DC2A063F00004E3671 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B5025DB2A063F00004E3671 /* ContentView.swift */; };
 		0B5025DE2A063F06004E3671 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0B5025DD2A063F06004E3671 /* Assets.xcassets */; };
@@ -36,7 +34,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0B1B0F232A08645B00EF2243 /* Sleep-TrackerTests-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Sleep-TrackerTests-Info.plist"; sourceTree = "<group>"; };
 		0B5025D62A063EFF004E3671 /* Sleep Tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sleep Tracker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B5025D92A063EFF004E3671 /* SleepTrackerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SleepTrackerApp.swift; sourceTree = "<group>"; };
 		0B5025DB2A063F00004E3671 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -117,7 +114,6 @@
 		0B5025E92A063F07004E3671 /* Sleep TrackerTests */ = {
 			isa = PBXGroup;
 			children = (
-				0B1B0F232A08645B00EF2243 /* Sleep-TrackerTests-Info.plist */,
 				0B5025EA2A063F07004E3671 /* Sleep_TrackerTests.swift */,
 			);
 			path = "Sleep TrackerTests";
@@ -278,7 +274,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				0B5025E12A063F06004E3671 /* Preview Assets.xcassets in Resources */,
-				0B1B0F242A08645B00EF2243 /* Sleep-TrackerTests-Info.plist in Resources */,
 				0B5025DE2A063F06004E3671 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -287,7 +282,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0B1B0F252A08645B00EF2243 /* Sleep-TrackerTests-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

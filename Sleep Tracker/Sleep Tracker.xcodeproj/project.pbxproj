@@ -15,7 +15,8 @@
 		0B5025F52A063F07004E3671 /* Sleep_TrackerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B5025F42A063F07004E3671 /* Sleep_TrackerUITests.swift */; };
 		0B5025F72A063F07004E3671 /* Sleep_TrackerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B5025F62A063F07004E3671 /* Sleep_TrackerUITestsLaunchTests.swift */; };
 		9354B4DD2A0ABB4A0095F1CD /* Color+AppScheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9354B4DC2A0ABB4A0095F1CD /* Color+AppScheme.swift */; };
-		935A25962A0A2A39003CF69D /* CustomColorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935A25952A0A2A39003CF69D /* CustomColorTests.swift */; };
+		9354B4DF2A0ABDDA0095F1CD /* AppSchemeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9354B4DE2A0ABDDA0095F1CD /* AppSchemeTests.swift */; };
+		9354B4E02A0ABF310095F1CD /* Color+AppScheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9354B4DC2A0ABB4A0095F1CD /* Color+AppScheme.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,7 +48,7 @@
 		0B5025F42A063F07004E3671 /* Sleep_TrackerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sleep_TrackerUITests.swift; sourceTree = "<group>"; };
 		0B5025F62A063F07004E3671 /* Sleep_TrackerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sleep_TrackerUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		9354B4DC2A0ABB4A0095F1CD /* Color+AppScheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+AppScheme.swift"; sourceTree = "<group>"; };
-		935A25952A0A2A39003CF69D /* CustomColorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomColorTests.swift; sourceTree = "<group>"; };
+		9354B4DE2A0ABDDA0095F1CD /* AppSchemeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSchemeTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,7 +129,7 @@
 			children = (
 				0B5025F42A063F07004E3671 /* Sleep_TrackerUITests.swift */,
 				0B5025F62A063F07004E3671 /* Sleep_TrackerUITestsLaunchTests.swift */,
-				935A25952A0A2A39003CF69D /* CustomColorTests.swift */,
+				9354B4DE2A0ABDDA0095F1CD /* AppSchemeTests.swift */,
 			);
 			path = "Sleep TrackerUITests";
 			sourceTree = "<group>";
@@ -364,7 +365,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				935A25962A0A2A39003CF69D /* CustomColorTests.swift in Sources */,
+				9354B4E02A0ABF310095F1CD /* Color+AppScheme.swift in Sources */,
+				9354B4DF2A0ABDDA0095F1CD /* AppSchemeTests.swift in Sources */,
 				0B5025F52A063F07004E3671 /* Sleep_TrackerUITests.swift in Sources */,
 				0B5025F72A063F07004E3671 /* Sleep_TrackerUITestsLaunchTests.swift in Sources */,
 			);

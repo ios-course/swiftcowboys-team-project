@@ -1,8 +1,8 @@
 import SwiftUI
 
 extension Color {
-    /// A custom color representation that adapts to the given context.
-    enum Custom {
+    /// The color representation used in the application that adapts to the given context.
+    enum AppColor {
         /// A dark indigo color suitable for use in UI elements.
         static let darkIndigo = Color(red: 0.145, green: 0.09, blue: 0.318)
         /// A bright blue color suitable for use in UI elements.

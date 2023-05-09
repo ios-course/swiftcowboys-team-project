@@ -2,7 +2,12 @@ import SwiftUI
 
 struct DuringSleepView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            Image("Sleeping_astronaut_image")
+            Text("Alarm 07:30")
+                .font(.system(size: 25))
+                .foregroundColor(.white)
+        }
     }
 }
 

@@ -5,6 +5,7 @@ struct SleepSetupView: View {
 
     // MARK: Private
 
+    @State var animate = false
     @State private var currentDate = Date()
 
     // MARK: - Views
@@ -17,8 +18,15 @@ struct SleepSetupView: View {
 
             HStack {
                 alarmButton
+                    .onTapGesture {
+                        withAnimation(Animation.spring().speed(1)) {
+                            animate.toggle()
+                        }
+                    }
+                    .zIndex(1)
                 timePicker
                     .padding(.leading, 40)
+                    .zIndex(0)
             }
             estimatedLabel
                 .padding(.top, 50)
@@ -36,16 +44,17 @@ struct SleepSetupView: View {
                     .fill(.purple)
                     .frame(width: 70, height: 40)
             }
+            .opacity(animate ? 1.0 : 0.5)
     }
 
     // MARK: - Time Picker
 
     private var timePicker: some View {
         DatePicker("", selection: $currentDate, displayedComponents: .hourAndMinute)
-                    .labelsHidden()
-                    .datePickerStyle(.wheel)
-                    .frame(width: 200, height: 100)
-                    .clipped()
+            .labelsHidden()
+            .datePickerStyle(.wheel)
+            .frame(width: 200, height: 100)
+            .clipped()
     }
 
     // MARK: - EstimatedLabel

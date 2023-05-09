@@ -14,6 +14,7 @@
 		0B5025EB2A063F07004E3671 /* Sleep_TrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B5025EA2A063F07004E3671 /* Sleep_TrackerTests.swift */; };
 		0B5025F52A063F07004E3671 /* Sleep_TrackerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B5025F42A063F07004E3671 /* Sleep_TrackerUITests.swift */; };
 		0B5025F72A063F07004E3671 /* Sleep_TrackerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B5025F62A063F07004E3671 /* Sleep_TrackerUITestsLaunchTests.swift */; };
+		BF77C2792A0A78F500BB6656 /* SleepSetupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF77C2782A0A78F500BB6656 /* SleepSetupView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		0B5025F02A063F07004E3671 /* Sleep TrackerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Sleep TrackerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B5025F42A063F07004E3671 /* Sleep_TrackerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sleep_TrackerUITests.swift; sourceTree = "<group>"; };
 		0B5025F62A063F07004E3671 /* Sleep_TrackerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sleep_TrackerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		BF77C2782A0A78F500BB6656 /* SleepSetupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SleepSetupView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,6 +140,7 @@
 		0B5026062A064259004E3671 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				BF77C2772A0A78CC00BB6656 /* SleepPageView */,
 				0B5025DB2A063F00004E3671 /* ContentView.swift */,
 			);
 			path = View;
@@ -165,6 +168,14 @@
 				0B5025DD2A063F06004E3671 /* Assets.xcassets */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		BF77C2772A0A78CC00BB6656 /* SleepPageView */ = {
+			isa = PBXGroup;
+			children = (
+				BF77C2782A0A78F500BB6656 /* SleepSetupView.swift */,
+			);
+			path = SleepPageView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -340,6 +351,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF77C2792A0A78F500BB6656 /* SleepSetupView.swift in Sources */,
 				0B5025DC2A063F00004E3671 /* ContentView.swift in Sources */,
 				0B5025DA2A063EFF004E3671 /* SleepTrackerApp.swift in Sources */,
 			);

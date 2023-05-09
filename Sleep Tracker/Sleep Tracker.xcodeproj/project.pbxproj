@@ -15,6 +15,8 @@
 		0B5025F52A063F07004E3671 /* Sleep_TrackerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B5025F42A063F07004E3671 /* Sleep_TrackerUITests.swift */; };
 		0B5025F72A063F07004E3671 /* Sleep_TrackerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B5025F62A063F07004E3671 /* Sleep_TrackerUITestsLaunchTests.swift */; };
 		935A25942A0A285D003CF69D /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935A25932A0A285D003CF69D /* Color+Extension.swift */; };
+		935A25962A0A2A39003CF69D /* CustomColorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935A25952A0A2A39003CF69D /* CustomColorTests.swift */; };
+		935A25972A0A2A5F003CF69D /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935A25932A0A285D003CF69D /* Color+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +48,7 @@
 		0B5025F42A063F07004E3671 /* Sleep_TrackerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sleep_TrackerUITests.swift; sourceTree = "<group>"; };
 		0B5025F62A063F07004E3671 /* Sleep_TrackerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sleep_TrackerUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		935A25932A0A285D003CF69D /* Color+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
+		935A25952A0A2A39003CF69D /* CustomColorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomColorTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +129,7 @@
 			children = (
 				0B5025F42A063F07004E3671 /* Sleep_TrackerUITests.swift */,
 				0B5025F62A063F07004E3671 /* Sleep_TrackerUITestsLaunchTests.swift */,
+				935A25952A0A2A39003CF69D /* CustomColorTests.swift */,
 			);
 			path = "Sleep TrackerUITests";
 			sourceTree = "<group>";
@@ -361,8 +365,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				935A25962A0A2A39003CF69D /* CustomColorTests.swift in Sources */,
 				0B5025F52A063F07004E3671 /* Sleep_TrackerUITests.swift in Sources */,
 				0B5025F72A063F07004E3671 /* Sleep_TrackerUITestsLaunchTests.swift in Sources */,
+				935A25972A0A2A5F003CF69D /* Color+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

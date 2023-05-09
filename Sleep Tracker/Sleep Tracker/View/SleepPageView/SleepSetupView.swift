@@ -2,7 +2,28 @@ import SwiftUI
 
 struct SleepSetupView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            Image("Sleeping_astronaut_image")
+                .resizable()
+                .frame(width: 150, height: 150)
+
+            HStack {
+                alarmButton
+            }
+        }
+    }
+
+    // MARK: - Alarm Button
+
+    private var alarmButton: some View {
+        Image("Alarm_symbol_white")
+            .resizable()
+            .frame(width: 20, height: 20)
+            .background {
+                RoundedRectangle(cornerRadius: 30)
+                    .fill(.purple)
+                    .frame(width: 70, height: 40)
+            }
     }
 }
 

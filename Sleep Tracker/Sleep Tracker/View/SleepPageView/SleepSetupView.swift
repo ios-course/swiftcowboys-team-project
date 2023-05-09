@@ -1,6 +1,14 @@
 import SwiftUI
 
 struct SleepSetupView: View {
+    // MARK: - Properties
+
+    // MARK: Private
+
+    @State private var currentDate = Date()
+
+    // MARK: - Views
+
     var body: some View {
         VStack {
             Image("Sleeping_astronaut_image")
@@ -9,7 +17,11 @@ struct SleepSetupView: View {
 
             HStack {
                 alarmButton
+                timePicker
+                    .padding(.leading, 40)
             }
+            estimatedLabel
+                .padding(.top, 50)
         }
     }
 
@@ -24,6 +36,23 @@ struct SleepSetupView: View {
                     .fill(.purple)
                     .frame(width: 70, height: 40)
             }
+    }
+
+    // MARK: - Time Picker
+
+    private var timePicker: some View {
+        DatePicker("", selection: $currentDate, displayedComponents: .hourAndMinute)
+                    .labelsHidden()
+                    .datePickerStyle(.wheel)
+                    .frame(width: 200, height: 100)
+                    .clipped()
+    }
+
+    // MARK: - EstimatedLabel
+
+    private var estimatedLabel: some View {
+        Text("estimated bedtime 7:52")
+            .font(.system(size: 20, weight: .bold))
     }
 }
 

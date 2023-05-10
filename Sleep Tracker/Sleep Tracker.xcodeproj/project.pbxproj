@@ -15,7 +15,7 @@
 		0B5025F52A063F07004E3671 /* Sleep_TrackerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B5025F42A063F07004E3671 /* Sleep_TrackerUITests.swift */; };
 		0B5025F72A063F07004E3671 /* Sleep_TrackerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B5025F62A063F07004E3671 /* Sleep_TrackerUITestsLaunchTests.swift */; };
 		9354B4DD2A0ABB4A0095F1CD /* Color+AppScheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9354B4DC2A0ABB4A0095F1CD /* Color+AppScheme.swift */; };
-		9354B4DF2A0ABDDA0095F1CD /* AppSchemeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9354B4DE2A0ABDDA0095F1CD /* AppSchemeTests.swift */; };
+		9354B4DF2A0ABDDA0095F1CD /* Color+AppSchemeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9354B4DE2A0ABDDA0095F1CD /* Color+AppSchemeTests.swift */; };
 		9354B4E02A0ABF310095F1CD /* Color+AppScheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9354B4DC2A0ABB4A0095F1CD /* Color+AppScheme.swift */; };
 /* End PBXBuildFile section */
 
@@ -48,7 +48,7 @@
 		0B5025F42A063F07004E3671 /* Sleep_TrackerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sleep_TrackerUITests.swift; sourceTree = "<group>"; };
 		0B5025F62A063F07004E3671 /* Sleep_TrackerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sleep_TrackerUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		9354B4DC2A0ABB4A0095F1CD /* Color+AppScheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+AppScheme.swift"; sourceTree = "<group>"; };
-		9354B4DE2A0ABDDA0095F1CD /* AppSchemeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSchemeTests.swift; sourceTree = "<group>"; };
+		9354B4DE2A0ABDDA0095F1CD /* Color+AppSchemeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+AppSchemeTests.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,9 +127,9 @@
 		0B5025F32A063F07004E3671 /* Sleep TrackerUITests */ = {
 			isa = PBXGroup;
 			children = (
+				93E238932A0B7EE600B58D0E /* Helpers */,
 				0B5025F42A063F07004E3671 /* Sleep_TrackerUITests.swift */,
 				0B5025F62A063F07004E3671 /* Sleep_TrackerUITestsLaunchTests.swift */,
-				9354B4DE2A0ABDDA0095F1CD /* AppSchemeTests.swift */,
 			);
 			path = "Sleep TrackerUITests";
 			sourceTree = "<group>";
@@ -172,6 +172,14 @@
 				0B5025DD2A063F06004E3671 /* Assets.xcassets */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		93E238932A0B7EE600B58D0E /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				9354B4DE2A0ABDDA0095F1CD /* Color+AppSchemeTests.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -366,7 +374,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9354B4E02A0ABF310095F1CD /* Color+AppScheme.swift in Sources */,
-				9354B4DF2A0ABDDA0095F1CD /* AppSchemeTests.swift in Sources */,
+				9354B4DF2A0ABDDA0095F1CD /* Color+AppSchemeTests.swift in Sources */,
 				0B5025F52A063F07004E3671 /* Sleep_TrackerUITests.swift in Sources */,
 				0B5025F72A063F07004E3671 /* Sleep_TrackerUITestsLaunchTests.swift in Sources */,
 			);

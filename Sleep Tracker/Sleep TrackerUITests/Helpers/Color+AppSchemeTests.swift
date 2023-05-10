@@ -1,7 +1,7 @@
 import SwiftUI
 import XCTest
 
-final class AppSchemeTests: XCTestCase {
+final class ColorAppSchemeTests: XCTestCase {
     func testAppSchemeEnumReturnsCorrectValuesForAppColorScheme() {
         let darkIndigo = Color(red: 37.0 / 255.0, green: 23.0 / 255.0, blue: 81.0 / 255.0)
         let brightBlue = Color(red: 56.0 / 255.0, green: 40.0 / 255.0, blue: 183.0 / 255.0)
@@ -14,16 +14,16 @@ final class AppSchemeTests: XCTestCase {
         let white = Color(red: 255.0 / 255.0, green: 255.0 / 255.0, blue: 255.0 / 255.0)
         let black = Color(red: 0.0 / 255.0, green: 0.0 / 255.0, blue: 0.0 / 255.0)
 
-        XCTAssertEqual(darkIndigo, Color.AppScheme.darkIndigo)
-        XCTAssertEqual(brightBlue, Color.AppScheme.brightBlue)
-        XCTAssertEqual(bluePurple, Color.AppScheme.bluePurple)
-        XCTAssertEqual(blueViolet, Color.AppScheme.blueViolet)
-        XCTAssertEqual(brightPurple, Color.AppScheme.brightPurple)
-        XCTAssertEqual(brightMint, Color.AppScheme.brightMint)
-        XCTAssertEqual(darkGraphite, Color.AppScheme.darkGraphite)
-        XCTAssertEqual(lightGray, Color.AppScheme.lightGray)
-        XCTAssertEqual(white, Color.AppScheme.white)
-        XCTAssertEqual(black, Color.AppScheme.black)
+        XCTAssertEqual(darkIndigo, .AppScheme.darkIndigo)
+        XCTAssertEqual(brightBlue, .AppScheme.brightBlue)
+        XCTAssertEqual(bluePurple, .AppScheme.bluePurple)
+        XCTAssertEqual(blueViolet, .AppScheme.blueViolet)
+        XCTAssertEqual(brightPurple, .AppScheme.brightPurple)
+        XCTAssertEqual(brightMint, .AppScheme.brightMint)
+        XCTAssertEqual(darkGraphite, .AppScheme.darkGraphite)
+        XCTAssertEqual(lightGray, .AppScheme.lightGray)
+        XCTAssertEqual(white, .AppScheme.white)
+        XCTAssertEqual(black, .AppScheme.black)
     }
 
     func testColorAppSchemeCanBeUsedInAFunctionWithAColorParameter() {
@@ -31,6 +31,6 @@ final class AppSchemeTests: XCTestCase {
             true
         }
 
-        XCTAssertTrue(isTheColorUsed(color: Color.AppScheme.darkIndigo))
+        XCTAssertTrue(isTheColorUsed(color: .AppScheme.darkIndigo))
     }
 }

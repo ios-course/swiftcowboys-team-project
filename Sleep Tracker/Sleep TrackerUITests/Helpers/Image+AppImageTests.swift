@@ -34,7 +34,7 @@ final class ImageAppImageTests: XCTestCase {
         XCTAssertEqual(viewSymbolPurple, .AppImage.viewSymbolPurple)
     }
 
-    func testImageAppImageCanBeUsedInAFunctionWithAImageParameter() {
+    func testImageAppImageCanBeUsedInAFunctionWithAnImageParameter() {
         func isTheImageUsed(image _: Image) -> Bool {
             true
         }

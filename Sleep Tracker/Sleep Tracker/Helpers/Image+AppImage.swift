@@ -8,7 +8,7 @@ extension Image {
         /// An image of a white bed symbol.
         static let bedSymbolWhite = Image("Bed_symbol_white")
         /// An image of a black exit symbol.
-        static let exitSymbolBlack = Image("Exit_symbol_black@3x")
+        static let exitSymbolBlack = Image("Exit_symbol_black")
         /// A general background image.
         static let generalBackgroundImage = Image("General_background_image")
         /// An image of a purple home symbol.
@@ -28,7 +28,7 @@ extension Image {
         /// An image of a colored sun symbol.
         static let sunSymbolColored = Image("Sun_symbol_colored")
         /// An image of a white symbol with a tick mark.
-        static let tickMarkSymbolWhite = Image("Tick-mark_symbol_white")
+        static let tickMarkSymbolWhite = Image("Tick_mark_symbol_white")
         /// An image of a purple view symbol.
         static let viewSymbolPurple = Image("View_symbol_purple")
     }

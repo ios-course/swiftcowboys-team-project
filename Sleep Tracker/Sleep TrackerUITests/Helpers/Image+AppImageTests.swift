@@ -5,7 +5,7 @@ final class ImageAppImageTests: XCTestCase {
     func testAppImageEnumReturnsCorrectImagesForAppImage() {
         let alarmSymbolWhite = Image("Alarm_symbol_white")
         let bedSymbolWhite = Image("Bed_symbol_white")
-        let exitSymbolBlack = Image("Exit_symbol_black@3x")
+        let exitSymbolBlack = Image("Exit_symbol_black")
         let generalBackgroundImage = Image("General_background_image")
         let homeSymbolPurple = Image("Home_symbol_purple")
         let moonSymbolPurple = Image("Moon_symbol_purple")
@@ -15,7 +15,7 @@ final class ImageAppImageTests: XCTestCase {
         let sleepingAstronautImage = Image("Sleeping_astronaut_image")
         let statisticsSymbolPurple = Image("Statistics_symbol_purple")
         let sunSymbolColored = Image("Sun_symbol_colored")
-        let tickMarkSymbolWhite = Image("Tick-mark_symbol_white")
+        let tickMarkSymbolWhite = Image("Tick_mark_symbol_white")
         let viewSymbolPurple = Image("View_symbol_purple")
 
         XCTAssertEqual(alarmSymbolWhite, .AppImage.alarmSymbolWhite)

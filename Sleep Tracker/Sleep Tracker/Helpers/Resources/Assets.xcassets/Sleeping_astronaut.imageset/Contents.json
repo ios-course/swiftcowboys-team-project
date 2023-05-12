@@ -1,17 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "Onboarding_background_image@1x.png",
+      "filename" : "Sleeping_astronaut@1x.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "Onboarding_background_image@2x.png",
+      "filename" : "Sleeping_astronaut@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "Onboarding_background_image@3x.png",
+      "filename" : "Sleeping_astronaut@3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }

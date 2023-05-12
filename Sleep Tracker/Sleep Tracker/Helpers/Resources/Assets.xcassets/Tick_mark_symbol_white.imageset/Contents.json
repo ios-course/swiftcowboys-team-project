@@ -1,17 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "Tick-mark_symbol_white@1x.png",
+      "filename" : "Tick_mark_symbol_white@1x.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "Tick-mark_symbol_white@2x.png",
+      "filename" : "Tick_mark_symbol_white@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "Tick-mark_symbol_white@3x.png",
+      "filename" : "Tick_mark_symbol_white@3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }

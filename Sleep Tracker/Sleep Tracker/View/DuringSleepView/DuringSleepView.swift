@@ -10,7 +10,7 @@ struct DuringSleepView: View {
                 .AppImage.sleepingAstronaut
             Text(alarmStatusText)
                 .font(.system(size: 25))
-                .foregroundColor(.white)
+                .foregroundColor(.AppScheme.white)
         }
     }
 

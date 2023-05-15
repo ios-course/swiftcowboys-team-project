@@ -1,17 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "Sleeping_astronaut_image@1x.png",
+      "filename" : "Tick_mark_symbol_white@1x.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "Sleeping_astronaut_image@2x.png",
+      "filename" : "Tick_mark_symbol_white@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "Sleeping_astronaut_image@3x.png",
+      "filename" : "Tick_mark_symbol_white@3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }

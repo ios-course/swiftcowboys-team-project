@@ -2,8 +2,8 @@ import SwiftUI
 
 /// A view displaying information during the current sleep.
 struct DuringSleepView: View {
-
     // MARK: - Public interface
+
     var body: some View {
         VStack {
             Image
@@ -15,6 +15,7 @@ struct DuringSleepView: View {
     }
 
     // MARK: - Private interface
+
     @State private var alarmStatusText = "Alarm 07:30"
 }
 

@@ -11,10 +11,6 @@ struct SleepSetupView: View {
      */
     @State var isAlarmOn = false
 
-    // MARK: - Private interface
-
-    @State private var currentDate = Date()
-
     var body: some View {
         VStack {
             sleepingAstronautImage
@@ -33,6 +29,10 @@ struct SleepSetupView: View {
             estimatedLabel
         }
     }
+
+    // MARK: - Private interface
+
+    @State private var currentDate = Date()
 
     /**
      Creating an image with an astronaut.

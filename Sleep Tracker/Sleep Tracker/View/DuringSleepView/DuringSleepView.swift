@@ -1,5 +1,6 @@
 import SwiftUI
 
+/// A view displaying information during the current sleep.
 struct DuringSleepView: View {
 
     // MARK: - Public interface

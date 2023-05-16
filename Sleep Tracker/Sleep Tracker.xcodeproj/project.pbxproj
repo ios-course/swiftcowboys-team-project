@@ -14,6 +14,8 @@
 		0B5025EB2A063F07004E3671 /* Sleep_TrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B5025EA2A063F07004E3671 /* Sleep_TrackerTests.swift */; };
 		0B5025F52A063F07004E3671 /* Sleep_TrackerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B5025F42A063F07004E3671 /* Sleep_TrackerUITests.swift */; };
 		0B5025F72A063F07004E3671 /* Sleep_TrackerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B5025F62A063F07004E3671 /* Sleep_TrackerUITestsLaunchTests.swift */; };
+		74D35C7B2A12C455008798DC /* LocalStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D35C7A2A12C455008798DC /* LocalStorage.swift */; };
+		74D35C802A12C5EE008798DC /* LocalStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D35C7A2A12C455008798DC /* LocalStorage.swift */; };
 		9354B4DD2A0ABB4A0095F1CD /* Color+AppScheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9354B4DC2A0ABB4A0095F1CD /* Color+AppScheme.swift */; };
 		9354B4DF2A0ABDDA0095F1CD /* Color+AppSchemeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9354B4DE2A0ABDDA0095F1CD /* Color+AppSchemeTests.swift */; };
 		9354B4E02A0ABF310095F1CD /* Color+AppScheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9354B4DC2A0ABB4A0095F1CD /* Color+AppScheme.swift */; };
@@ -142,6 +144,7 @@
 		0B5026052A06424E004E3671 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				74D35C7A2A12C455008798DC /* LocalStorage.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -178,6 +181,24 @@
 				0B5025DD2A063F06004E3671 /* Assets.xcassets */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		74D35C7C2A12C571008798DC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				74D35C7F2A12C5B7008798DC /* LocalStorage */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		74D35C7F2A12C5B7008798DC /* LocalStorage */ = {
+			isa = PBXGroup;
+			children = (
+				74D35C7D2A12C583008798DC /* SetTests.swift */,
+				74D35C832A12CC8F008798DC /* GetTests.swift */,
+				74D35C862A12CDAF008798DC /* DeleteTests.swift */,
+			);
+			path = LocalStorage;
 			sourceTree = "<group>";
 		};
 		93E238932A0B7EE600B58D0E /* Helpers */ = {
@@ -363,6 +384,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9354B4DD2A0ABB4A0095F1CD /* Color+AppScheme.swift in Sources */,
+				74D35C7B2A12C455008798DC /* LocalStorage.swift in Sources */,
 				9363F2DB2A0D44F20067647F /* Image+AppImage.swift in Sources */,
 				0B5025DC2A063F00004E3671 /* ContentView.swift in Sources */,
 				0B5025DA2A063EFF004E3671 /* SleepTrackerApp.swift in Sources */,
@@ -374,6 +396,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0B5025EB2A063F07004E3671 /* Sleep_TrackerTests.swift in Sources */,
+				74D35C802A12C5EE008798DC /* LocalStorage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

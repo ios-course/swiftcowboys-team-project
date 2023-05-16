@@ -17,6 +17,7 @@
 		74D35C7B2A12C455008798DC /* LocalStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D35C7A2A12C455008798DC /* LocalStorage.swift */; };
 		74D35C802A12C5EE008798DC /* LocalStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D35C7A2A12C455008798DC /* LocalStorage.swift */; };
 		74D35C812A12C601008798DC /* SetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D35C7D2A12C583008798DC /* SetTests.swift */; };
+		74D35C852A12CD3B008798DC /* GetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D35C832A12CC8F008798DC /* GetTests.swift */; };
 		9354B4DD2A0ABB4A0095F1CD /* Color+AppScheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9354B4DC2A0ABB4A0095F1CD /* Color+AppScheme.swift */; };
 		9354B4DF2A0ABDDA0095F1CD /* Color+AppSchemeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9354B4DE2A0ABDDA0095F1CD /* Color+AppSchemeTests.swift */; };
 		9354B4E02A0ABF310095F1CD /* Color+AppScheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9354B4DC2A0ABB4A0095F1CD /* Color+AppScheme.swift */; };
@@ -55,6 +56,7 @@
 		0B5025F62A063F07004E3671 /* Sleep_TrackerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sleep_TrackerUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		74D35C7A2A12C455008798DC /* LocalStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalStorage.swift; sourceTree = "<group>"; };
 		74D35C7D2A12C583008798DC /* SetTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetTests.swift; sourceTree = "<group>"; };
+		74D35C832A12CC8F008798DC /* GetTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetTests.swift; sourceTree = "<group>"; };
 		9354B4DC2A0ABB4A0095F1CD /* Color+AppScheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+AppScheme.swift"; sourceTree = "<group>"; };
 		9354B4DE2A0ABDDA0095F1CD /* Color+AppSchemeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+AppSchemeTests.swift"; sourceTree = "<group>"; };
 		9363F2DA2A0D44F20067647F /* Image+AppImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Image+AppImage.swift"; sourceTree = "<group>"; };
@@ -399,6 +401,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				74D35C852A12CD3B008798DC /* GetTests.swift in Sources */,
 				0B5025EB2A063F07004E3671 /* Sleep_TrackerTests.swift in Sources */,
 				74D35C812A12C601008798DC /* SetTests.swift in Sources */,
 				74D35C802A12C5EE008798DC /* LocalStorage.swift in Sources */,

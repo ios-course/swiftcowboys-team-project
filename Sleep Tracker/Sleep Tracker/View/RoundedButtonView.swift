@@ -1,7 +1,7 @@
 import SwiftUI
 
-/// A button to use in the application.
-struct AppButtonView: View {
+/// A rounded button to use in the application.
+struct RoundedButtonView: View {
     /// A text on the button.
     @Binding var buttonText: String
 
@@ -17,9 +17,9 @@ struct AppButtonView: View {
     }
 }
 
-struct AppButtonView_Previews: PreviewProvider {
+struct RoundedButtonView_Previews: PreviewProvider {
     static var previews: some View {
         @State var buttonText = "START SLEEPING"
-        AppButtonView(buttonText: $buttonText)
+        RoundedButtonView(buttonText: $buttonText)
     }
 }

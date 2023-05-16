@@ -151,8 +151,8 @@
 		0B5026062A064259004E3671 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				93E6DFDF2A142D1F0090EE2F /* ReusableViews */,
 				0B5025DB2A063F00004E3671 /* ContentView.swift */,
-				933ABC0F2A13779F00D4A485 /* RoundedButtonView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -190,6 +190,14 @@
 				9363F2DC2A0D67DD0067647F /* Image+AppImageTests.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		93E6DFDF2A142D1F0090EE2F /* ReusableViews */ = {
+			isa = PBXGroup;
+			children = (
+				933ABC0F2A13779F00D4A485 /* RoundedButtonView.swift */,
+			);
+			path = ReusableViews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

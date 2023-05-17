@@ -11,7 +11,7 @@ final class LocalStorage {
     ///   - value: The value to be stored.
     ///   - key: The key associated with the value.
     func set<T>(_ value: T, forKey key: String) {
-        defaults.set(value, forKey: key)
+        standardDefaults.set(value, forKey: key)
     }
 
     /// Retrieves the value of specified type, associated with the given key from local storage.
@@ -20,17 +20,17 @@ final class LocalStorage {
     /// - Returns: The value associated with the key, or `nil` if the key is not found
     /// or the value has a type different from the specified one.
     func get<T>(forKey key: String) -> T? {
-        return defaults.object(forKey: key) as? T
+        return standardDefaults.object(forKey: key) as? T
     }
 
     /// Deletes the value associated with the given key from local storage.
     /// If no value is found for the given key, the method has no effect.
     /// - Parameter key: The key associated with the value.
     func delete(forKey key: String) {
-        defaults.removeObject(forKey: key)
+        standardDefaults.removeObject(forKey: key)
     }
 
     // MARK: - Private interface
 
-    private let defaults = UserDefaults.standard
+    private let standardDefaults = UserDefaults.standard
 }

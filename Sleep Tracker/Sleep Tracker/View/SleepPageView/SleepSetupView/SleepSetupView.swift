@@ -22,7 +22,7 @@ struct SleepSetupView: View {
                         }
                     }
                 ZStack {
-                    timePicker
+                    SleepTimePicker(isHide: $isAlarmOn)
                     noAlarmLabel
                 }
             }
@@ -31,22 +31,6 @@ struct SleepSetupView: View {
     }
 
     // MARK: - Private interface
-
-    @State private var currentDate = Date()
-
-    /**
-     Creating a custom TimePicker in which the user will be able to choose what time he wakes up.
-     */
-    private var timePicker: some View {
-        DatePicker("", selection: $currentDate, displayedComponents: .hourAndMinute)
-            .labelsHidden()
-            .datePickerStyle(.wheel)
-            .frame(width: 200, height: 100)
-            .clipped()
-            .padding(.leading, 40)
-            .zIndex(0)
-            .opacity(isAlarmOn ? 1.0 : 0.0)
-    }
 
     /**
      Creating a label if the alarm clock is not on.

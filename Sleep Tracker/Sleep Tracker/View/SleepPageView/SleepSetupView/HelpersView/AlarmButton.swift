@@ -5,7 +5,7 @@ import SwiftUI
  */
 struct AlarmButton: View {
     /**
-     A boolean value that indicates whether the animation is on or off.
+     A boolean value that indicates when the animation is on or off.
      */
     @Binding var animate: Bool
 

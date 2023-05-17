@@ -20,7 +20,7 @@ final class LocalStorage {
     /// - Returns: The value associated with the key, or `nil` if the key is not found
     /// or the value has a type different from the specified one.
     func get<T>(forKey key: String) -> T? {
-        return standardDefaults.object(forKey: key) as? T
+        standardDefaults.object(forKey: key) as? T
     }
 
     /// Deletes the value associated with the given key from local storage.

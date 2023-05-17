@@ -4,7 +4,7 @@ import SwiftUI
 struct SleepTrackerApp: App {
     var body: some Scene {
         WindowGroup {
-            SleepSetupView()
+            ContentView()
         }
     }
 }

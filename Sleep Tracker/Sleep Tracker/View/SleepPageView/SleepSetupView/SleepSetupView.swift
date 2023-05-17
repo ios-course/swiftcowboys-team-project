@@ -1,7 +1,7 @@
 import SwiftUI
 
 /**
- A view showing the option to set the alarm clock and set the wake-up time before going to bed.
+ A view show the option to set the alarm clock and set the wake-up time before go to bed.
  */
 struct SleepSetupView: View {
     // MARK: - Public interface
@@ -13,9 +13,9 @@ struct SleepSetupView: View {
 
     var body: some View {
         VStack {
-            sleepingAstronautImage
+            SleepingAstronautImage()
             HStack {
-                alarmButton
+                AlarmButton(animate: $isAlarmOn)
                     .onTapGesture {
                         withAnimation(Animation.spring().speed(1)) {
                             isAlarmOn.toggle()
@@ -33,31 +33,6 @@ struct SleepSetupView: View {
     // MARK: - Private interface
 
     @State private var currentDate = Date()
-
-    /**
-     Creating an image with an astronaut.
-     */
-    private var sleepingAstronautImage: some View {
-        Image.AppImage.sleepingAstronaut
-            .resizable()
-            .frame(width: 150, height: 150)
-    }
-
-    /**
-     Creating a custom alarm button when pressed, changes the value of `isAlarmOn` to the opposite.
-     */
-    private var alarmButton: some View {
-        Image.AppImage.alarmSymbolWhite
-            .resizable()
-            .frame(width: 20, height: 20)
-            .background {
-                RoundedRectangle(cornerRadius: 30)
-                    .fill(.purple)
-                    .frame(width: 70, height: 40)
-            }
-            .opacity(isAlarmOn ? 1.0 : 0.5)
-            .zIndex(1)
-    }
 
     /**
      Creating a custom TimePicker in which the user will be able to choose what time he wakes up.

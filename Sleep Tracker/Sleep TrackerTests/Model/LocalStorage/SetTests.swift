@@ -6,10 +6,8 @@ final class LocalStorageSetTests: XCTestCase {
     }
 
     func testSetPresentsInTheAPI() {
-        // given
-        storage.set("value", forKey: "key")
-
-        // when
+        // given // when
+        storage.set("value", forKey: "vgeirujm3498v983vj-key")
 
         // then
         // the code compiles
@@ -17,29 +15,29 @@ final class LocalStorageSetTests: XCTestCase {
 
     func testSetReturnsNilForNonExistentKey() {
         // given
-        let numberToSet = 100
-        let key = "number"
+        let testValue = 100
+        let key = "cehn9hiuheuvuehnv3w43-number"
 
         // when
-        storage.set(numberToSet, forKey: key)
-        let retrievedValue: Int? = storage.get(forKey: key)
+        storage.set(testValue, forKey: key)
 
         // then
-        XCTAssertEqual(numberToSet, retrievedValue)
+        let retrievedValue: Int? = storage.get(forKey: key)
+        XCTAssertEqual(testValue, retrievedValue)
     }
 
     func testSetSetsTheValueForExistentKey() {
         // given
         let englishGreeting = "Hello"
         let spanishGreeting = "Hola"
-        let key = "greeting"
+        let key = "348yv347y7nr4c-greeting"
 
         // when
         storage.set(englishGreeting, forKey: key)
         storage.set(spanishGreeting, forKey: key)
-        let retrievedValue: String? = storage.get(forKey: key)
 
         // then
+        let retrievedValue: String? = storage.get(forKey: key)
         XCTAssertEqual(spanishGreeting, retrievedValue)
     }
 

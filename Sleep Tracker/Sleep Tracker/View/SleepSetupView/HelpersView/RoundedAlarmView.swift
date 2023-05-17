@@ -21,7 +21,7 @@ struct RoundedAlarmView: View {
     }
 }
 
-struct AlarmButton_Previews: PreviewProvider {
+struct RoundedAlarmView_Previews: PreviewProvider {
     static var previews: some View {
         RoundedAlarmView(animate: .constant(false))
     }

@@ -29,7 +29,7 @@ struct SleepSetupView: View {
     // MARK: - Private interface
 
     private var noAlarmLabel: some View {
-        Text("No alarm clock,\njust analyzed sleep")
+        Text("No alarm clock,\njust a sleep analysis")
             .font(.system(size: 20, weight: .bold))
             .opacity(isAlarmOn ? 0.0 : 1.0)
     }

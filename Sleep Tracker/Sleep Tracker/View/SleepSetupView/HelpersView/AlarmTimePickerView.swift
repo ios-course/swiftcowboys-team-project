@@ -24,7 +24,7 @@ struct AlarmTimePickerView: View {
     @State private var currentDate = Date()
 }
 
-struct SleepTimePicker_Previews: PreviewProvider {
+struct AlarmTimePickerView_Previews: PreviewProvider {
     static var previews: some View {
         AlarmTimePickerView(isHide: .constant(true))
     }

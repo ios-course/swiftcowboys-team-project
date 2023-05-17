@@ -1,6 +1,6 @@
 import XCTest
 
-final class DeleteTests: XCTestCase {
+final class LocalStorageDeleteTests: XCTestCase {
     override func setUp() {
         storage = LocalStorage()
     }

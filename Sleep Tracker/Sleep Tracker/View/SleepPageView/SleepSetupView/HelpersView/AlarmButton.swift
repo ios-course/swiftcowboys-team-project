@@ -1,12 +1,10 @@
 import SwiftUI
 
-/**
- A custom button for the alarm clock which, when clicked, change its opacity property with animation.
- */
+/// A custom button for the alarm clock which, when clicked, change its opacity property with animation.
 struct AlarmButton: View {
-    /**
-     A boolean value that indicates when the animation is on or off.
-     */
+
+    /// A boolean value that indicates when the animation is on or off.
+    /// When `true` button has no transparency and when `false` button has transparency.
     @Binding var animate: Bool
 
     var body: some View {

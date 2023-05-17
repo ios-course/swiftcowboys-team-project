@@ -1,21 +1,11 @@
-//
-//  SleepTimePicker.swift
-//  Sleep Tracker
-//
-//  Created by Egor Mesheryakov on 17.05.23.
-//
-
 import SwiftUI
 
-/**
- A custom TimePicker in which the user will be able to choose what time he wakes up.
- */
+/// A custom TimePicker in which the user will be able to choose what time he wakes up.
 struct SleepTimePicker: View {
     // MARK: - Public interface
 
-    /**
-     A boolean value when the TimePicker show or hide..
-     */
+    /// A boolean value when the TimePicker show or hide.
+    /// When `true` TimePicker is hide and when `false` TimePicker is show.
     @Binding var isHide: Bool
 
     var body: some View {

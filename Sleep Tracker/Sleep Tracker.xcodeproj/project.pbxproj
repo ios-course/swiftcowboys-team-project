@@ -20,8 +20,8 @@
 		9363F2DB2A0D44F20067647F /* Image+AppImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9363F2DA2A0D44F20067647F /* Image+AppImage.swift */; };
 		9363F2DD2A0D67DD0067647F /* Image+AppImageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9363F2DC2A0D67DD0067647F /* Image+AppImageTests.swift */; };
 		9363F2DE2A0D67F10067647F /* Image+AppImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9363F2DA2A0D44F20067647F /* Image+AppImage.swift */; };
-		BF6918DE2A14B88800A5DF33 /* AlarmButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6918DD2A14B88800A5DF33 /* AlarmButton.swift */; };
-		BF6918E02A14C20B00A5DF33 /* SleepTimePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6918DF2A14C20B00A5DF33 /* SleepTimePicker.swift */; };
+		BF6918DE2A14B88800A5DF33 /* RoundedAlarmView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6918DD2A14B88800A5DF33 /* RoundedAlarmView.swift */; };
+		BF6918E02A14C20B00A5DF33 /* AlarmTimePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6918DF2A14C20B00A5DF33 /* AlarmTimePickerView.swift */; };
 		BF77C2792A0A78F500BB6656 /* SleepSetupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF77C2782A0A78F500BB6656 /* SleepSetupView.swift */; };
 /* End PBXBuildFile section */
 
@@ -57,8 +57,8 @@
 		9354B4DE2A0ABDDA0095F1CD /* Color+AppSchemeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+AppSchemeTests.swift"; sourceTree = "<group>"; };
 		9363F2DA2A0D44F20067647F /* Image+AppImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Image+AppImage.swift"; sourceTree = "<group>"; };
 		9363F2DC2A0D67DD0067647F /* Image+AppImageTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Image+AppImageTests.swift"; sourceTree = "<group>"; };
-		BF6918DD2A14B88800A5DF33 /* AlarmButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmButton.swift; sourceTree = "<group>"; };
-		BF6918DF2A14C20B00A5DF33 /* SleepTimePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SleepTimePicker.swift; sourceTree = "<group>"; };
+		BF6918DD2A14B88800A5DF33 /* RoundedAlarmView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedAlarmView.swift; sourceTree = "<group>"; };
+		BF6918DF2A14C20B00A5DF33 /* AlarmTimePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmTimePickerView.swift; sourceTree = "<group>"; };
 		BF77C2782A0A78F500BB6656 /* SleepSetupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SleepSetupView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -155,7 +155,7 @@
 		0B5026062A064259004E3671 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				BF77C2772A0A78CC00BB6656 /* SleepPageView */,
+				BF6918D62A14B7FC00A5DF33 /* SleepSetupView */,
 				0B5025DB2A063F00004E3671 /* ContentView.swift */,
 			);
 			path = View;
@@ -208,18 +208,10 @@
 		BF6918D72A14B80800A5DF33 /* HelpersView */ = {
 			isa = PBXGroup;
 			children = (
-				BF6918DD2A14B88800A5DF33 /* AlarmButton.swift */,
-				BF6918DF2A14C20B00A5DF33 /* SleepTimePicker.swift */,
+				BF6918DD2A14B88800A5DF33 /* RoundedAlarmView.swift */,
+				BF6918DF2A14C20B00A5DF33 /* AlarmTimePickerView.swift */,
 			);
 			path = HelpersView;
-			sourceTree = "<group>";
-		};
-		BF77C2772A0A78CC00BB6656 /* SleepPageView */ = {
-			isa = PBXGroup;
-			children = (
-				BF6918D62A14B7FC00A5DF33 /* SleepSetupView */,
-			);
-			path = SleepPageView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -397,10 +389,10 @@
 			files = (
 				9354B4DD2A0ABB4A0095F1CD /* Color+AppScheme.swift in Sources */,
 				9363F2DB2A0D44F20067647F /* Image+AppImage.swift in Sources */,
-				BF6918DE2A14B88800A5DF33 /* AlarmButton.swift in Sources */,
+				BF6918DE2A14B88800A5DF33 /* RoundedAlarmView.swift in Sources */,
 				BF77C2792A0A78F500BB6656 /* SleepSetupView.swift in Sources */,
 				0B5025DC2A063F00004E3671 /* ContentView.swift in Sources */,
-				BF6918E02A14C20B00A5DF33 /* SleepTimePicker.swift in Sources */,
+				BF6918E02A14C20B00A5DF33 /* AlarmTimePickerView.swift in Sources */,
 				0B5025DA2A063EFF004E3671 /* SleepTrackerApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

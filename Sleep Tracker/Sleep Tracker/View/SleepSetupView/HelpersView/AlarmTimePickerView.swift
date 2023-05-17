@@ -1,10 +1,10 @@
 import SwiftUI
 
 /// A custom TimePicker in which the user will be able to choose what time he wakes up.
-struct SleepTimePicker: View {
+struct AlarmTimePickerView: View {
     // MARK: - Public interface
 
-    /// A boolean value when the TimePicker show or hide.
+    /// A boolean value that indicates whether the TimePicker is hidden.
     /// When `true` TimePicker is hide and when `false` TimePicker is show.
     @Binding var isHide: Bool
 
@@ -26,6 +26,6 @@ struct SleepTimePicker: View {
 
 struct SleepTimePicker_Previews: PreviewProvider {
     static var previews: some View {
-        SleepTimePicker(isHide: .constant(true))
+        AlarmTimePickerView(isHide: .constant(true))
     }
 }

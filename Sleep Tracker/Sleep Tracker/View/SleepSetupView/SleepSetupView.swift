@@ -1,24 +1,24 @@
 import SwiftUI
 
-/// A view show the option to set the alarm clock and set the wake-up time before go to bed.
+/// A view shows the options that the user can set before go to bed.
 struct SleepSetupView: View {
     // MARK: - Public interface
 
-    /// Boolean value by which we can know if the alarm is on or off.
+    /// Boolean value that indicates whether the alarm is on.
     @State var isAlarmOn = false
 
     var body: some View {
         VStack {
             Image.AppImage.sleepingAstronaut
             HStack {
-                AlarmButton(animate: $isAlarmOn)
+                RoundedAlarmView(animate: $isAlarmOn)
                     .onTapGesture {
                         withAnimation(Animation.spring().speed(1)) {
                             isAlarmOn.toggle()
                         }
                     }
                 ZStack {
-                    SleepTimePicker(isHide: $isAlarmOn)
+                    AlarmTimePickerView(isHide: $isAlarmOn)
                     noAlarmLabel
                 }
             }

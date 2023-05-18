@@ -2,7 +2,7 @@ import SwiftUI
 
 /// A view shows the options that the user can set before go to bed.
 struct SleepSetupView: View {
-    // MARK: - Public interface
+    // MARK: - Non-Private interface
 
     /// Boolean value that indicates whether the alarm is on.
     @State var isAlarmOn = false
@@ -11,32 +11,26 @@ struct SleepSetupView: View {
         VStack {
             Image.AppImage.sleepingAstronaut
             HStack {
-                RoundedAlarmView(animate: $isAlarmOn)
+                RoundedAlarmView(isAnimated: $isAlarmOn)
                     .onTapGesture {
                         withAnimation(Animation.spring().speed(1)) {
                             isAlarmOn.toggle()
                         }
                     }
-                ZStack {
-                    AlarmTimePickerView(isHide: $isAlarmOn)
-                    noAlarmLabel
-                }
+                AlarmTimePickerView(isHidden: $isAlarmOn,
+                                    selectedDate: .now)
             }
             estimatedLabel
         }
+        .padding()
     }
 
     // MARK: - Private interface
 
-    private var noAlarmLabel: some View {
-        Text("No alarm clock,\njust a sleep analysis")
-            .font(.system(size: 20, weight: .bold))
-            .opacity(isAlarmOn ? 0.0 : 1.0)
-    }
-
     private var estimatedLabel: some View {
         Text("estimated bedtime 07:52")
-            .font(.system(size: 20, weight: .bold))
+            .font(.system(size: 20,
+                          weight: .bold))
             .padding(.top, 50)
     }
 }

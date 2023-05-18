@@ -199,19 +199,19 @@
 		BF6918D62A14B7FC00A5DF33 /* SleepSetupView */ = {
 			isa = PBXGroup;
 			children = (
-				BF6918D72A14B80800A5DF33 /* HelpersView */,
+				BF6918D72A14B80800A5DF33 /* Subviews */,
 				BF77C2782A0A78F500BB6656 /* SleepSetupView.swift */,
 			);
 			path = SleepSetupView;
 			sourceTree = "<group>";
 		};
-		BF6918D72A14B80800A5DF33 /* HelpersView */ = {
+		BF6918D72A14B80800A5DF33 /* Subviews */ = {
 			isa = PBXGroup;
 			children = (
 				BF6918DD2A14B88800A5DF33 /* RoundedAlarmView.swift */,
 				BF6918DF2A14C20B00A5DF33 /* AlarmTimePickerView.swift */,
 			);
-			path = HelpersView;
+			path = Subviews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

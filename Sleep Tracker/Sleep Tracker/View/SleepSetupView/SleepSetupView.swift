@@ -17,8 +17,8 @@ struct SleepSetupView: View {
                             isAlarmOn.toggle()
                         }
                     }
-                AlarmTimePickerView(isHidden: $isAlarmOn,
-                                    selectedDate: .now)
+                AlarmSetupView(isHidden: $isAlarmOn,
+                               selectedDate: .now)
             }
             estimatedLabel
         }

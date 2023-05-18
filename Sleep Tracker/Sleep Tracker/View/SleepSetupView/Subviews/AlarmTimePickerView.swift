@@ -12,15 +12,6 @@ struct AlarmTimePickerView: View {
     @State var selectedDate: Date
 
     var body: some View {
-        ZStack {
-            timePicker
-            noAlarmLabel
-        }
-    }
-
-    // MARK: - Private interface
-
-    private var timePicker: some View {
         DatePicker("",
                    selection: $selectedDate,
                    displayedComponents: .hourAndMinute)
@@ -32,13 +23,6 @@ struct AlarmTimePickerView: View {
                    alignment: .center)
             .clipped()
             .opacity(isHidden ? 1.0 : 0.0)
-    }
-
-    private var noAlarmLabel: some View {
-        Text("No alarm clock,\njust a sleep analysis")
-            .font(.system(size: 20,
-                          weight: .bold))
-            .opacity(isHidden ? 0.0 : 1.0)
     }
 }
 

@@ -20,18 +20,9 @@ struct SleepSetupView: View {
                 AlarmSetupView(isHidden: $isAlarmOn,
                                selectedDate: .now)
             }
-            estimatedLabel
+            EstimatedLabel()
         }
         .padding()
-    }
-
-    // MARK: - Private interface
-
-    private var estimatedLabel: some View {
-        Text("estimated bedtime 07:52")
-            .font(.system(size: 20,
-                          weight: .bold))
-            .padding(.top, 50)
     }
 }
 

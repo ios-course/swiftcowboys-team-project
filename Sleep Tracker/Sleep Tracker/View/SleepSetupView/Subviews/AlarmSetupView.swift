@@ -1,16 +1,16 @@
 import SwiftUI
 
-/// A view that displays a time picker and a label indicating that the alarm clock is off.
+/// A view that shows an information according to the alarm status.
 struct AlarmSetupView: View {
-    /// A boolean value that indicates whether the Label is hidden.
-    /// When `true` Label is hidden and when `false` Label is visible.
-    @Binding var isHidden: Bool
+    /// A boolean value that indicates whether the alarm is on.
+    /// If `true` TimePicker is show, otherwise Label is show.
+    @Binding var isAlarmOn: Bool
 
     /// A date selected in the TimePicker.
     @State var selectedDate: Date
 
     var body: some View {
-        switch isHidden {
+        switch isAlarmOn {
         case true:
             WheelTimePickerView(selectedDate: selectedDate)
         case false:
@@ -21,7 +21,7 @@ struct AlarmSetupView: View {
 
 struct AlarmSetupView_Previews: PreviewProvider {
     static var previews: some View {
-        AlarmSetupView(isHidden: .constant(false),
+        AlarmSetupView(isAlarmOn: .constant(false),
                        selectedDate: .now)
     }
 }

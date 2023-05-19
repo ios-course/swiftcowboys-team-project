@@ -4,7 +4,7 @@ import SwiftUI
 struct SleepSetupView: View {
     // MARK: - Non-Private interface
 
-    /// Boolean value that indicates whether the alarm is on.
+    /// A boolean value that indicates whether the alarm is on.
     @State var isAlarmOn = false
 
     var body: some View {
@@ -17,7 +17,7 @@ struct SleepSetupView: View {
                             isAlarmOn.toggle()
                         }
                     }
-                AlarmSetupView(isHidden: $isAlarmOn,
+                AlarmSetupView(isAlarmOn: $isAlarmOn,
                                selectedDate: .now)
             }
             EstimatedLabelView()

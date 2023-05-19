@@ -3,7 +3,7 @@ import SwiftUI
 /// A view that allows to select (pick) a specific time (hours and minutes within 00:00 - 23:59 range).
 /// Picker has the "wheel" style.
 struct WheelTimePickerView: View {
-    ///  A date selected by the user in TimePicker.
+    /// A date selected by the user in the Piker with time.
     @State var selectedDate: Date
 
     var body: some View {

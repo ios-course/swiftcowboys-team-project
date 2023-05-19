@@ -1,7 +1,7 @@
 import SwiftUI
 
 /// A view that shows information about the disabled alarm clock.
-struct NoAlarmLabel: View {
+struct NoAlarmLabelView: View {
     var body: some View {
         Text("No alarm clock,\njust a sleep analysis")
             .font(.system(size: 20,
@@ -13,8 +13,8 @@ struct NoAlarmLabel: View {
     }
 }
 
-struct NoAlarmLabel_Previews: PreviewProvider {
+struct NoAlarmLabelView_Previews: PreviewProvider {
     static var previews: some View {
-        NoAlarmLabel()
+        NoAlarmLabelView()
     }
 }

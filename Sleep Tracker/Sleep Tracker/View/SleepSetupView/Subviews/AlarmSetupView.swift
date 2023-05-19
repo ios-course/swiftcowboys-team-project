@@ -6,7 +6,7 @@ struct AlarmSetupView: View {
     /// If `true` TimePicker is show, otherwise Label is show.
     @Binding var isAlarmOn: Bool
 
-    /// A date selected in the TimePicker.
+    /// A date selected by the user in TimePicker.
     @State var selectedDate: Date
 
     var body: some View {
@@ -14,7 +14,7 @@ struct AlarmSetupView: View {
         case true:
             WheelTimePickerView(selectedDate: selectedDate)
         case false:
-            NoAlarmLabel()
+            NoAlarmLabelView()
         }
     }
 }

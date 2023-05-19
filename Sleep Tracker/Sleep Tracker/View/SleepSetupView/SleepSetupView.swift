@@ -11,14 +11,12 @@ struct SleepSetupView: View {
             HStack {
                 RoundedAlarmView(isOpaque: $isAlarmOn)
                     .onTapGesture {
-                        withAnimation(Animation.spring().speed(1)) {
-                            isAlarmOn.toggle()
-                        }
+                        isAlarmOn.toggle()
                     }
                 AlarmSetupView(isAlarmOn: $isAlarmOn,
                                selectedDate: .now)
             }
-            EstimatedLabelView()
+            EstimatedSleepDurationLabelView()
         }
         .padding()
     }

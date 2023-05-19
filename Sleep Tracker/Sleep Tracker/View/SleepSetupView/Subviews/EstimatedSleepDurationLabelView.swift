@@ -1,7 +1,7 @@
 import SwiftUI
 
 /// A view that shows the predicted duration of sleep.
-struct EstimatedLabelView: View {
+struct EstimatedSleepDurationLabelView: View {
     var body: some View {
         Text("Predicted sleep duration:\n07:52")
             .multilineTextAlignment(.center)
@@ -11,8 +11,8 @@ struct EstimatedLabelView: View {
     }
 }
 
-struct EstimatedLabelView_Previews: PreviewProvider {
+struct EstimatedSleepDurationLabelView_Previews: PreviewProvider {
     static var previews: some View {
-        EstimatedLabelView()
+        EstimatedSleepDurationLabelView()
     }
 }

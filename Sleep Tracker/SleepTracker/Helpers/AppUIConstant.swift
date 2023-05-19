@@ -6,8 +6,8 @@ enum AppUIConstant {
     static let cornerRadius10: CGFloat = 10
     /// A corner radius is 46.
     static let cornerRadius46: CGFloat = 46
-    /// A corner radius is 50.
-    static let cornerRadius50: CGFloat = 50
+    /// A corner radius is 20.
+    static let cornerRadius20: CGFloat = 20
     /// A corner radius is 15.
     static let cornerRadius15: CGFloat = 15
     /// A corner radius is 80.
@@ -19,8 +19,6 @@ enum AppUIConstant {
     static let padding50: CGFloat = 50
     /// A padding is 10.
     static let padding10: CGFloat = 10
-    /// A padding is 25.
-    static let padding25: CGFloat = 25
 
     /// An opacity is 0.0.
     static let transparent: Double = 0.0
@@ -29,11 +27,8 @@ enum AppUIConstant {
     /// An opacity is 1.0.
     static let opaque: Double = 1.0
 
-    /// A frame width is 0.
-    static let frameWidth0: CGFloat = 0
-    /// A frame height is 100.
-    static let frameHeight100: CGFloat = 100
-
-    /// An animation speed is 1.0.
-    static let animationSpeed1: Double = 1.0
+    /// A frame size is 0.
+    static let frameSize0: CGFloat = 0
+    /// A frame size is 100.
+    static let frameSize100: CGFloat = 100
 }

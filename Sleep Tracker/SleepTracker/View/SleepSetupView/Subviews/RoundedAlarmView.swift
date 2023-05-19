@@ -3,7 +3,6 @@ import SwiftUI
 /// A rectangular rounded view with an alarm clock image in the center.
 struct RoundedAlarmView: View {
     /// A boolean value that indicates whether the view is opaque.
-    /// If `true` view is opaque, otherwise is semi-transparent.
     @Binding var isOpaque: Bool
 
     var body: some View {

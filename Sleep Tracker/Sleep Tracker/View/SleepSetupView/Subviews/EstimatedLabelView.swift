@@ -4,6 +4,7 @@ import SwiftUI
 struct EstimatedLabelView: View {
     var body: some View {
         Text("Predicted sleep duration:\n07:52")
+            .multilineTextAlignment(.center)
             .font(.system(size: 20,
                           weight: .bold))
             .padding(.top, 50)

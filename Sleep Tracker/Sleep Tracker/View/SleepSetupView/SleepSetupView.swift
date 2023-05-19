@@ -2,8 +2,6 @@ import SwiftUI
 
 /// A view shows the options that the user can set before go to bed.
 struct SleepSetupView: View {
-    // MARK: - Non-Private interface
-
     /// A boolean value that indicates whether the alarm is on.
     @State var isAlarmOn = false
 

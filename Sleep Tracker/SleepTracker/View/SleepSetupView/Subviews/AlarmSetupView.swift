@@ -5,7 +5,7 @@ struct AlarmSetupView: View {
     /// A boolean value that indicates whether the alarm is on.
     @Binding var isAlarmOn: Bool
 
-    /// A date selected by the user in TimePicker.
+    /// The date displayed by the picker.
     @State var selectedDate: Date
 
     var body: some View {

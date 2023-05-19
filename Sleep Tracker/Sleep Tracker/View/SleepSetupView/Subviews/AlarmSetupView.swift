@@ -10,9 +10,11 @@ struct AlarmSetupView: View {
     @State var selectedDate: Date
 
     var body: some View {
-        ZStack {
+        switch isHidden {
+        case true:
             AlarmTimePickerView(isHidden: $isHidden,
                                 selectedDate: selectedDate)
+        case false:
             NoAlarmLabel(isHidden: $isHidden)
         }
     }

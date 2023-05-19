@@ -1,6 +1,6 @@
 import SwiftUI
 
-/// A custom TimePicker in which the user will be able to choose what time he wakes up.
+/// A TimePicker in which the user can select the wake up time.
 struct AlarmTimePickerView: View {
     // MARK: - Non-Private interface
 
@@ -8,7 +8,7 @@ struct AlarmTimePickerView: View {
     /// When `true` TimePicker is hidden and when `false` TimePicker is visible.
     @Binding var isHidden: Bool
 
-    /// A variable that returns the date selected in TimePicker.
+    /// A date selected in the TimePicker.
     @State var selectedDate: Date
 
     var body: some View {

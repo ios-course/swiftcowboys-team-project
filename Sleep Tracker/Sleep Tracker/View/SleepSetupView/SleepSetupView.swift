@@ -20,7 +20,7 @@ struct SleepSetupView: View {
                 AlarmSetupView(isHidden: $isAlarmOn,
                                selectedDate: .now)
             }
-            EstimatedLabel()
+            EstimatedLabelView()
         }
         .padding()
     }

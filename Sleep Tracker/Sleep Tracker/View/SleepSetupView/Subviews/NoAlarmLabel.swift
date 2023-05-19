@@ -1,9 +1,9 @@
 import SwiftUI
 
-/// A view that display information that the alarm clock is off.
+/// A view that shows information about the disabled alarm clock.
 struct NoAlarmLabel: View {
-    /// A boolean value that indicates whether the Label is hidden.
-    /// When `true` Label is hidden and when `false` Label is visible.
+    /// A boolean value that indicates whether the alarm is animated.
+    /// When `true` alarm is animated and when `false` alarm is not animated.
     @Binding var isHidden: Bool
 
     var body: some View {

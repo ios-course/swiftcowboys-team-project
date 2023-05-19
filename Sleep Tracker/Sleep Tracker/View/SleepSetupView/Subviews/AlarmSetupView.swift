@@ -6,7 +6,7 @@ struct AlarmSetupView: View {
     /// When `true` Label is hidden and when `false` Label is visible.
     @Binding var isHidden: Bool
 
-    /// A variable that returns the date selected in TimePicker.
+    /// A date selected in the TimePicker.
     @State var selectedDate: Date
 
     var body: some View {

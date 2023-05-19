@@ -11,7 +11,7 @@ struct SleepSetupView: View {
         VStack {
             Image.AppImage.sleepingAstronaut
             HStack {
-                RoundedAlarmView(isAnimated: $isAlarmOn)
+                RoundedAlarmView(isOpaque: $isAlarmOn)
                     .onTapGesture {
                         withAnimation(Animation.spring().speed(1)) {
                             isAlarmOn.toggle()

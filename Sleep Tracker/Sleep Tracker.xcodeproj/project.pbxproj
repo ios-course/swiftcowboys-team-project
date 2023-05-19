@@ -21,7 +21,7 @@
 		9363F2DD2A0D67DD0067647F /* Image+AppImageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9363F2DC2A0D67DD0067647F /* Image+AppImageTests.swift */; };
 		9363F2DE2A0D67F10067647F /* Image+AppImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9363F2DA2A0D44F20067647F /* Image+AppImage.swift */; };
 		BF6918DE2A14B88800A5DF33 /* RoundedAlarmView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6918DD2A14B88800A5DF33 /* RoundedAlarmView.swift */; };
-		BF6918E02A14C20B00A5DF33 /* AlarmTimePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6918DF2A14C20B00A5DF33 /* AlarmTimePickerView.swift */; };
+		BF6918E02A14C20B00A5DF33 /* WheelTimePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6918DF2A14C20B00A5DF33 /* WheelTimePickerView.swift */; };
 		BF6918E22A16865300A5DF33 /* NoAlarmLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6918E12A16865300A5DF33 /* NoAlarmLabel.swift */; };
 		BF6918E42A1690F500A5DF33 /* AlarmSetupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6918E32A1690F500A5DF33 /* AlarmSetupView.swift */; };
 		BF6918E62A16968F00A5DF33 /* EstimatedLabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6918E52A16968F00A5DF33 /* EstimatedLabelView.swift */; };
@@ -61,7 +61,7 @@
 		9363F2DA2A0D44F20067647F /* Image+AppImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Image+AppImage.swift"; sourceTree = "<group>"; };
 		9363F2DC2A0D67DD0067647F /* Image+AppImageTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Image+AppImageTests.swift"; sourceTree = "<group>"; };
 		BF6918DD2A14B88800A5DF33 /* RoundedAlarmView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedAlarmView.swift; sourceTree = "<group>"; };
-		BF6918DF2A14C20B00A5DF33 /* AlarmTimePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmTimePickerView.swift; sourceTree = "<group>"; };
+		BF6918DF2A14C20B00A5DF33 /* WheelTimePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WheelTimePickerView.swift; sourceTree = "<group>"; };
 		BF6918E12A16865300A5DF33 /* NoAlarmLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoAlarmLabel.swift; sourceTree = "<group>"; };
 		BF6918E32A1690F500A5DF33 /* AlarmSetupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmSetupView.swift; sourceTree = "<group>"; };
 		BF6918E52A16968F00A5DF33 /* EstimatedLabelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EstimatedLabelView.swift; sourceTree = "<group>"; };
@@ -215,7 +215,7 @@
 			isa = PBXGroup;
 			children = (
 				BF6918DD2A14B88800A5DF33 /* RoundedAlarmView.swift */,
-				BF6918DF2A14C20B00A5DF33 /* AlarmTimePickerView.swift */,
+				BF6918DF2A14C20B00A5DF33 /* WheelTimePickerView.swift */,
 				BF6918E12A16865300A5DF33 /* NoAlarmLabel.swift */,
 				BF6918E32A1690F500A5DF33 /* AlarmSetupView.swift */,
 				BF6918E52A16968F00A5DF33 /* EstimatedLabelView.swift */,
@@ -402,7 +402,7 @@
 				BF77C2792A0A78F500BB6656 /* SleepSetupView.swift in Sources */,
 				0B5025DC2A063F00004E3671 /* ContentView.swift in Sources */,
 				BF6918E62A16968F00A5DF33 /* EstimatedLabelView.swift in Sources */,
-				BF6918E02A14C20B00A5DF33 /* AlarmTimePickerView.swift in Sources */,
+				BF6918E02A14C20B00A5DF33 /* WheelTimePickerView.swift in Sources */,
 				0B5025DA2A063EFF004E3671 /* SleepTrackerApp.swift in Sources */,
 				BF6918E22A16865300A5DF33 /* NoAlarmLabel.swift in Sources */,
 				BF6918E42A1690F500A5DF33 /* AlarmSetupView.swift in Sources */,

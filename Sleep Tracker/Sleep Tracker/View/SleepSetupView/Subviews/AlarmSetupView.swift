@@ -12,8 +12,7 @@ struct AlarmSetupView: View {
     var body: some View {
         switch isHidden {
         case true:
-            AlarmTimePickerView(isHidden: $isHidden,
-                                selectedDate: selectedDate)
+            WheelTimePickerView(selectedDate: selectedDate)
         case false:
             NoAlarmLabel(isHidden: $isHidden)
         }

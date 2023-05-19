@@ -14,7 +14,7 @@ struct AlarmSetupView: View {
         case true:
             WheelTimePickerView(selectedDate: selectedDate)
         case false:
-            NoAlarmLabel(isHidden: $isHidden)
+            NoAlarmLabel()
         }
     }
 }

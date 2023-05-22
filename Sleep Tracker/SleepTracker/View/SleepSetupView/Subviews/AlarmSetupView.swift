@@ -1,0 +1,26 @@
+import SwiftUI
+
+/// A view that shows an information according to the alarm status.
+struct AlarmSetupView: View {
+    /// A boolean value that indicates whether the alarm is on.
+    @Binding var isAlarmOn: Bool
+
+    /// The date displayed by the picker.
+    @State var selectedDate: Date
+
+    var body: some View {
+        switch isAlarmOn {
+        case true:
+            WheelTimePickerView(selectedDate: selectedDate)
+        case false:
+            NoAlarmLabelView()
+        }
+    }
+}
+
+struct AlarmSetupView_Previews: PreviewProvider {
+    static var previews: some View {
+        AlarmSetupView(isAlarmOn: .constant(false),
+                       selectedDate: .now)
+    }
+}

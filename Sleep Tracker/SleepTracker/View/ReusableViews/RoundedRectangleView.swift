@@ -4,7 +4,7 @@ import SwiftUI
 /// In the center of the shape is white text.
 struct RoundedRectangleView: View {
     /// A text on the rectangle.
-    @Binding var rectangleText: String
+    @State var rectangleText: String
 
     var body: some View {
         Text(rectangleText)
@@ -20,7 +20,6 @@ struct RoundedRectangleView: View {
 
 struct RoundedRectangleView_Previews: PreviewProvider {
     static var previews: some View {
-        @State var rectangleText = "START SLEEPING"
-        RoundedRectangleView(rectangleText: $rectangleText)
+        RoundedRectangleView(rectangleText: "START SLEEPING")
     }
 }

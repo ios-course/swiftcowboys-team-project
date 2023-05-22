@@ -9,10 +9,9 @@ struct AlarmSetupView: View {
     @State var selectedDate: Date
 
     var body: some View {
-        switch isAlarmOn {
-        case true:
+        if isAlarmOn {
             WheelTimePickerView(selectedDate: selectedDate)
-        case false:
+        } else {
             NoAlarmLabelView()
         }
     }

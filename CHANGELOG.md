@@ -36,4 +36,3 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 - Fixed the bug after merging when initial information appeared in the`README.md` after the merging - [#32](https://github.com/ios-course/swiftcowboys-team-project/pull/32/files)
 
 - Fixed an error while building the `Sleep tracker/Tests` target - [#34](https://github.com/ios-course/swiftcowboys-team-project/pull/34)
-

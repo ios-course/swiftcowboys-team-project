@@ -5,7 +5,7 @@ import SwiftUI
 /// The button will have a label with the white center-aligned text.
 ///
 /// To configure the current button style for a view hierarchy, use the `buttonStyle(_:)` modifier.
-struct RoundedRectangleButton: ButtonStyle {
+struct RoundedRectangleBlue: ButtonStyle {
     func makeBody(configuration: Configuration) -> some View {
             configuration.label
                 .font(
@@ -26,9 +26,9 @@ struct RoundedRectangleButton: ButtonStyle {
     private let buttonDefaultPadding: CGFloat = 24
 }
 
-struct RoundedRectangleButton_Previews: PreviewProvider {
+struct RoundedRectangleBlue_Previews: PreviewProvider {
     static var previews: some View {
         Button("Press Me!") {}
-            .buttonStyle(RoundedRectangleButton())
+            .buttonStyle(RoundedRectangleBlue())
     }
 }

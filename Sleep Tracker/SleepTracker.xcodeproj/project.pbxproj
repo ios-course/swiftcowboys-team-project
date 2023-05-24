@@ -15,7 +15,7 @@
 		0B5025F52A063F07004E3671 /* SleepTrackerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B5025F42A063F07004E3671 /* SleepTrackerUITests.swift */; };
 		0B5025F72A063F07004E3671 /* SleepTrackerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B5025F62A063F07004E3671 /* SleepTrackerUITestsLaunchTests.swift */; };
 		74B5086A2A0AC98C00B12BE0 /* DuringSleepView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B508692A0AC98C00B12BE0 /* DuringSleepView.swift */; };
-		933ABC102A13779F00D4A485 /* RoundedRectangleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933ABC0F2A13779F00D4A485 /* RoundedRectangleView.swift */; };
+		933ABC102A13779F00D4A485 /* RoundedRectangleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933ABC0F2A13779F00D4A485 /* RoundedRectangleButton.swift */; };
 		9354B4DD2A0ABB4A0095F1CD /* Color+AppScheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9354B4DC2A0ABB4A0095F1CD /* Color+AppScheme.swift */; };
 		9354B4DF2A0ABDDA0095F1CD /* Color+AppSchemeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9354B4DE2A0ABDDA0095F1CD /* Color+AppSchemeTests.swift */; };
 		9354B4E02A0ABF310095F1CD /* Color+AppScheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9354B4DC2A0ABB4A0095F1CD /* Color+AppScheme.swift */; };
@@ -59,7 +59,7 @@
 		0B5025F42A063F07004E3671 /* SleepTrackerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SleepTrackerUITests.swift; sourceTree = "<group>"; };
 		0B5025F62A063F07004E3671 /* SleepTrackerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SleepTrackerUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		74B508692A0AC98C00B12BE0 /* DuringSleepView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DuringSleepView.swift; sourceTree = "<group>"; };
-		933ABC0F2A13779F00D4A485 /* RoundedRectangleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedRectangleView.swift; sourceTree = "<group>"; };
+		933ABC0F2A13779F00D4A485 /* RoundedRectangleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedRectangleButton.swift; sourceTree = "<group>"; };
 		9354B4DC2A0ABB4A0095F1CD /* Color+AppScheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+AppScheme.swift"; sourceTree = "<group>"; };
 		9354B4DE2A0ABDDA0095F1CD /* Color+AppSchemeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+AppSchemeTests.swift"; sourceTree = "<group>"; };
 		9363F2DA2A0D44F20067647F /* Image+AppImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Image+AppImage.swift"; sourceTree = "<group>"; };
@@ -199,6 +199,14 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		1C6EE5662A1DE933007015CA /* ButtonStyle */ = {
+			isa = PBXGroup;
+			children = (
+				933ABC0F2A13779F00D4A485 /* RoundedRectangleButton.swift */,
+			);
+			path = ButtonStyle;
+			sourceTree = "<group>";
+		};
 		74B508682A0AC97700B12BE0 /* DuringSleepView */ = {
 			isa = PBXGroup;
 			children = (
@@ -219,7 +227,7 @@
 		93E6DFDF2A142D1F0090EE2F /* ReusableViews */ = {
 			isa = PBXGroup;
 			children = (
-				933ABC0F2A13779F00D4A485 /* RoundedRectangleView.swift */,
+				1C6EE5662A1DE933007015CA /* ButtonStyle */,
 			);
 			path = ReusableViews;
 			sourceTree = "<group>";
@@ -420,7 +428,7 @@
 			files = (
 				74B5086A2A0AC98C00B12BE0 /* DuringSleepView.swift in Sources */,
 				9354B4DD2A0ABB4A0095F1CD /* Color+AppScheme.swift in Sources */,
-				933ABC102A13779F00D4A485 /* RoundedRectangleView.swift in Sources */,
+				933ABC102A13779F00D4A485 /* RoundedRectangleButton.swift in Sources */,
 				9363F2DB2A0D44F20067647F /* Image+AppImage.swift in Sources */,
 				BF6918DE2A14B88800A5DF33 /* RoundedAlarmView.swift in Sources */,
 				BF77C2792A0A78F500BB6656 /* SleepSetupView.swift in Sources */,

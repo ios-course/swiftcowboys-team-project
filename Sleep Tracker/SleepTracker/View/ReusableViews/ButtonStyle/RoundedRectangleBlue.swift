@@ -19,11 +19,9 @@ struct RoundedRectangleBlue: ButtonStyle {
                 .foregroundColor(.AppScheme.white)
                 .background(Color.AppScheme.brightBlue)
                 .clipShape(Capsule())
-                .padding(buttonDefaultPadding)
     }
 
     private let labelTextSize: CGFloat = 20
-    private let buttonDefaultPadding: CGFloat = 24
 }
 
 struct RoundedRectangleBlue_Previews: PreviewProvider {

@@ -7,18 +7,18 @@ import SwiftUI
 /// To configure the current button style for a view hierarchy, use the `buttonStyle(_:)` modifier.
 struct RoundedRectangleBlue: ButtonStyle {
     func makeBody(configuration: Configuration) -> some View {
-            configuration.label
-                .font(
-                    .system(
-                        size: labelTextSize, weight: .bold
-                    )
+        configuration.label
+            .font(
+                .system(
+                    size: labelTextSize, weight: .bold
                 )
-                .multilineTextAlignment(.center)
-                .frame(maxWidth: .infinity)
-                .padding()
-                .foregroundColor(.AppScheme.white)
-                .background(Color.AppScheme.brightBlue)
-                .clipShape(Capsule())
+            )
+            .multilineTextAlignment(.center)
+            .frame(maxWidth: .infinity)
+            .padding()
+            .foregroundColor(.AppScheme.white)
+            .background(Color.AppScheme.brightBlue)
+            .clipShape(Capsule())
     }
 
     private let labelTextSize: CGFloat = 20

@@ -23,6 +23,8 @@ extension Image {
         static let onboardingBackground = Image("Onboarding_background")
         /// A sleeping astronaut image.
         static let sleepingAstronaut = Image("Sleeping_astronaut")
+        /// A sleeping astronaut image (vertically oriented).
+        static let sleepingAstronautVertical = Image("Sleeping_astronaut_vertical")
         /// An image of a statistic symbol.
         static let statisticsSymbolPurple = Image("Statistics_symbol_purple")
         /// An image of a colored sun symbol.

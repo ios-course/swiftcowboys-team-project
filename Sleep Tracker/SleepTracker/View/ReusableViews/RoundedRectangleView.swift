@@ -1,25 +1,34 @@
 import SwiftUI
 
-/// A rectangular shape in bright blue with rounded corners.
-/// In the center of the shape is white text.
-struct RoundedRectangleView: View {
-    /// A text on the rectangle.
-    @State var rectangleText: String
-
-    var body: some View {
-        Text(rectangleText)
-            .foregroundColor(.AppScheme.white)
-            .font(.system(size: 20, weight: .bold))
-            .frame(maxWidth: .infinity)
-            .padding()
-            .background(Color.AppScheme.brightBlue)
-            .cornerRadius(46)
-            .padding(24)
+/// A type that applies standard interaction behavior and a custom appearance to all buttons within a view hierarchy.
+/// The button will have a rectanglular bright-blue shape with rounded corners.
+/// The button will have a label with the white center-aligned text.
+///
+/// To configure the current button style for a view hierarchy, use the `buttonStyle(_:)` modifier.
+struct RoundedRectangleButton: ButtonStyle {
+    func makeBody(configuration: Configuration) -> some View {
+            configuration.label
+                .font(
+                    .system(
+                        size: labelTextSize, weight: .bold
+                    )
+                )
+                .multilineTextAlignment(.center)
+                .frame(maxWidth: .infinity)
+                .padding()
+                .foregroundColor(.AppScheme.white)
+                .background(Color.AppScheme.brightBlue)
+                .clipShape(Capsule())
+                .padding(buttonDefaultPadding)
     }
+
+    private let labelTextSize: CGFloat = 20
+    private let buttonDefaultPadding: CGFloat = 24
 }
 
-struct RoundedRectangleView_Previews: PreviewProvider {
+struct RoundedRectangleButton_Previews: PreviewProvider {
     static var previews: some View {
-        RoundedRectangleView(rectangleText: "START SLEEPING")
+        Button("Press Me!") {}
+            .buttonStyle(RoundedRectangleButton())
     }
 }

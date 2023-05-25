@@ -22,6 +22,7 @@
 		9363F2DB2A0D44F20067647F /* Image+AppImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9363F2DA2A0D44F20067647F /* Image+AppImage.swift */; };
 		9363F2DD2A0D67DD0067647F /* Image+AppImageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9363F2DC2A0D67DD0067647F /* Image+AppImageTests.swift */; };
 		9363F2DE2A0D67F10067647F /* Image+AppImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9363F2DA2A0D44F20067647F /* Image+AppImage.swift */; };
+		93DE2EAA2A1F5A390086AED8 /* SleepSetupViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93DE2EA92A1F5A380086AED8 /* SleepSetupViewModel.swift */; };
 		BF6918DE2A14B88800A5DF33 /* RoundedAlarmView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6918DD2A14B88800A5DF33 /* RoundedAlarmView.swift */; };
 		BF6918E02A14C20B00A5DF33 /* WheelTimePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6918DF2A14C20B00A5DF33 /* WheelTimePickerView.swift */; };
 		BF6918E22A16865300A5DF33 /* NoAlarmLabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6918E12A16865300A5DF33 /* NoAlarmLabelView.swift */; };
@@ -64,6 +65,7 @@
 		9354B4DE2A0ABDDA0095F1CD /* Color+AppSchemeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+AppSchemeTests.swift"; sourceTree = "<group>"; };
 		9363F2DA2A0D44F20067647F /* Image+AppImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Image+AppImage.swift"; sourceTree = "<group>"; };
 		9363F2DC2A0D67DD0067647F /* Image+AppImageTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Image+AppImageTests.swift"; sourceTree = "<group>"; };
+		93DE2EA92A1F5A380086AED8 /* SleepSetupViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SleepSetupViewModel.swift; sourceTree = "<group>"; };
 		BF6918DD2A14B88800A5DF33 /* RoundedAlarmView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedAlarmView.swift; sourceTree = "<group>"; };
 		BF6918DF2A14C20B00A5DF33 /* WheelTimePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WheelTimePickerView.swift; sourceTree = "<group>"; };
 		BF6918E12A16865300A5DF33 /* NoAlarmLabelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoAlarmLabelView.swift; sourceTree = "<group>"; };
@@ -176,6 +178,7 @@
 		0B5026072A06425F004E3671 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				93DE2EA92A1F5A380086AED8 /* SleepSetupViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -435,6 +438,7 @@
 				0B5025DC2A063F00004E3671 /* ContentView.swift in Sources */,
 				BF6918E62A16968F00A5DF33 /* MultilineCenteredLabelView.swift in Sources */,
 				BF6918E02A14C20B00A5DF33 /* WheelTimePickerView.swift in Sources */,
+				93DE2EAA2A1F5A390086AED8 /* SleepSetupViewModel.swift in Sources */,
 				0B5025DA2A063EFF004E3671 /* SleepTrackerApp.swift in Sources */,
 				BF6918E22A16865300A5DF33 /* NoAlarmLabelView.swift in Sources */,
 				BF6918E42A1690F500A5DF33 /* AlarmSetupView.swift in Sources */,

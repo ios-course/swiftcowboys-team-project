@@ -14,7 +14,8 @@ struct DuringSleepView: View {
             Image.AppImage.sleepingAstronautHorizontal
 
             MultilineCenteredLabelView(
-                text: alarmStatusText
+                text: alarmStatusText,
+                time: $alarmTime
             )
         }
     }
@@ -23,7 +24,8 @@ struct DuringSleepView: View {
 
     private let imageToTextRelativeVerticalOffset: CGFloat = 45
     private let sleepSignText = "zZZZzZZZZzZZzzz"
-    @State private var alarmStatusText = "Alarm 07:30"
+    @State private var alarmStatusText = "Alarm "
+    @State private var alarmTime = "07:30"
 }
 
 struct DuringSleepView_Previews: PreviewProvider {

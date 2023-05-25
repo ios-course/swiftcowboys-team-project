@@ -3,10 +3,12 @@ import SwiftUI
 /// A label that shows a center-aligned multiline bold text.
 struct MultilineCenteredLabelView: View {
     /// A text to show in the label.
-    let text: String
+    @State var text: String
+    /// A time to show in the label.
+    @Binding var time: String
 
     var body: some View {
-        Text(text)
+        Text(text + time)
             .multilineTextAlignment(.center)
             .font(
                 .system(
@@ -20,7 +22,8 @@ struct MultilineCenteredLabelView: View {
 struct MultilineCenteredLabelView_Previews: PreviewProvider {
     static var previews: some View {
         MultilineCenteredLabelView(
-            text: "The first line text\nThe second line text"
+            text: "Text\n",
+            time: .constant("7h 2m")
         )
     }
 }

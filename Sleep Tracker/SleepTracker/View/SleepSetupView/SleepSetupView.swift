@@ -4,6 +4,8 @@ import SwiftUI
 struct SleepSetupView: View {
     // MARK: - Non-private interface
 
+    /// A view model that provides the data to the view.
+    @ObservedObject var viewModel: SleepSetupViewModel
     /// A boolean value that indicates whether the alarm is on.
     @State var isAlarmOn = false
 
@@ -18,25 +20,29 @@ struct SleepSetupView: View {
                     }
                 AlarmSetupView(
                     isAlarmOn: $isAlarmOn,
-                    selectedDate: .now
+                    selectedDate: $viewModel.selectedTime
                 )
             }
 
             MultilineCenteredLabelView(
-                text: estimatedSleepText
+                text: estimatedSleepText,
+                time: $viewModel.sleepDuration
             )
         }
     }
 
     // MARK: - Private interface
 
-    private let estimatedSleepText = "Predicted sleep duration:\n7h 52m"
+    private let estimatedSleepText = "Predicted sleep duration:\n"
 }
 
 struct SleepSetupView_Previews: PreviewProvider {
     static var previews: some View {
         VStack {
-            SleepSetupView(isAlarmOn: true)
+            SleepSetupView(
+                viewModel: SleepSetupViewModel(),
+                isAlarmOn: true
+            )
         }
     }
 }

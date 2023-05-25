@@ -4,7 +4,7 @@ import SwiftUI
 /// Picker has the "wheel" style.
 struct WheelTimePickerView: View {
     /// The date displayed by the picker.
-    @State var selectedDate: Date
+    @Binding var selectedDate: Date
 
     var body: some View {
         DatePicker("",
@@ -22,6 +22,6 @@ struct WheelTimePickerView: View {
 
 struct WheelTimePickerView_Previews: PreviewProvider {
     static var previews: some View {
-        WheelTimePickerView(selectedDate: .now)
+        WheelTimePickerView(selectedDate: .constant(.now))
     }
 }

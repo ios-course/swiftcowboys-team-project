@@ -1,6 +1,6 @@
 import SwiftUI
 
-/// A view shows the options that the user can set before go to bed.
+/// A view where the user can set the alarm and choose specific time when it goes off.
 struct SleepSetupView: View {
     // MARK: - Non-private interface
 

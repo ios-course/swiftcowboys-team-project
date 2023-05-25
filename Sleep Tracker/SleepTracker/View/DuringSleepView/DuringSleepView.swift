@@ -7,7 +7,10 @@ struct DuringSleepView: View {
     var body: some View {
         VStack {
             Text(sleepSignText)
-                .offset(x: 0, y: 45)
+                .offset(
+                    x: 0,
+                    y: imageToTextRelativeVerticalOffset
+                )
             Image.AppImage.sleepingAstronautHorizontal
 
             MultilineCenteredLabelView(
@@ -18,6 +21,7 @@ struct DuringSleepView: View {
 
     // MARK: - Private interface
 
+    private let imageToTextRelativeVerticalOffset: CGFloat = 45
     private let sleepSignText = "zZZZzZZZZzZZzzz"
     @State private var alarmStatusText = "Alarm 07:30"
 }

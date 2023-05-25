@@ -9,25 +9,34 @@ struct SleepSetupView: View {
 
     var body: some View {
         VStack {
-            Image.AppImage.sleepingAstronaut
+            Image.AppImage.sleepingAstronautVertical
+
             HStack {
                 RoundedAlarmView(isOpaque: $isAlarmOn)
                     .onTapGesture {
                         isAlarmOn.toggle()
                     }
-                AlarmSetupView(isAlarmOn: $isAlarmOn,
-                               selectedDate: .now)
+                AlarmSetupView(
+                    isAlarmOn: $isAlarmOn,
+                    selectedDate: .now
+                )
             }
-            EstimatedSleepDurationLabelView()
+
+            MultilineCenteredLabelView(
+                text: estimatedSleepText
+            )
         }
-        .padding()
     }
 
     // MARK: - Private interface
+
+    private let estimatedSleepText = "Predicted sleep duration:\n7h 52m"
 }
 
 struct SleepSetupView_Previews: PreviewProvider {
     static var previews: some View {
-        SleepSetupView()
+        VStack {
+            SleepSetupView(isAlarmOn: true)
+        }
     }
 }

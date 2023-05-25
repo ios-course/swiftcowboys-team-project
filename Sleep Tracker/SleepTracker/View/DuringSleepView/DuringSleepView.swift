@@ -6,7 +6,7 @@ struct DuringSleepView: View {
 
     var body: some View {
         VStack {
-            Image.AppImage.sleepingAstronaut
+            Image.AppImage.sleepingAstronautHorizontal
             Text(alarmStatusText)
                 .font(.system(size: 25))
                 .foregroundColor(.AppScheme.white)

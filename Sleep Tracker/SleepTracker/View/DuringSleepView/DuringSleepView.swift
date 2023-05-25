@@ -1,6 +1,6 @@
 import SwiftUI
 
-/// A view displaying information during the current sleep.
+/// A view that displays information about whether the alarm is on and for when it goes off.
 struct DuringSleepView: View {
     // MARK: - Non-private interface
 

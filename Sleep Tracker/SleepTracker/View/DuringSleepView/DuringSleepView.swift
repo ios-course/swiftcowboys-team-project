@@ -2,19 +2,23 @@ import SwiftUI
 
 /// A view displaying information during the current sleep.
 struct DuringSleepView: View {
-    // MARK: - Public interface
+    // MARK: - Non-private interface
 
     var body: some View {
         VStack {
+            Text(sleepSignText)
+                .offset(x: 0, y: 45)
             Image.AppImage.sleepingAstronautHorizontal
-            Text(alarmStatusText)
-                .font(.system(size: 25))
-                .foregroundColor(.AppScheme.white)
+
+            MultilineCenteredLabelView(
+                text: alarmStatusText
+            )
         }
     }
 
     // MARK: - Private interface
 
+    private let sleepSignText = "zZZZzZZZZzZZzzz"
     @State private var alarmStatusText = "Alarm 07:30"
 }
 

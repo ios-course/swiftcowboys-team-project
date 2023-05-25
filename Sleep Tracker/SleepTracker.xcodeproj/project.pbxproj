@@ -227,6 +227,7 @@
 		93E6DFDF2A142D1F0090EE2F /* ReusableViews */ = {
 			isa = PBXGroup;
 			children = (
+				BF6918E52A16968F00A5DF33 /* MultilineCenteredLabelView.swift */,
 				1C6EE5662A1DE933007015CA /* ButtonStyle */,
 			);
 			path = ReusableViews;
@@ -248,7 +249,6 @@
 				BF6918DF2A14C20B00A5DF33 /* WheelTimePickerView.swift */,
 				BF6918E12A16865300A5DF33 /* NoAlarmLabelView.swift */,
 				BF6918E32A1690F500A5DF33 /* AlarmSetupView.swift */,
-				BF6918E52A16968F00A5DF33 /* MultilineCenteredLabelView.swift */,
 			);
 			path = Subviews;
 			sourceTree = "<group>";

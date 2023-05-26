@@ -11,7 +11,6 @@
 		0B5025DC2A063F00004E3671 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B5025DB2A063F00004E3671 /* ContentView.swift */; };
 		0B5025DE2A063F06004E3671 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0B5025DD2A063F06004E3671 /* Assets.xcassets */; };
 		0B5025E12A063F06004E3671 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0B5025E02A063F06004E3671 /* Preview Assets.xcassets */; };
-		0B5025EB2A063F07004E3671 /* SleepTrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B5025EA2A063F07004E3671 /* SleepTrackerTests.swift */; };
 		0B5025F52A063F07004E3671 /* SleepTrackerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B5025F42A063F07004E3671 /* SleepTrackerUITests.swift */; };
 		0B5025F72A063F07004E3671 /* SleepTrackerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B5025F62A063F07004E3671 /* SleepTrackerUITestsLaunchTests.swift */; };
 		74B5086A2A0AC98C00B12BE0 /* DuringSleepView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B508692A0AC98C00B12BE0 /* DuringSleepView.swift */; };
@@ -54,7 +53,6 @@
 		0B5025DD2A063F06004E3671 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0B5025E02A063F06004E3671 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		0B5025E62A063F06004E3671 /* SleepTrackerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SleepTrackerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		0B5025EA2A063F07004E3671 /* SleepTrackerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SleepTrackerTests.swift; sourceTree = "<group>"; };
 		0B5025F02A063F07004E3671 /* SleepTrackerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SleepTrackerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B5025F42A063F07004E3671 /* SleepTrackerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SleepTrackerUITests.swift; sourceTree = "<group>"; };
 		0B5025F62A063F07004E3671 /* SleepTrackerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SleepTrackerUITestsLaunchTests.swift; sourceTree = "<group>"; };
@@ -140,7 +138,6 @@
 		0B5025E92A063F07004E3671 /* SleepTrackerTests */ = {
 			isa = PBXGroup;
 			children = (
-				0B5025EA2A063F07004E3671 /* SleepTrackerTests.swift */,
 			);
 			path = SleepTrackerTests;
 			sourceTree = "<group>";
@@ -445,7 +442,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0B5025EB2A063F07004E3671 /* SleepTrackerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -13,14 +13,14 @@
 		0B5025E12A063F06004E3671 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0B5025E02A063F06004E3671 /* Preview Assets.xcassets */; };
 		0B5025F52A063F07004E3671 /* SleepTrackerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B5025F42A063F07004E3671 /* SleepTrackerUITests.swift */; };
 		0B5025F72A063F07004E3671 /* SleepTrackerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B5025F62A063F07004E3671 /* SleepTrackerUITestsLaunchTests.swift */; };
+		1CB25E382A20EFFF00510E2B /* Color+AppSchemeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9354B4DE2A0ABDDA0095F1CD /* Color+AppSchemeTests.swift */; };
+		1CB25E392A20F00100510E2B /* Image+AppImageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9363F2DC2A0D67DD0067647F /* Image+AppImageTests.swift */; };
+		1CB25E3A2A20F01200510E2B /* Color+AppScheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9354B4DC2A0ABB4A0095F1CD /* Color+AppScheme.swift */; };
+		1CB25E3B2A20F01500510E2B /* Image+AppImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9363F2DA2A0D44F20067647F /* Image+AppImage.swift */; };
 		74B5086A2A0AC98C00B12BE0 /* DuringSleepView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B508692A0AC98C00B12BE0 /* DuringSleepView.swift */; };
 		933ABC102A13779F00D4A485 /* RoundedRectangleBlue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933ABC0F2A13779F00D4A485 /* RoundedRectangleBlue.swift */; };
 		9354B4DD2A0ABB4A0095F1CD /* Color+AppScheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9354B4DC2A0ABB4A0095F1CD /* Color+AppScheme.swift */; };
-		9354B4DF2A0ABDDA0095F1CD /* Color+AppSchemeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9354B4DE2A0ABDDA0095F1CD /* Color+AppSchemeTests.swift */; };
-		9354B4E02A0ABF310095F1CD /* Color+AppScheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9354B4DC2A0ABB4A0095F1CD /* Color+AppScheme.swift */; };
 		9363F2DB2A0D44F20067647F /* Image+AppImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9363F2DA2A0D44F20067647F /* Image+AppImage.swift */; };
-		9363F2DD2A0D67DD0067647F /* Image+AppImageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9363F2DC2A0D67DD0067647F /* Image+AppImageTests.swift */; };
-		9363F2DE2A0D67F10067647F /* Image+AppImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9363F2DA2A0D44F20067647F /* Image+AppImage.swift */; };
 		BF6918DE2A14B88800A5DF33 /* RoundedAlarmView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6918DD2A14B88800A5DF33 /* RoundedAlarmView.swift */; };
 		BF6918E02A14C20B00A5DF33 /* WheelTimePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6918DF2A14C20B00A5DF33 /* WheelTimePickerView.swift */; };
 		BF6918E22A16865300A5DF33 /* NoAlarmLabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6918E12A16865300A5DF33 /* NoAlarmLabelView.swift */; };
@@ -138,6 +138,7 @@
 		0B5025E92A063F07004E3671 /* SleepTrackerTests */ = {
 			isa = PBXGroup;
 			children = (
+				93E238932A0B7EE600B58D0E /* Helpers */,
 			);
 			path = SleepTrackerTests;
 			sourceTree = "<group>";
@@ -145,7 +146,6 @@
 		0B5025F32A063F07004E3671 /* SleepTrackerUITests */ = {
 			isa = PBXGroup;
 			children = (
-				93E238932A0B7EE600B58D0E /* Helpers */,
 				0B5025F42A063F07004E3671 /* SleepTrackerUITests.swift */,
 				0B5025F62A063F07004E3671 /* SleepTrackerUITestsLaunchTests.swift */,
 			);
@@ -442,6 +442,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1CB25E3A2A20F01200510E2B /* Color+AppScheme.swift in Sources */,
+				1CB25E3B2A20F01500510E2B /* Image+AppImage.swift in Sources */,
+				1CB25E382A20EFFF00510E2B /* Color+AppSchemeTests.swift in Sources */,
+				1CB25E392A20F00100510E2B /* Image+AppImageTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -449,10 +453,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9354B4E02A0ABF310095F1CD /* Color+AppScheme.swift in Sources */,
-				9363F2DE2A0D67F10067647F /* Image+AppImage.swift in Sources */,
-				9354B4DF2A0ABDDA0095F1CD /* Color+AppSchemeTests.swift in Sources */,
-				9363F2DD2A0D67DD0067647F /* Image+AppImageTests.swift in Sources */,
 				0B5025F52A063F07004E3671 /* SleepTrackerUITests.swift in Sources */,
 				0B5025F72A063F07004E3671 /* SleepTrackerUITestsLaunchTests.swift in Sources */,
 			);

@@ -1,66 +1,100 @@
 import Foundation
 
 final class SleepPageViewModel: ObservableObject {
-    @Published var isAlarmOn = false
-    @Published var isSleepInProgress = false
-//    @Published var isSleepInProgress = false {
-//        didSet { store(sleepingState: isSleepInProgress) }
-//    }
+    // MARK: - Non-private interface
 
-//    @Published var alarmTime: Date = .now
+    /// Indicates whether alarm is set.
+    ///
+    /// Returns `true` if the alarm is on, otherwise `false`.
+    ///
+    /// The property publishes updates when the value is changed.
+    @Published var isAlarmOn = false {
+        didSet { updateEstimatedSleepTimeText() }
+    }
 
+    /// Indicates the sleeping state.
+    ///
+    /// Returns `true` if the sleep is in progress, otherwise `false`.
+    ///
+    /// The property publishes updates when the value is changed.
+    @Published var isSleepInProgress = false {
+        didSet { store(sleepingState: isSleepInProgress) }
+    }
+
+    /// A time when the alarm goes off.
+    ///
+    /// The property publishes updates when the value is changed.
     @Published var alarmTime: Date = .now {
-        didSet {
-            updateEstimatedSleepTime()
-        }
+        didSet { updateEstimatedSleepTimeText() }
     }
 
-    init() {
-        isSleepInProgress = getSleepingState()
-    }
+    /// A text to show as an estimated sleep time.
+    ///
+    /// The property publishes updates when the value is changed.
+    @Published var estimatedSleepTimeText: String = ""
 
+    /// A text to show as an alarm status.
     var alarmText: String {
-        let isAlarmOnText = "\(alarmPrefixText) \(alarmTime.hour):\(alarmTime.minutes)"
-        return isAlarmOn ? isAlarmOnText : isAlarmOffText
+        let alarmShortTime = String(format: "%02d:%02d", alarmTime.hour, alarmTime.minutes)
+        return isAlarmOn ? "\(alarmPrefixText) \(alarmShortTime)" : noAlarmText
     }
 
-    var buttonText: String {
+    /// A text to show on the button that toggle the sleeping state.
+    var bottomButtonText: String {
         isSleepInProgress ? stopSleepingButtonText : startSleepingButtonText
     }
 
-    @Published var estimatedSleepTimeText: String = ""
-
-//    var estimatedSleepTimeText: String {
-//        let sleepTime = alarmTime.addingTimeInterval(10 * 60)
-//        return "\(estimatedSleepTimePrefixText):\n\(sleepTime.hour)h \(sleepTime.minutes)m"
-//    }
-
-    private func updateEstimatedSleepTime() {
-        let currentHour = Date.now.hour
-        let currentMinutes = Date.now.minutes
-
-        let alarmHour = alarmTime.hour
-        let alarmMinutes = alarmTime.minutes
-
-        let isAlarmAfterCurrentTime = (alarmHour > currentHour) || (alarmHour == currentHour) && (alarmMinutes > currentMinutes)
-
-        if isAlarmAfterCurrentTime {
-            estimatedSleepTimeText = "\(estimatedSleepTimePrefixText):\n" +
-                "\(alarmHour - currentHour)h" +
-                "\(alarmMinutes - currentMinutes)m"
-        } else {
-            estimatedSleepTimeText = "\(estimatedSleepTimePrefixText):\n" +
-                "\(24 - currentHour + alarmHour)h" +
-                "\(60 - currentMinutes + alarmMinutes)m"
-        }
+    /// Creates a new instance of the view model.
+    init() {
+        isSleepInProgress = getSleepingState()
+        updateEstimatedSleepTimeText()
     }
 
+    // MARK: - Private interface
+
+    /**
+     Updates a text for the estimated sleep time based on a current time and a status of the alarm.
+     */
+    private func updateEstimatedSleepTimeText() {
+        let now = Date.now
+        let minutesInHour = 60
+        let hoursInDay = 24
+
+        let nowTotalMinutes = (now.hour * minutesInHour) + now.minutes
+        let alarmTotalMinutes = (alarmTime.hour * minutesInHour) + alarmTime.minutes
+
+        let totalDifferenceInMinutes = nowTotalMinutes < alarmTotalMinutes
+            ? alarmTotalMinutes - nowTotalMinutes
+            : (hoursInDay * minutesInHour) - nowTotalMinutes + alarmTotalMinutes
+
+        let hours = totalDifferenceInMinutes / minutesInHour
+        let minutes = totalDifferenceInMinutes % minutesInHour
+
+        estimatedSleepTimeText = isAlarmOn
+            ? "\(estimatedSleepTimePrefixText):" +
+            "\n" +
+            "\(hours)h" +
+            " " +
+            "\(minutes)m"
+            : estimatedSleepTimeNotAvailableText
+    }
+
+    /**
+     Stores a sleeping state in a local storage.
+
+     - Parameter sleepingState: A boolean value indicating the sleeping state.
+     */
     private func store(sleepingState: Bool) {
         UserDefaults
             .sharedAppPreferences?
             .set(sleepingState, forKey: UserDefaults.Key.isSleepInProgress)
     }
 
+    /**
+     Retrieves a sleeping state from a local storage.
+
+     - Returns: `true` if the sleep is in progress, otherwise `false`.
+     */
     private func getSleepingState() -> Bool {
         UserDefaults
             .sharedAppPreferences?
@@ -68,10 +102,9 @@ final class SleepPageViewModel: ObservableObject {
     }
 
     private let alarmPrefixText = "Alarm"
-    private let isAlarmOffText = "No Alarm"
-
+    private let noAlarmText = "No Alarm"
     private let stopSleepingButtonText = "STOP SLEEPING"
     private let startSleepingButtonText = "START SLEEPING"
-
+    private let estimatedSleepTimeNotAvailableText = " \n "
     private let estimatedSleepTimePrefixText = "Predicted sleep duration"
 }

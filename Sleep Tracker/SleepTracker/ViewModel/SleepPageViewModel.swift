@@ -7,9 +7,11 @@ final class SleepPageViewModel: ObservableObject {
 //        didSet { store(sleepingState: isSleepInProgress) }
 //    }
 
+//    @Published var alarmTime: Date = .now
+
     @Published var alarmTime: Date = .now {
         didSet {
-            updateEstimatedSleepTime
+            updateEstimatedSleepTime()
         }
     }
 
@@ -26,9 +28,31 @@ final class SleepPageViewModel: ObservableObject {
         isSleepInProgress ? stopSleepingButtonText : startSleepingButtonText
     }
 
-    var estimatedSleepTimeText: String {
-        let sleepTime = alarmTime.addingTimeInterval(10 * 60)
-        return "\(estimatedSleepTimePrefixText):\n\(sleepTime.hour)h \(sleepTime.minutes)m"
+    @Published var estimatedSleepTimeText: String = ""
+
+//    var estimatedSleepTimeText: String {
+//        let sleepTime = alarmTime.addingTimeInterval(10 * 60)
+//        return "\(estimatedSleepTimePrefixText):\n\(sleepTime.hour)h \(sleepTime.minutes)m"
+//    }
+
+    private func updateEstimatedSleepTime() {
+        let currentHour = Date.now.hour
+        let currentMinutes = Date.now.minutes
+
+        let alarmHour = alarmTime.hour
+        let alarmMinutes = alarmTime.minutes
+
+        let isAlarmAfterCurrentTime = (alarmHour > currentHour) || (alarmHour == currentHour) && (alarmMinutes > currentMinutes)
+
+        if isAlarmAfterCurrentTime {
+            estimatedSleepTimeText = "\(estimatedSleepTimePrefixText):\n" +
+                "\(alarmHour - currentHour)h" +
+                "\(alarmMinutes - currentMinutes)m"
+        } else {
+            estimatedSleepTimeText = "\(estimatedSleepTimePrefixText):\n" +
+                "\(24 - currentHour + alarmHour)h" +
+                "\(60 - currentMinutes + alarmMinutes)m"
+        }
     }
 
     private func store(sleepingState: Bool) {
@@ -41,10 +65,6 @@ final class SleepPageViewModel: ObservableObject {
         UserDefaults
             .sharedAppPreferences?
             .bool(forKey: UserDefaults.Key.isSleepInProgress) ?? false
-    }
-
-    private updateEstimatedSleepTime() {
-
     }
 
     private let alarmPrefixText = "Alarm"

@@ -9,7 +9,8 @@ struct RoundedCorner: Shape {
 
     /// Creates and returns a new Bézier path object with a rectangular path rounded at the specified corners.
     ///
-    /// This method creates a closed subpath, proceeding in a clockwise direction (relative to the default coordinate system) as it creates the necessary line and curve segments.
+    /// This method creates a closed subpath, proceeding in a clockwise direction
+    /// (relative to the default coordinate system) as it creates the necessary line and curve segments.
     ///
     /// - Parameters:
     ///   - rect: The rectangle that defines the basic shape of the path.

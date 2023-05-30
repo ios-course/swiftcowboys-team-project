@@ -26,6 +26,7 @@
 		BF6918E62A16968F00A5DF33 /* MultilineCenteredLabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6918E52A16968F00A5DF33 /* MultilineCenteredLabelView.swift */; };
 		BF77C2792A0A78F500BB6656 /* SleepSetupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF77C2782A0A78F500BB6656 /* SleepSetupView.swift */; };
 		BFF1DD8A2A2616100023D8FF /* RoundedCorner .swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF1DD892A2616100023D8FF /* RoundedCorner .swift */; };
+		BFF1DD8C2A261AA30023D8FF /* UIview+RoundedCorner.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF1DD8B2A261AA30023D8FF /* UIview+RoundedCorner.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,7 @@
 		BF6918E52A16968F00A5DF33 /* MultilineCenteredLabelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultilineCenteredLabelView.swift; sourceTree = "<group>"; };
 		BF77C2782A0A78F500BB6656 /* SleepSetupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SleepSetupView.swift; sourceTree = "<group>"; };
 		BFF1DD892A2616100023D8FF /* RoundedCorner .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RoundedCorner .swift"; sourceTree = "<group>"; };
+		BFF1DD8B2A261AA30023D8FF /* UIview+RoundedCorner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIview+RoundedCorner.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,6 +158,7 @@
 				9354B4DC2A0ABB4A0095F1CD /* Color+AppScheme.swift */,
 				9363F2DA2A0D44F20067647F /* Image+AppImage.swift */,
 				BFF1DD892A2616100023D8FF /* RoundedCorner .swift */,
+				BFF1DD8B2A261AA30023D8FF /* UIview+RoundedCorner.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -379,6 +382,7 @@
 				0B5025DA2A063EFF004E3671 /* SleepTrackerApp.swift in Sources */,
 				BF6918E22A16865300A5DF33 /* NoAlarmLabelView.swift in Sources */,
 				BF6918E42A1690F500A5DF33 /* AlarmSetupView.swift in Sources */,
+				BFF1DD8C2A261AA30023D8FF /* UIview+RoundedCorner.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

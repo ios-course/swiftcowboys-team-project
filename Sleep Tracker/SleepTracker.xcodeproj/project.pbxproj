@@ -23,6 +23,7 @@
 		1CE7E9D52A25D4EE000A0509 /* Date+ShortComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE7E9D42A25D4EE000A0509 /* Date+ShortComponents.swift */; };
 		1CE7E9D62A25D5C6000A0509 /* Date+ShortComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE7E9D42A25D4EE000A0509 /* Date+ShortComponents.swift */; };
 		1CE7E9D82A263530000A0509 /* Date+CurrentTimeZone.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE7E9D72A263530000A0509 /* Date+CurrentTimeZone.swift */; };
+		1CE7E9DC2A263E41000A0509 /* SleepPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE7E9DB2A263E41000A0509 /* SleepPageView.swift */; };
 		74B5086A2A0AC98C00B12BE0 /* DuringSleepView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B508692A0AC98C00B12BE0 /* DuringSleepView.swift */; };
 		933ABC102A13779F00D4A485 /* RoundedRectangleBlue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933ABC0F2A13779F00D4A485 /* RoundedRectangleBlue.swift */; };
 		9354B4DD2A0ABB4A0095F1CD /* Color+AppScheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9354B4DC2A0ABB4A0095F1CD /* Color+AppScheme.swift */; };
@@ -59,6 +60,7 @@
 		1CE7E9D22A25D499000A0509 /* Date+ShortComponentsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+ShortComponentsTests.swift"; sourceTree = "<group>"; };
 		1CE7E9D42A25D4EE000A0509 /* Date+ShortComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+ShortComponents.swift"; sourceTree = "<group>"; };
 		1CE7E9D72A263530000A0509 /* Date+CurrentTimeZone.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+CurrentTimeZone.swift"; sourceTree = "<group>"; };
+		1CE7E9DB2A263E41000A0509 /* SleepPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SleepPageView.swift; sourceTree = "<group>"; };
 		74B508692A0AC98C00B12BE0 /* DuringSleepView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DuringSleepView.swift; sourceTree = "<group>"; };
 		933ABC0F2A13779F00D4A485 /* RoundedRectangleBlue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedRectangleBlue.swift; sourceTree = "<group>"; };
 		9354B4DC2A0ABB4A0095F1CD /* Color+AppScheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+AppScheme.swift"; sourceTree = "<group>"; };
@@ -204,6 +206,7 @@
 		1CE7E9DA2A263BCB000A0509 /* SleepPageView */ = {
 			isa = PBXGroup;
 			children = (
+				1CE7E9DB2A263E41000A0509 /* SleepPageView.swift */,
 				74B508682A0AC97700B12BE0 /* DuringSleepView */,
 				BF6918D62A14B7FC00A5DF33 /* SleepSetupView */,
 			);
@@ -412,6 +415,7 @@
 				BF6918E02A14C20B00A5DF33 /* WheelTimePickerView.swift in Sources */,
 				0B5025DA2A063EFF004E3671 /* SleepTrackerApp.swift in Sources */,
 				BF6918E22A16865300A5DF33 /* NoAlarmLabelView.swift in Sources */,
+				1CE7E9DC2A263E41000A0509 /* SleepPageView.swift in Sources */,
 				1CE7E9D52A25D4EE000A0509 /* Date+ShortComponents.swift in Sources */,
 				BF6918E42A1690F500A5DF33 /* AlarmSetupView.swift in Sources */,
 			);

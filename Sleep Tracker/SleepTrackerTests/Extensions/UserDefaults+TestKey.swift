@@ -1,4 +1,4 @@
-import Foundation
+import Foundation.NSUserDefaults
 
 extension UserDefaults {
     /// Keys in the key-value storage to use in unit tests.

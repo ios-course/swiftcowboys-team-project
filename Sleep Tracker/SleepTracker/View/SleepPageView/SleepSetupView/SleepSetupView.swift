@@ -7,11 +7,11 @@ struct SleepSetupView: View {
     /// A boolean value that indicates whether the alarm is on.
     @Binding var isAlarmOn: Bool
 
-    // TODO:
+    /// A time selected on the time picker.
     @Binding var selectedTime: Date
 
-    // TODO:
-    @State var estimatedText: String
+    /// A text to show as an estimated sleep time.
+    var estimatedSleepTimeText: String
 
     var body: some View {
         VStack {
@@ -32,7 +32,7 @@ struct SleepSetupView: View {
             }
 
             MultilineCenteredLabelView(
-                text: estimatedText
+                text: estimatedSleepTimeText
             )
         }
     }
@@ -40,11 +40,18 @@ struct SleepSetupView: View {
 
 struct SleepSetupView_Previews: PreviewProvider {
     static var previews: some View {
-        VStack {
+        ContainerView()
+    }
+
+    struct ContainerView: View {
+        @State var isShowing = true
+        @State var dateFool = Date.now
+
+        var body: some View {
             SleepSetupView(
-                isAlarmOn: .constant(true),
-                selectedTime: .constant(.now),
-                estimatedText: "Predicted sleep duration:\n7h 52m"
+                isAlarmOn: $isShowing,
+                selectedTime: $dateFool,
+                estimatedSleepTimeText: "Predicted sleep duration:\n7h 52m"
             )
         }
     }

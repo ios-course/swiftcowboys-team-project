@@ -13,6 +13,6 @@ extension UserDefaults {
     /// Keys to use within the app when accessing `UserDefaults`.
     enum Key {
         /// References the state of the sleep.
-        static let sleepingState = "sleepingState"
+        static let isSleepInProgress = "isSleepInProgress"
     }
 }

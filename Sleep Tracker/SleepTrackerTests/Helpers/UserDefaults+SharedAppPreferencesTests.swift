@@ -52,6 +52,6 @@ final class UserDefaultsSharedAppPreferencesTests: XCTestCase {
     }
 
     func testUserDefaultKeysHaveExpectedValues() {
-        XCTAssertEqual(UserDefaults.Key.sleepingState, "sleepingState")
+        XCTAssertEqual(UserDefaults.Key.isSleepInProgress, "isSleepInProgress")
     }
 }

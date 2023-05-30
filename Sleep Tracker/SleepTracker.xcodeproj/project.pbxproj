@@ -17,6 +17,8 @@
 		1CB25E3B2A20F01500510E2B /* Image+AppImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9363F2DA2A0D44F20067647F /* Image+AppImage.swift */; };
 		1CB25E3F2A20F35000510E2B /* UserDefaults+SharedAppPreferencesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB25E3E2A20F35000510E2B /* UserDefaults+SharedAppPreferencesTests.swift */; };
 		1CB25E402A20F3D800510E2B /* UserDefaults+SharedAppPreferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB25E3C2A20F2A600510E2B /* UserDefaults+SharedAppPreferences.swift */; };
+		1CD503B82A26806B00B8141A /* SleepPageViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CD503B72A26806B00B8141A /* SleepPageViewModelTests.swift */; };
+		1CD503B92A26808A00B8141A /* SleepPageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE7E9DD2A263EDD000A0509 /* SleepPageViewModel.swift */; };
 		1CE7E9CF2A25CF1B000A0509 /* UserDefaults+DeleteDataForAllTestKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE7E9CE2A25CF1B000A0509 /* UserDefaults+DeleteDataForAllTestKeys.swift */; };
 		1CE7E9D12A25CF48000A0509 /* UserDefaults+TestKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE7E9D02A25CF48000A0509 /* UserDefaults+TestKey.swift */; };
 		1CE7E9D32A25D499000A0509 /* Date+ShortComponentsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE7E9D22A25D499000A0509 /* Date+ShortComponentsTests.swift */; };
@@ -57,6 +59,7 @@
 		0B5025E62A063F06004E3671 /* SleepTrackerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SleepTrackerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1CB25E3C2A20F2A600510E2B /* UserDefaults+SharedAppPreferences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+SharedAppPreferences.swift"; sourceTree = "<group>"; };
 		1CB25E3E2A20F35000510E2B /* UserDefaults+SharedAppPreferencesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+SharedAppPreferencesTests.swift"; sourceTree = "<group>"; };
+		1CD503B72A26806B00B8141A /* SleepPageViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SleepPageViewModelTests.swift; sourceTree = "<group>"; };
 		1CE7E9CE2A25CF1B000A0509 /* UserDefaults+DeleteDataForAllTestKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+DeleteDataForAllTestKeys.swift"; sourceTree = "<group>"; };
 		1CE7E9D02A25CF48000A0509 /* UserDefaults+TestKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+TestKey.swift"; sourceTree = "<group>"; };
 		1CE7E9D22A25D499000A0509 /* Date+ShortComponentsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+ShortComponentsTests.swift"; sourceTree = "<group>"; };
@@ -137,8 +140,9 @@
 		0B5025E92A063F07004E3671 /* SleepTrackerTests */ = {
 			isa = PBXGroup;
 			children = (
-				1CE7E9CD2A25CF09000A0509 /* Extensions */,
 				93E238932A0B7EE600B58D0E /* Helpers */,
+				1CD503B62A26803300B8141A /* ViewModel */,
+				1CE7E9CD2A25CF09000A0509 /* Extensions */,
 			);
 			path = SleepTrackerTests;
 			sourceTree = "<group>";
@@ -195,6 +199,14 @@
 				933ABC0F2A13779F00D4A485 /* RoundedRectangleBlue.swift */,
 			);
 			path = ButtonStyle;
+			sourceTree = "<group>";
+		};
+		1CD503B62A26803300B8141A /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				1CD503B72A26806B00B8141A /* SleepPageViewModelTests.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		1CE7E9CD2A25CF09000A0509 /* Extensions */ = {
@@ -432,6 +444,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				1CE7E9D12A25CF48000A0509 /* UserDefaults+TestKey.swift in Sources */,
+				1CD503B82A26806B00B8141A /* SleepPageViewModelTests.swift in Sources */,
+				1CD503B92A26808A00B8141A /* SleepPageViewModel.swift in Sources */,
 				1CB25E3F2A20F35000510E2B /* UserDefaults+SharedAppPreferencesTests.swift in Sources */,
 				1CE7E9D82A263530000A0509 /* Date+CurrentTimeZone.swift in Sources */,
 				1CE7E9CF2A25CF1B000A0509 /* UserDefaults+DeleteDataForAllTestKeys.swift in Sources */,

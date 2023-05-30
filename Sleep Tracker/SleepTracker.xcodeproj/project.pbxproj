@@ -15,11 +15,14 @@
 		1CB25E392A20F00100510E2B /* Image+AppImageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9363F2DC2A0D67DD0067647F /* Image+AppImageTests.swift */; };
 		1CB25E3A2A20F01200510E2B /* Color+AppScheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9354B4DC2A0ABB4A0095F1CD /* Color+AppScheme.swift */; };
 		1CB25E3B2A20F01500510E2B /* Image+AppImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9363F2DA2A0D44F20067647F /* Image+AppImage.swift */; };
-		1CB25E3D2A20F2A600510E2B /* UserDefaults+SharedAppPreferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB25E3C2A20F2A600510E2B /* UserDefaults+SharedAppPreferences.swift */; };
 		1CB25E3F2A20F35000510E2B /* UserDefaults+SharedAppPreferencesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB25E3E2A20F35000510E2B /* UserDefaults+SharedAppPreferencesTests.swift */; };
 		1CB25E402A20F3D800510E2B /* UserDefaults+SharedAppPreferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB25E3C2A20F2A600510E2B /* UserDefaults+SharedAppPreferences.swift */; };
 		1CE7E9CF2A25CF1B000A0509 /* UserDefaults+DeleteDataForAllTestKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE7E9CE2A25CF1B000A0509 /* UserDefaults+DeleteDataForAllTestKeys.swift */; };
 		1CE7E9D12A25CF48000A0509 /* UserDefaults+TestKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE7E9D02A25CF48000A0509 /* UserDefaults+TestKey.swift */; };
+		1CE7E9D32A25D499000A0509 /* Date+ShortComponentsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE7E9D22A25D499000A0509 /* Date+ShortComponentsTests.swift */; };
+		1CE7E9D52A25D4EE000A0509 /* Date+ShortComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE7E9D42A25D4EE000A0509 /* Date+ShortComponents.swift */; };
+		1CE7E9D62A25D5C6000A0509 /* Date+ShortComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE7E9D42A25D4EE000A0509 /* Date+ShortComponents.swift */; };
+		1CE7E9D82A263530000A0509 /* Date+CurrentTimeZone.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE7E9D72A263530000A0509 /* Date+CurrentTimeZone.swift */; };
 		74B5086A2A0AC98C00B12BE0 /* DuringSleepView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B508692A0AC98C00B12BE0 /* DuringSleepView.swift */; };
 		933ABC102A13779F00D4A485 /* RoundedRectangleBlue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933ABC0F2A13779F00D4A485 /* RoundedRectangleBlue.swift */; };
 		9354B4DD2A0ABB4A0095F1CD /* Color+AppScheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9354B4DC2A0ABB4A0095F1CD /* Color+AppScheme.swift */; };
@@ -53,6 +56,9 @@
 		1CB25E3E2A20F35000510E2B /* UserDefaults+SharedAppPreferencesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+SharedAppPreferencesTests.swift"; sourceTree = "<group>"; };
 		1CE7E9CE2A25CF1B000A0509 /* UserDefaults+DeleteDataForAllTestKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+DeleteDataForAllTestKeys.swift"; sourceTree = "<group>"; };
 		1CE7E9D02A25CF48000A0509 /* UserDefaults+TestKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+TestKey.swift"; sourceTree = "<group>"; };
+		1CE7E9D22A25D499000A0509 /* Date+ShortComponentsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+ShortComponentsTests.swift"; sourceTree = "<group>"; };
+		1CE7E9D42A25D4EE000A0509 /* Date+ShortComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+ShortComponents.swift"; sourceTree = "<group>"; };
+		1CE7E9D72A263530000A0509 /* Date+CurrentTimeZone.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+CurrentTimeZone.swift"; sourceTree = "<group>"; };
 		74B508692A0AC98C00B12BE0 /* DuringSleepView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DuringSleepView.swift; sourceTree = "<group>"; };
 		933ABC0F2A13779F00D4A485 /* RoundedRectangleBlue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedRectangleBlue.swift; sourceTree = "<group>"; };
 		9354B4DC2A0ABB4A0095F1CD /* Color+AppScheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+AppScheme.swift"; sourceTree = "<group>"; };
@@ -164,6 +170,7 @@
 				9354B4DC2A0ABB4A0095F1CD /* Color+AppScheme.swift */,
 				9363F2DA2A0D44F20067647F /* Image+AppImage.swift */,
 				1CB25E3C2A20F2A600510E2B /* UserDefaults+SharedAppPreferences.swift */,
+				1CE7E9D42A25D4EE000A0509 /* Date+ShortComponents.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -190,6 +197,7 @@
 			children = (
 				1CE7E9CE2A25CF1B000A0509 /* UserDefaults+DeleteDataForAllTestKeys.swift */,
 				1CE7E9D02A25CF48000A0509 /* UserDefaults+TestKey.swift */,
+				1CE7E9D72A263530000A0509 /* Date+CurrentTimeZone.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -208,6 +216,7 @@
 				9354B4DE2A0ABDDA0095F1CD /* Color+AppSchemeTests.swift */,
 				9363F2DC2A0D67DD0067647F /* Image+AppImageTests.swift */,
 				1CB25E3E2A20F35000510E2B /* UserDefaults+SharedAppPreferencesTests.swift */,
+				1CE7E9D22A25D499000A0509 /* Date+ShortComponentsTests.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -395,7 +404,7 @@
 				BF6918E02A14C20B00A5DF33 /* WheelTimePickerView.swift in Sources */,
 				0B5025DA2A063EFF004E3671 /* SleepTrackerApp.swift in Sources */,
 				BF6918E22A16865300A5DF33 /* NoAlarmLabelView.swift in Sources */,
-				1CB25E3D2A20F2A600510E2B /* UserDefaults+SharedAppPreferences.swift in Sources */,
+				1CE7E9D52A25D4EE000A0509 /* Date+ShortComponents.swift in Sources */,
 				BF6918E42A1690F500A5DF33 /* AlarmSetupView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -406,8 +415,11 @@
 			files = (
 				1CE7E9D12A25CF48000A0509 /* UserDefaults+TestKey.swift in Sources */,
 				1CB25E3F2A20F35000510E2B /* UserDefaults+SharedAppPreferencesTests.swift in Sources */,
+				1CE7E9D82A263530000A0509 /* Date+CurrentTimeZone.swift in Sources */,
 				1CE7E9CF2A25CF1B000A0509 /* UserDefaults+DeleteDataForAllTestKeys.swift in Sources */,
+				1CE7E9D62A25D5C6000A0509 /* Date+ShortComponents.swift in Sources */,
 				1CB25E3A2A20F01200510E2B /* Color+AppScheme.swift in Sources */,
+				1CE7E9D32A25D499000A0509 /* Date+ShortComponentsTests.swift in Sources */,
 				1CB25E3B2A20F01500510E2B /* Image+AppImage.swift in Sources */,
 				1CB25E382A20EFFF00510E2B /* Color+AppSchemeTests.swift in Sources */,
 				1CB25E392A20F00100510E2B /* Image+AppImageTests.swift in Sources */,

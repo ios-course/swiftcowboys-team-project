@@ -3,6 +3,7 @@ import SwiftUI
 struct SleepPageView: View {
     // MARK: - Non-private interface
 
+    /// A view model that provides data in the view.
     @ObservedObject var viewModel: SleepPageViewModel
 
     var body: some View {
@@ -20,14 +21,14 @@ struct SleepPageView: View {
                         SleepSetupView(
                             isAlarmOn: $viewModel.isAlarmOn,
                             selectedTime: $viewModel.alarmTime,
-                            estimatedText: viewModel.estimatedSleepTimeText
+                            estimatedSleepTimeText: viewModel.estimatedSleepTimeText
                         )
                         .padding(.horizontal, 24)
                     }
                 }
                 .frame(maxHeight: .infinity)
 
-                Button(viewModel.buttonText) {
+                Button(viewModel.bottomButtonText) {
                     handleButtonClick()
                 }
                 .buttonStyle(RoundedRectangleBlue())

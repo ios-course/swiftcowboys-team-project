@@ -15,6 +15,11 @@
 		1CB25E392A20F00100510E2B /* Image+AppImageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9363F2DC2A0D67DD0067647F /* Image+AppImageTests.swift */; };
 		1CB25E3A2A20F01200510E2B /* Color+AppScheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9354B4DC2A0ABB4A0095F1CD /* Color+AppScheme.swift */; };
 		1CB25E3B2A20F01500510E2B /* Image+AppImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9363F2DA2A0D44F20067647F /* Image+AppImage.swift */; };
+		1CB25E3D2A20F2A600510E2B /* UserDefaults+SharedAppPreferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB25E3C2A20F2A600510E2B /* UserDefaults+SharedAppPreferences.swift */; };
+		1CB25E3F2A20F35000510E2B /* UserDefaults+SharedAppPreferencesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB25E3E2A20F35000510E2B /* UserDefaults+SharedAppPreferencesTests.swift */; };
+		1CB25E402A20F3D800510E2B /* UserDefaults+SharedAppPreferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB25E3C2A20F2A600510E2B /* UserDefaults+SharedAppPreferences.swift */; };
+		1CE7E9CF2A25CF1B000A0509 /* UserDefaults+DeleteDataForAllTestKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE7E9CE2A25CF1B000A0509 /* UserDefaults+DeleteDataForAllTestKeys.swift */; };
+		1CE7E9D12A25CF48000A0509 /* UserDefaults+TestKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE7E9D02A25CF48000A0509 /* UserDefaults+TestKey.swift */; };
 		74B5086A2A0AC98C00B12BE0 /* DuringSleepView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B508692A0AC98C00B12BE0 /* DuringSleepView.swift */; };
 		933ABC102A13779F00D4A485 /* RoundedRectangleBlue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933ABC0F2A13779F00D4A485 /* RoundedRectangleBlue.swift */; };
 		9354B4DD2A0ABB4A0095F1CD /* Color+AppScheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9354B4DC2A0ABB4A0095F1CD /* Color+AppScheme.swift */; };
@@ -46,6 +51,10 @@
 		0B5025DD2A063F06004E3671 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0B5025E02A063F06004E3671 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		0B5025E62A063F06004E3671 /* SleepTrackerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SleepTrackerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1CB25E3C2A20F2A600510E2B /* UserDefaults+SharedAppPreferences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+SharedAppPreferences.swift"; sourceTree = "<group>"; };
+		1CB25E3E2A20F35000510E2B /* UserDefaults+SharedAppPreferencesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+SharedAppPreferencesTests.swift"; sourceTree = "<group>"; };
+		1CE7E9CE2A25CF1B000A0509 /* UserDefaults+DeleteDataForAllTestKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+DeleteDataForAllTestKeys.swift"; sourceTree = "<group>"; };
+		1CE7E9D02A25CF48000A0509 /* UserDefaults+TestKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+TestKey.swift"; sourceTree = "<group>"; };
 		74B508692A0AC98C00B12BE0 /* DuringSleepView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DuringSleepView.swift; sourceTree = "<group>"; };
 		933ABC0F2A13779F00D4A485 /* RoundedRectangleBlue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedRectangleBlue.swift; sourceTree = "<group>"; };
 		9354B4DC2A0ABB4A0095F1CD /* Color+AppScheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+AppScheme.swift"; sourceTree = "<group>"; };
@@ -121,6 +130,7 @@
 		0B5025E92A063F07004E3671 /* SleepTrackerTests */ = {
 			isa = PBXGroup;
 			children = (
+				1CE7E9CD2A25CF09000A0509 /* Extensions */,
 				93E238932A0B7EE600B58D0E /* Helpers */,
 			);
 			path = SleepTrackerTests;
@@ -159,6 +169,7 @@
 				9363F2DA2A0D44F20067647F /* Image+AppImage.swift */,
 				BFF1DD892A2616100023D8FF /* RoundedCorner .swift */,
 				BFF1DD8B2A261AA30023D8FF /* UIview+RoundedCorner.swift */,
+				1CB25E3C2A20F2A600510E2B /* UserDefaults+SharedAppPreferences.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -180,6 +191,15 @@
 			path = ButtonStyle;
 			sourceTree = "<group>";
 		};
+		1CE7E9CD2A25CF09000A0509 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				1CE7E9CE2A25CF1B000A0509 /* UserDefaults+DeleteDataForAllTestKeys.swift */,
+				1CE7E9D02A25CF48000A0509 /* UserDefaults+TestKey.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		74B508682A0AC97700B12BE0 /* DuringSleepView */ = {
 			isa = PBXGroup;
 			children = (
@@ -193,6 +213,7 @@
 			children = (
 				9354B4DE2A0ABDDA0095F1CD /* Color+AppSchemeTests.swift */,
 				9363F2DC2A0D67DD0067647F /* Image+AppImageTests.swift */,
+				1CB25E3E2A20F35000510E2B /* UserDefaults+SharedAppPreferencesTests.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -381,6 +402,7 @@
 				BF6918E02A14C20B00A5DF33 /* WheelTimePickerView.swift in Sources */,
 				0B5025DA2A063EFF004E3671 /* SleepTrackerApp.swift in Sources */,
 				BF6918E22A16865300A5DF33 /* NoAlarmLabelView.swift in Sources */,
+				1CB25E3D2A20F2A600510E2B /* UserDefaults+SharedAppPreferences.swift in Sources */,
 				BF6918E42A1690F500A5DF33 /* AlarmSetupView.swift in Sources */,
 				BFF1DD8C2A261AA30023D8FF /* UIview+RoundedCorner.swift in Sources */,
 			);
@@ -390,10 +412,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1CE7E9D12A25CF48000A0509 /* UserDefaults+TestKey.swift in Sources */,
+				1CB25E3F2A20F35000510E2B /* UserDefaults+SharedAppPreferencesTests.swift in Sources */,
+				1CE7E9CF2A25CF1B000A0509 /* UserDefaults+DeleteDataForAllTestKeys.swift in Sources */,
 				1CB25E3A2A20F01200510E2B /* Color+AppScheme.swift in Sources */,
 				1CB25E3B2A20F01500510E2B /* Image+AppImage.swift in Sources */,
 				1CB25E382A20EFFF00510E2B /* Color+AppSchemeTests.swift in Sources */,
 				1CB25E392A20F00100510E2B /* Image+AppImageTests.swift in Sources */,
+				1CB25E402A20F3D800510E2B /* UserDefaults+SharedAppPreferences.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -4,24 +4,26 @@ import SwiftUI
 /// Picker has the "wheel" style.
 struct WheelTimePickerView: View {
     /// The date displayed by the picker.
-    @State var selectedDate: Date
+    @Binding var selectedTime: Date
 
     var body: some View {
-        DatePicker("",
-                   selection: $selectedDate,
-                   displayedComponents: .hourAndMinute)
-            .labelsHidden()
-            .datePickerStyle(.wheel)
-            .frame(minWidth: 0,
-                   maxWidth: .infinity,
-                   maxHeight: 100,
-                   alignment: .center)
-            .clipped()
+        DatePicker(
+            "",
+            selection: $selectedTime,
+            displayedComponents: .hourAndMinute
+        )
+        .labelsHidden()
+        .datePickerStyle(.wheel)
+        .frame(minWidth: 0,
+               maxWidth: .infinity,
+               maxHeight: 100,
+               alignment: .center)
+        .clipped()
     }
 }
 
 struct WheelTimePickerView_Previews: PreviewProvider {
     static var previews: some View {
-        WheelTimePickerView(selectedDate: .now)
+        WheelTimePickerView(selectedTime: .constant(.now))
     }
 }

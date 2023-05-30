@@ -5,38 +5,47 @@ struct SleepSetupView: View {
     // MARK: - Non-private interface
 
     /// A boolean value that indicates whether the alarm is on.
-    @State var isAlarmOn = false
+    @Binding var isAlarmOn: Bool
+
+    // TODO:
+    @Binding var selectedTime: Date
+
+    // TODO:
+    @State var estimatedText: String
 
     var body: some View {
         VStack {
             Image.AppImage.sleepingAstronautVertical
 
             HStack {
-                RoundedAlarmView(isOpaque: $isAlarmOn)
-                    .onTapGesture {
-                        isAlarmOn.toggle()
-                    }
+                RoundedAlarmView(
+                    isOpaque: $isAlarmOn
+                )
+                .onTapGesture {
+                    isAlarmOn.toggle()
+                }
+
                 AlarmSetupView(
-                    isAlarmOn: $isAlarmOn,
-                    selectedDate: .now
+                    isAlarmOn: isAlarmOn,
+                    selectedDate: $selectedTime
                 )
             }
 
             MultilineCenteredLabelView(
-                text: estimatedSleepText
+                text: estimatedText
             )
         }
     }
-
-    // MARK: - Private interface
-
-    private let estimatedSleepText = "Predicted sleep duration:\n7h 52m"
 }
 
 struct SleepSetupView_Previews: PreviewProvider {
     static var previews: some View {
         VStack {
-            SleepSetupView(isAlarmOn: true)
+            SleepSetupView(
+                isAlarmOn: .constant(true),
+                selectedTime: .constant(.now),
+                estimatedText: "Predicted sleep duration:\n7h 52m"
+            )
         }
     }
 }

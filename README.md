@@ -4,10 +4,10 @@
 
 ## Dev environment
 
-![macOS](https://img.shields.io/badge/macOS-13.3.1%2B-311B6B)
+![macOS](https://img.shields.io/badge/macOS-13.3.1-311B6B)
 ![Xcode](https://img.shields.io/badge/Xcode-14.3-91FFB6)
 ![Swift](https://img.shields.io/badge/Swift-5.8-9D91FF)
-![SDKs_for_iOS](https://img.shields.io/badge/SDKs%20for%20iOS-16.0%2B-F3FF91)
+![SDKs_for_iOS](https://img.shields.io/badge/SDKs%20for%20iOS-16.0-F3FF91)
 ![SwiftLint](https://img.shields.io/badge/SwiftLint-0.51.0-3828B7)
 ![SwiftFormat](https://img.shields.io/badge/SwiftFormat-0.51.7-FFBDF7)
 

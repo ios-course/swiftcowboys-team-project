@@ -25,11 +25,11 @@ final class DateShortComponentsTests: XCTestCase {
     }
 
     func testMinutePropertyReturnsExpectedValues() {
-        let hourComponentsToTest: [TimeInterval] = [
+        let minuteComponentsToTest: [TimeInterval] = [
             0, 1, 3, 5, 10, 19, 20, 23, 24, 25, 59, 60, 61, 99, 100, 101, 1000, 9999, 10000, 12345,
         ]
 
-        hourComponentsToTest.forEach {
+        minuteComponentsToTest.forEach {
             let minutes = $0 * Time.minute
             let expectedMinutesComponent = Int($0) % Time.minutesInHour
             let testDate = Date(timeIntervalSince1970: minutes).toCurrentTimeZone

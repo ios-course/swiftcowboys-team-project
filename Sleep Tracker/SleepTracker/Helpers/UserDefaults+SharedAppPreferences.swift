@@ -10,7 +10,7 @@ extension UserDefaults {
         return UserDefaults(suiteName: "\(bundleIdPrefix)-\(storagePrefix)-\(storageName)")
     }
 
-    /// Keys to use within the app when accessing `UserDefauts`.
+    /// Keys to use within the app when accessing `UserDefaults`.
     enum Key {
         /// References the state of the sleep.
         static let sleepingState = "sleepingState"

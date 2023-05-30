@@ -18,6 +18,8 @@ The repo contains the source code of the `SleepTracker` application.
 
 ## Installation
 
+- You need to have the environment in the versions specified in the [Dev environment](#dev-environment).
+
 1. Go to the [Releases](https://github.com/ios-course/swiftcowboys-team-project/releases) section in the current repository.
 2. Select the release version you want to install.
 3. From the release assets, download the archive in a format that suits you.

@@ -1,14 +1,14 @@
 import XCTest
 
 final class UserDefaultsSharedAppPreferencesTests: XCTestCase {
-    override func setUp() async throws {
-        try await super.setUp()
+    override func setUp() {
+        super.setUp()
         UserDefaults.sharedAppPreferences?.deleteDataForAllTestKeys()
     }
 
-    override func tearDown() async throws {
+    override func tearDown() {
         UserDefaults.sharedAppPreferences?.deleteDataForAllTestKeys()
-        try await super.tearDown()
+        super.tearDown()
     }
 
     func testSharedAppPreferencesPropertyDoesNotReturnNil() {

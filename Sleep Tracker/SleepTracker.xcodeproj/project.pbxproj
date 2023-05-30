@@ -148,8 +148,7 @@
 		0B5026062A064259004E3671 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				BF6918D62A14B7FC00A5DF33 /* SleepSetupView */,
-				74B508682A0AC97700B12BE0 /* DuringSleepView */,
+				1CE7E9DA2A263BCB000A0509 /* SleepPageView */,
 				93E6DFDF2A142D1F0090EE2F /* ReusableViews */,
 				0B5025DB2A063F00004E3671 /* ContentView.swift */,
 			);
@@ -202,6 +201,15 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		1CE7E9DA2A263BCB000A0509 /* SleepPageView */ = {
+			isa = PBXGroup;
+			children = (
+				74B508682A0AC97700B12BE0 /* DuringSleepView */,
+				BF6918D62A14B7FC00A5DF33 /* SleepSetupView */,
+			);
+			path = SleepPageView;
+			sourceTree = "<group>";
+		};
 		74B508682A0AC97700B12BE0 /* DuringSleepView */ = {
 			isa = PBXGroup;
 			children = (
@@ -242,10 +250,10 @@
 		BF6918D72A14B80800A5DF33 /* Subviews */ = {
 			isa = PBXGroup;
 			children = (
+				BF6918E32A1690F500A5DF33 /* AlarmSetupView.swift */,
+				BF6918E12A16865300A5DF33 /* NoAlarmLabelView.swift */,
 				BF6918DD2A14B88800A5DF33 /* RoundedAlarmView.swift */,
 				BF6918DF2A14C20B00A5DF33 /* WheelTimePickerView.swift */,
-				BF6918E12A16865300A5DF33 /* NoAlarmLabelView.swift */,
-				BF6918E32A1690F500A5DF33 /* AlarmSetupView.swift */,
 			);
 			path = Subviews;
 			sourceTree = "<group>";

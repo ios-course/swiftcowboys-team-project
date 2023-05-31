@@ -26,6 +26,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 -  Added accidentally uncommitted changes for `SleepSetupView` - [#67](https://github.com/ios-course/swiftcowboys-team-project/pull/67)
 -  Added `RoundedRectangleBlue` as `ButtonStyle` - [#70](https://github.com/ios-course/swiftcowboys-team-project/pull/70)
 -  Added an extension for the `UserDefaults` - [#84](https://github.com/ios-course/swiftcowboys-team-project/pull/84)
+-  Added extension for the `Date` - [#87](https://github.com/ios-course/swiftcowboys-team-project/pull/82)
 
 ### Changed
 
@@ -38,7 +39,6 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 - Removed empty `SleepTrackerTests.swift` file from the `SleepTrackerTests` target - [#82](https://github.com/ios-course/swiftcowboys-team-project/pull/82)
 - Moved unit tests from the `SleepTrackerUITests` target into the `SleepTrackerTests` target - [#82](https://github.com/ios-course/swiftcowboys-team-project/pull/82)
 - Removed the `SleepTrackerUITests` target - [#82](https://github.com/ios-course/swiftcowboys-team-project/pull/82)
-- Added extension for the `Date` - [#87](https://github.com/ios-course/swiftcowboys-team-project/pull/82)
 
 ### Fixed
 

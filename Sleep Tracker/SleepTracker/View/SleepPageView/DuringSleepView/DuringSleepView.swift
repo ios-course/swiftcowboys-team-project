@@ -4,7 +4,9 @@ import SwiftUI
 struct DuringSleepView: View {
     // MARK: - Non-private interface
 
-    /// Text to show whether the alarm on/off. If the alarm. If the alarm is off,
+    /// Text to show whether the alarm on/off.
+    /// If the alarm is on, contains the alarm time.
+    /// If the alarm is off, text tells that.
     @State var alarmStatusText: String
 
     var body: some View {

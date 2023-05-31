@@ -17,5 +17,8 @@ extension UserDefaults {
 
         /// References the time when a user's alarm goes off.
         static let alarmTime = "alarmTime"
+
+        /// References the state of the alarm.
+        static let isAlarmOn = "isAlarmOn"
     }
 }

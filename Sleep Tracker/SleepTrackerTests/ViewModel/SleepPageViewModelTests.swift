@@ -1,6 +1,13 @@
 import XCTest
 
 final class SleepPageViewModelTests: XCTestCase {
+    override func setUp() {
+        super.setUp()
+        UserDefaults.sharedAppPreferences?.removeObject(forKey: UserDefaults.Key.isAlarmOn)
+        UserDefaults.sharedAppPreferences?.removeObject(forKey: UserDefaults.Key.alarmTime)
+        UserDefaults.sharedAppPreferences?.removeObject(forKey: UserDefaults.Key.isSleepInProgress)
+    }
+
     func testInitCreatesInstanceWithExpectedValues() {
         // given
         let currentTime = Date.now

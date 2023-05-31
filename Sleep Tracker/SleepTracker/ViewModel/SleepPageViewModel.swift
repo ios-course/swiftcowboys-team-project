@@ -10,7 +10,10 @@ final class SleepPageViewModel: ObservableObject {
     ///
     /// The property publishes updates when the value is changed.
     @Published var isAlarmOn = false {
-        didSet { updateEstimatedSleepTimeText() }
+        didSet {
+            store(alarmStatus: isAlarmOn)
+            updateEstimatedSleepTimeText()
+        }
     }
 
     /// Indicates the sleeping state.
@@ -21,7 +24,6 @@ final class SleepPageViewModel: ObservableObject {
     @Published var isSleepInProgress = false {
         didSet {
             store(sleepingState: isSleepInProgress)
-            store(alarmTime: isSleepInProgress ? alarmTime : nil)
         }
     }
 
@@ -29,7 +31,10 @@ final class SleepPageViewModel: ObservableObject {
     ///
     /// The property publishes updates when the value is changed.
     @Published var alarmTime: Date = .now {
-        didSet { updateEstimatedSleepTimeText() }
+        didSet {
+            store(alarmTime: alarmTime)
+            updateEstimatedSleepTimeText()
+        }
     }
 
     /// A text to show as an estimated sleep time.
@@ -50,9 +55,13 @@ final class SleepPageViewModel: ObservableObject {
 
     /// Creates a new instance of the view model.
     init() {
-        alarmTime = getAlarmTime() ?? .now
         isSleepInProgress = getSleepingState()
-        updateEstimatedSleepTimeText()
+        isAlarmOn = getAlarmStatus()
+        alarmTime = !isAlarmOn ? .now : (getAlarmTime() ?? .now)
+
+        if !isSleepInProgress {
+            updateEstimatedSleepTimeText()
+        }
     }
 
     // MARK: - Private interface
@@ -91,9 +100,7 @@ final class SleepPageViewModel: ObservableObject {
      - Parameter sleepingState: A boolean value indicating the sleeping state.
      */
     private func store(sleepingState: Bool) {
-        UserDefaults
-            .sharedAppPreferences?
-            .set(sleepingState, forKey: UserDefaults.Key.isSleepInProgress)
+        appPreferences?.set(sleepingState, forKey: UserDefaults.Key.isSleepInProgress)
     }
 
     /**
@@ -102,9 +109,7 @@ final class SleepPageViewModel: ObservableObject {
      - Returns: `true` if the sleep is in progress, otherwise `false`.
      */
     private func getSleepingState() -> Bool {
-        UserDefaults
-            .sharedAppPreferences?
-            .bool(forKey: UserDefaults.Key.isSleepInProgress) ?? false
+        appPreferences?.bool(forKey: UserDefaults.Key.isSleepInProgress) ?? false
     }
 
     /**
@@ -116,30 +121,52 @@ final class SleepPageViewModel: ObservableObject {
      */
     private func store(alarmTime: Date?) {
         guard let alarmTime else {
-            UserDefaults
-                .sharedAppPreferences?
-                .removeObject(forKey: UserDefaults.Key.alarmTime)
+            appPreferences?.removeObject(forKey: UserDefaults.Key.alarmTime)
             return
         }
 
-        let formattedTime = DateFormatter().string(from: alarmTime)
-        UserDefaults
-            .sharedAppPreferences?
-            .set(formattedTime, forKey: UserDefaults.Key.alarmTime)
+        let formattedTime = shortTimeFormatter.string(from: alarmTime)
+        appPreferences?.set(formattedTime, forKey: UserDefaults.Key.alarmTime)
     }
 
     /**
      Retrieves an alarm time from a local storage.
 
-     - Returns: A time when a user's alarm goes off, if the sleep is in progress; otherwise `nil`.
+     - Returns: A time when a user's alarm goes off. If the alarm time is unknown returns `nil`.
      */
     private func getAlarmTime() -> Date? {
-        let formattedTime = UserDefaults
-            .sharedAppPreferences?
-            .string(forKey: UserDefaults.Key.alarmTime)
+        let savedTime = appPreferences?.string(forKey: UserDefaults.Key.alarmTime)
 
-        guard let formattedTime else { return nil }
-        return DateFormatter().date(from: formattedTime)
+        guard let savedTime else { return nil }
+        return shortTimeFormatter.date(from: savedTime)
+    }
+
+    /**
+     Stores an status of the alarm (whether the alarm is on) in a local storage.
+
+     - Parameter alarmTime: A boolean value indicating if the alarm is on.
+     */
+    private func store(alarmStatus: Bool) {
+        appPreferences?.set(alarmStatus, forKey: UserDefaults.Key.isAlarmOn)
+    }
+
+    /**
+     Retrieves an alarm status from a local storage.
+
+     - Returns: `true` if the alarm was set, otherwise `false`.
+     */
+    private func getAlarmStatus() -> Bool {
+        appPreferences?.bool(forKey: UserDefaults.Key.isAlarmOn) ?? false
+    }
+
+    private var shortTimeFormatter: DateFormatter {
+        let formatter = DateFormatter()
+        formatter.dateFormat = "HH:mm"
+        return formatter
+    }
+
+    private var appPreferences: UserDefaults? {
+        UserDefaults.sharedAppPreferences
     }
 
     private let alarmPrefixText = "Alarm"

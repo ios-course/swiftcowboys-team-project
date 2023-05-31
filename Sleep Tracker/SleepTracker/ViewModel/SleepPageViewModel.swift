@@ -71,12 +71,13 @@ final class SleepPageViewModel: ObservableObject {
         let hours = totalDifferenceInMinutes / minutesInHour
         let minutes = totalDifferenceInMinutes % minutesInHour
 
-        estimatedSleepTimeText = isAlarmOn
-            ? "\(estimatedSleepTimePrefixText):" +
+        let estimatedSleepTimeForEnabledAlarmText =
+            "\(estimatedSleepTimePrefixText):" +
             "\n" +
-            "\(hours)h" +
-            " " +
-            "\(minutes)m"
+            "\(hours)h \(minutes)m"
+
+        estimatedSleepTimeText = isAlarmOn
+            ? estimatedSleepTimeForEnabledAlarmText
             : estimatedSleepTimeNotAvailableText
     }
 

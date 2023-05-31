@@ -83,12 +83,11 @@ extension SleepPageViewModelTests {
         let hours = totalDifferenceInMinutes / minutesInHour
         let minutes = totalDifferenceInMinutes % minutesInHour
 
-        return isAlarmOn
-            ? "Predicted sleep duration:" +
+        let estimatedSleepTimeForEnabledAlarmText =
+            "Predicted sleep duration:" +
             "\n" +
-            "\(hours)h" +
-            " " +
-            "\(minutes)m"
-            : " \n "
+            "\(hours)h \(minutes)m"
+
+        return isAlarmOn ? estimatedSleepTimeForEnabledAlarmText : " \n "
     }
 }

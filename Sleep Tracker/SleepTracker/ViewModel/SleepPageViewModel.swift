@@ -1,5 +1,6 @@
 import Foundation
 
+/// Manages UI of the `SleepPageView` and contains a related business logic.
 final class SleepPageViewModel: ObservableObject {
     // MARK: - Non-private interface
 

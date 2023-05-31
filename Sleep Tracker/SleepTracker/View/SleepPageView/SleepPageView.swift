@@ -1,5 +1,6 @@
 import SwiftUI
 
+/// A view that allows to set the alarm up and to change the sleeping status.
 struct SleepPageView: View {
     // MARK: - Non-private interface
 

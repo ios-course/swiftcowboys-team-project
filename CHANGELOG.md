@@ -27,4 +27,4 @@ The project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html
 -  Removed empty `SleepTrackerTests.swift` file from the `SleepTrackerTests` target. Removed the `SleepTrackerUITests` target. Unit tests from the `SleepTrackerUITests` target moved into the `SleepTrackerTests` target. Fixed unit tests (to make sure all tests pass) - [#82](https://github.com/ios-course/swiftcowboys-team-project/pull/82)
 -  Added an extension `UserDefaults+SharedAppPreferences` for the `UserDefaults` with tests - [#84](https://github.com/ios-course/swiftcowboys-team-project/pull/84)
 
--  Added extension `Date+ShortComponents`for the `Date` - [#87](https://github.com/ios-course/swiftcowboys-team-project/pull/82)
+-  Added extension `Date+ShortComponents`for the `Date` - [#87](https://github.com/ios-course/swiftcowboys-team-project/pull/87)

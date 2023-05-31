@@ -19,7 +19,10 @@ final class SleepPageViewModel: ObservableObject {
     ///
     /// The property publishes updates when the value is changed.
     @Published var isSleepInProgress = false {
-        didSet { store(sleepingState: isSleepInProgress) }
+        didSet {
+            store(sleepingState: isSleepInProgress)
+            store(alarmTime: isSleepInProgress ? alarmTime : nil)
+        }
     }
 
     /// A time when the alarm goes off.
@@ -47,6 +50,7 @@ final class SleepPageViewModel: ObservableObject {
 
     /// Creates a new instance of the view model.
     init() {
+        alarmTime = getAlarmTime() ?? .now
         isSleepInProgress = getSleepingState()
         updateEstimatedSleepTimeText()
     }
@@ -101,6 +105,41 @@ final class SleepPageViewModel: ObservableObject {
         UserDefaults
             .sharedAppPreferences?
             .bool(forKey: UserDefaults.Key.isSleepInProgress) ?? false
+    }
+
+    /**
+     Stores an alarm time in a local storage.
+
+     If the passed time is `nil`, the corresponding value is removed from the local storage.
+
+     - Parameter alarmTime: A time when a user's alarm goes off.
+     */
+    private func store(alarmTime: Date?) {
+        guard let alarmTime else {
+            UserDefaults
+                .sharedAppPreferences?
+                .removeObject(forKey: UserDefaults.Key.alarmTime)
+            return
+        }
+
+        let formattedTime = DateFormatter().string(from: alarmTime)
+        UserDefaults
+            .sharedAppPreferences?
+            .set(formattedTime, forKey: UserDefaults.Key.alarmTime)
+    }
+
+    /**
+     Retrieves an alarm time from a local storage.
+
+     - Returns: A time when a user's alarm goes off, if the sleep is in progress; otherwise `nil`.
+     */
+    private func getAlarmTime() -> Date? {
+        let formattedTime = UserDefaults
+            .sharedAppPreferences?
+            .string(forKey: UserDefaults.Key.alarmTime)
+
+        guard let formattedTime else { return nil }
+        return DateFormatter().date(from: formattedTime)
     }
 
     private let alarmPrefixText = "Alarm"

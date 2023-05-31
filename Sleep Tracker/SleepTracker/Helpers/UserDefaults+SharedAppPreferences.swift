@@ -14,5 +14,8 @@ extension UserDefaults {
     enum Key {
         /// References the state of the sleep.
         static let isSleepInProgress = "isSleepInProgress"
+
+        /// References the time when a user's alarm goes off.
+        static let alarmTime = "alarmTime"
     }
 }

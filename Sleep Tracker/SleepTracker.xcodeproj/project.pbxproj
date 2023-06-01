@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		0B5025DA2A063EFF004E3671 /* SleepTrackerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B5025D92A063EFF004E3671 /* SleepTrackerApp.swift */; };
-		0B5025DC2A063F00004E3671 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B5025DB2A063F00004E3671 /* ContentView.swift */; };
 		0B5025DE2A063F06004E3671 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0B5025DD2A063F06004E3671 /* Assets.xcassets */; };
 		0B5025E12A063F06004E3671 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0B5025E02A063F06004E3671 /* Preview Assets.xcassets */; };
 		1CB25E382A20EFFF00510E2B /* Color+AppSchemeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9354B4DE2A0ABDDA0095F1CD /* Color+AppSchemeTests.swift */; };
@@ -53,7 +52,6 @@
 /* Begin PBXFileReference section */
 		0B5025D62A063EFF004E3671 /* SleepTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SleepTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B5025D92A063EFF004E3671 /* SleepTrackerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SleepTrackerApp.swift; sourceTree = "<group>"; };
-		0B5025DB2A063F00004E3671 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		0B5025DD2A063F06004E3671 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0B5025E02A063F06004E3671 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		0B5025E62A063F06004E3671 /* SleepTrackerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SleepTrackerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -159,7 +157,6 @@
 			children = (
 				1CE7E9DA2A263BCB000A0509 /* SleepPageView */,
 				93E6DFDF2A142D1F0090EE2F /* ReusableViews */,
-				0B5025DB2A063F00004E3671 /* ContentView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -426,7 +423,6 @@
 				9363F2DB2A0D44F20067647F /* Image+AppImage.swift in Sources */,
 				BF6918DE2A14B88800A5DF33 /* RoundedAlarmView.swift in Sources */,
 				BF77C2792A0A78F500BB6656 /* SleepSetupView.swift in Sources */,
-				0B5025DC2A063F00004E3671 /* ContentView.swift in Sources */,
 				BF6918E62A16968F00A5DF33 /* MultilineCenteredLabelView.swift in Sources */,
 				BF6918E02A14C20B00A5DF33 /* WheelTimePickerView.swift in Sources */,
 				0B5025DA2A063EFF004E3671 /* SleepTrackerApp.swift in Sources */,

@@ -11,6 +11,7 @@ struct SleepPageView: View {
         ZStack {
             Image.AppImage.generalBackground
                 .resizable()
+                .ignoresSafeArea()
 
             VStack {
                 Group {
@@ -43,9 +44,7 @@ struct SleepPageView: View {
     // MARK: - Private interface
 
     private func handleButtonClick() {
-        if !viewModel.isSleepInProgress {
-            viewModel.isSleepInProgress.toggle()
-        }
+        viewModel.isSleepInProgress.toggle()
     }
 }
 

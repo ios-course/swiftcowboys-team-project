@@ -2,6 +2,8 @@ import SwiftUI
 
 /// A view that shows information about the disabled alarm clock.
 struct NoAlarmLabelView: View {
+    // MARK: - Non-private interface
+
     var body: some View {
         Text(noAlarmText)
             .font(.system(size: 20,
@@ -11,6 +13,8 @@ struct NoAlarmLabelView: View {
                    maxHeight: 100,
                    alignment: .center)
     }
+
+    // MARK: - Private interface
 
     private let noAlarmText = "No alarm clock\nJust a sleep analysis"
 }

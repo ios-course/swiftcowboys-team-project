@@ -4,6 +4,11 @@ import SwiftUI
 struct DuringSleepView: View {
     // MARK: - Non-private interface
 
+    /// Text to show whether the alarm on/off.
+    /// If the alarm is on, contains the alarm time.
+    /// If the alarm is off, text tells that.
+    @State var alarmStatusText: String
+
     var body: some View {
         VStack {
             Text(sleepSignText)
@@ -23,11 +28,10 @@ struct DuringSleepView: View {
 
     private let imageToTextRelativeVerticalOffset: CGFloat = 45
     private let sleepSignText = "zZZZzZZZZzZZzzz"
-    @State private var alarmStatusText = "Alarm 07:30"
 }
 
 struct DuringSleepView_Previews: PreviewProvider {
     static var previews: some View {
-        DuringSleepView()
+        DuringSleepView(alarmStatusText: "No Alarm")
     }
 }

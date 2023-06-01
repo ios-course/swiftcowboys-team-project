@@ -11,6 +11,7 @@ struct SleepPageView: View {
         ZStack {
             Image.AppImage.generalBackground
                 .resizable()
+                .ignoresSafeArea()
 
             VStack {
                 Group {

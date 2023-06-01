@@ -32,7 +32,7 @@ Note: You need to have the environment in the versions specified in the [Dev env
    <summary>CLICK HERE</summary>
    <p>
    
-   ![warning](./Images/Warning_when_opening_a_project.png)
+   <img src="./Docs/Images/Warning_when_opening_a_project.png" width="30%" height="30%">
    
    </p>
    </details>

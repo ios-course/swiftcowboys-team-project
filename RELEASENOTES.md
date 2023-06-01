@@ -12,4 +12,4 @@ The format is based on [Release notes format](https://github.com/ios-course/swif
 
 ### Changes
 
-- The user can start the application, on the screen he can turn on or off the alarm. When the alarm is turned on, the user can choose an alarm time. Each time the user selects a time in the time picker, the predicted sleep duration is recalculated. Clicking on the "start sleeping" button changes the image on the screen, hides the settings of the alarm and displays information about setting the alarm. Clicking on the "stop sleeping" button returns the user to the screen with the alarm settings.
+- You can set an alarm by selecting a time. The app will show you the predicted duration of your sleep. If you don't need the alarm clock, you can easily turn it off.

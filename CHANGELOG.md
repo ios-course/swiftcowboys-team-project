@@ -27,3 +27,4 @@ The project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html
 -  Added the `UserDefaults+SharedAppPreferences` extension with unit tests - [#84](https://github.com/ios-course/swiftcowboys-team-project/pull/84)
 -  Added the `Date+ShortComponents` extension  with unit tests - [#87](https://github.com/ios-course/swiftcowboys-team-project/pull/87)
 -  Added the `SleepPageView` screen where user can set up an alarm and start the sleep tracking mode - [#88](https://github.com/ios-course/swiftcowboys-team-project/pull/88)
+-  Updated `README.md` file with "Dev environment"/"Installation" sections. Updated the list of active contributors (authors). Updated dir structure with the `Docs` dir to store docs used in the repository - [#86](https://github.com/ios-course/swiftcowboys-team-project/pull/86)

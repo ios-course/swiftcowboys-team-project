@@ -26,11 +26,18 @@ Note: You need to have the environment in the versions specified in the [Dev env
 1. Go to the downloded asset.
 1. Double click on the asset to unzip if it is archived.
 1. Open the resulting folder.
-1. Open the `Sleep Tracker` folder.
-1. Find the file `SleepTracker.xcodeproj` and open it in `Xcode`.
-1. Click "Trust and Open" in the pop-up window to open the file.
+1. Open the `Sleep Tracker/SleepTracker.xcodeproj` file using the `Xcode`.
+1. If the following pop-up appears, click "Trust and Open" to open the file.
+   <details>
+   <summary>CLICK HERE</summary>
+   <p>
+   
+   ![warning](./Images/Warning_when_opening_a_project.png)
+   
+   </p>
+   </details>
 1. Select a device as the destination to run the project. See the [documentation](https://developer.apple.com/documentation/xcode/running-your-app-in-simulator-or-on-a-device) for more details on running the application in the simulator or on a device.
-8. Click the run button.
+8. Click the `Run` button and wait until the app is installed and launched.
 
 ## Authors
 

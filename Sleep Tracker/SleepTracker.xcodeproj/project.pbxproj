@@ -29,10 +29,10 @@
 		1CE7E9DF2A263F03000A0509 /* UserDefaults+SharedAppPreferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB25E3C2A20F2A600510E2B /* UserDefaults+SharedAppPreferences.swift */; };
 		74B5086A2A0AC98C00B12BE0 /* DuringSleepView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B508692A0AC98C00B12BE0 /* DuringSleepView.swift */; };
 		933ABC102A13779F00D4A485 /* RoundedRectangleBlue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933ABC0F2A13779F00D4A485 /* RoundedRectangleBlue.swift */; };
-		93513C0D2A17BBDC001B549A /* AppFontSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93513C0C2A17BBDC001B549A /* AppFontSize.swift */; };
+		93513C0D2A17BBDC001B549A /* CGFloat+AppFontSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93513C0C2A17BBDC001B549A /* CGFloat+AppFontSize.swift */; };
 		93513C0F2A17BCAC001B549A /* AppUIConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93513C0E2A17BCAC001B549A /* AppUIConstant.swift */; };
-		93513C112A17BD4E001B549A /* AppFontSizeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93513C102A17BD4E001B549A /* AppFontSizeTests.swift */; };
-		93513C122A17D0B1001B549A /* AppFontSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93513C0C2A17BBDC001B549A /* AppFontSize.swift */; };
+		93513C112A17BD4E001B549A /* CGFloat+AppFontSizeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93513C102A17BD4E001B549A /* CGFloat+AppFontSizeTests.swift */; };
+		93513C122A17D0B1001B549A /* CGFloat+AppFontSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93513C0C2A17BBDC001B549A /* CGFloat+AppFontSize.swift */; };
 		93513C142A17DC17001B549A /* AppUIConstantTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93513C132A17DC17001B549A /* AppUIConstantTests.swift */; };
 		93513C152A17DD52001B549A /* AppUIConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93513C0E2A17BCAC001B549A /* AppUIConstant.swift */; };
 		9354B4DD2A0ABB4A0095F1CD /* Color+AppScheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9354B4DC2A0ABB4A0095F1CD /* Color+AppScheme.swift */; };
@@ -73,9 +73,9 @@
 		1CE7E9DD2A263EDD000A0509 /* SleepPageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SleepPageViewModel.swift; sourceTree = "<group>"; };
 		74B508692A0AC98C00B12BE0 /* DuringSleepView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DuringSleepView.swift; sourceTree = "<group>"; };
 		933ABC0F2A13779F00D4A485 /* RoundedRectangleBlue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedRectangleBlue.swift; sourceTree = "<group>"; };
-		93513C0C2A17BBDC001B549A /* AppFontSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFontSize.swift; sourceTree = "<group>"; };
+		93513C0C2A17BBDC001B549A /* CGFloat+AppFontSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGFloat+AppFontSize.swift"; sourceTree = "<group>"; };
 		93513C0E2A17BCAC001B549A /* AppUIConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppUIConstant.swift; sourceTree = "<group>"; };
-		93513C102A17BD4E001B549A /* AppFontSizeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFontSizeTests.swift; sourceTree = "<group>"; };
+		93513C102A17BD4E001B549A /* CGFloat+AppFontSizeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGFloat+AppFontSizeTests.swift"; sourceTree = "<group>"; };
 		93513C132A17DC17001B549A /* AppUIConstantTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppUIConstantTests.swift; sourceTree = "<group>"; };
 		9354B4DC2A0ABB4A0095F1CD /* Color+AppScheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+AppScheme.swift"; sourceTree = "<group>"; };
 		9354B4DE2A0ABDDA0095F1CD /* Color+AppSchemeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+AppSchemeTests.swift"; sourceTree = "<group>"; };
@@ -187,7 +187,7 @@
 				9363F2DA2A0D44F20067647F /* Image+AppImage.swift */,
 				1CB25E3C2A20F2A600510E2B /* UserDefaults+SharedAppPreferences.swift */,
 				1CE7E9D42A25D4EE000A0509 /* Date+ShortComponents.swift */,
-				93513C0C2A17BBDC001B549A /* AppFontSize.swift */,
+				93513C0C2A17BBDC001B549A /* CGFloat+AppFontSize.swift */,
 				93513C0E2A17BCAC001B549A /* AppUIConstant.swift */,
 			);
 			path = Helpers;
@@ -253,7 +253,7 @@
 				9363F2DC2A0D67DD0067647F /* Image+AppImageTests.swift */,
 				1CB25E3E2A20F35000510E2B /* UserDefaults+SharedAppPreferencesTests.swift */,
 				1CE7E9D22A25D499000A0509 /* Date+ShortComponentsTests.swift */,
-				93513C102A17BD4E001B549A /* AppFontSizeTests.swift */,
+				93513C102A17BD4E001B549A /* CGFloat+AppFontSizeTests.swift */,
 				93513C132A17DC17001B549A /* AppUIConstantTests.swift */,
 			);
 			path = Helpers;
@@ -434,7 +434,7 @@
 				74B5086A2A0AC98C00B12BE0 /* DuringSleepView.swift in Sources */,
 				9354B4DD2A0ABB4A0095F1CD /* Color+AppScheme.swift in Sources */,
 				933ABC102A13779F00D4A485 /* RoundedRectangleBlue.swift in Sources */,
-				93513C0D2A17BBDC001B549A /* AppFontSize.swift in Sources */,
+				93513C0D2A17BBDC001B549A /* CGFloat+AppFontSize.swift in Sources */,
 				9363F2DB2A0D44F20067647F /* Image+AppImage.swift in Sources */,
 				BF6918DE2A14B88800A5DF33 /* RoundedAlarmView.swift in Sources */,
 				BF77C2792A0A78F500BB6656 /* SleepSetupView.swift in Sources */,
@@ -468,9 +468,9 @@
 				1CB25E382A20EFFF00510E2B /* Color+AppSchemeTests.swift in Sources */,
 				1CB25E392A20F00100510E2B /* Image+AppImageTests.swift in Sources */,
 				1CB25E402A20F3D800510E2B /* UserDefaults+SharedAppPreferences.swift in Sources */,
-				93513C122A17D0B1001B549A /* AppFontSize.swift in Sources */,
+				93513C122A17D0B1001B549A /* CGFloat+AppFontSize.swift in Sources */,
 				93513C142A17DC17001B549A /* AppUIConstantTests.swift in Sources */,
-				93513C112A17BD4E001B549A /* AppFontSizeTests.swift in Sources */,
+				93513C112A17BD4E001B549A /* CGFloat+AppFontSizeTests.swift in Sources */,
 				93513C152A17DD52001B549A /* AppUIConstant.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

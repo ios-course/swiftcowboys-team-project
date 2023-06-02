@@ -13,13 +13,13 @@ enum AppUIConstant {
 
     /// An opacity setting used for the transparent view.
     static let transparent: Double = 0.0
-    /// An opacity setting used for the translucent view.
-    static let translucent: Double = 0.5
+    /// An opacity setting used for the semitransparent view.
+    static let semitransparent: Double = 0.5
     /// An opacity setting used for the opaque view.
     static let opaque: Double = 1.0
 
-    /// A minimum frame width.
-    static let minFrameWidth: CGFloat = 0
-    /// A maximum frame height.
-    static let maxFrameHeight: CGFloat = 100
+    /// A minimum frame width for the views used in the`AlarmSetupView`.
+    static let minFrameWidthInAlarmSetup: CGFloat = 0
+    /// A maximum frame height for the views used in the`AlarmSetupView`.
+    static let maxFrameHeightInAlarmSetup: CGFloat = 100
 }

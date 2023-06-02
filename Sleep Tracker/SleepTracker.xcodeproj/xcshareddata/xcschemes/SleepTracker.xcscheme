@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
    LastUpgradeVersion = "1430"
-   version = "1.7">
+   version = "1.8">
    <BuildAction
       parallelizeBuildables = "YES"
       buildImplicitDependencies = "YES">
@@ -17,6 +17,20 @@
                BlueprintIdentifier = "0B5025D52A063EFF004E3671"
                BuildableName = "SleepTracker.app"
                BlueprintName = "SleepTracker"
+               ReferencedContainer = "container:SleepTracker.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "NO"
+            buildForProfiling = "NO"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "0B5025E52A063F06004E3671"
+               BuildableName = "SleepTrackerTests.xctest"
+               BlueprintName = "SleepTrackerTests"
                ReferencedContainer = "container:SleepTracker.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>

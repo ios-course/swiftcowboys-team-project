@@ -6,6 +6,7 @@ The project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html
 ## [Unreleased]
 
 -  Removed space from the project root directory name. Removed space from the `SleepTrackerTests` target product name. Removed the hyphen from the `SleepTrackerTests` target bundle identifier - [#97](https://github.com/ios-course/swiftcowboys-team-project/pull/97)
+-  Created an extension to round individual corners for `View` - [#96](https://github.com/ios-course/swiftcowboys-team-project/pull/96)
 
 ## [Release 0.1.0]
 
@@ -33,4 +34,3 @@ The project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html
 -  Added the `SleepPageView` screen where user can set up an alarm and start the sleep tracking mode - [#88](https://github.com/ios-course/swiftcowboys-team-project/pull/88)
 -  Updated `README.md` file with "Dev environment"/"Installation" sections. Updated the list of active contributors (authors). Updated dir structure with the `Docs` dir to store docs used in the repository - [#86](https://github.com/ios-course/swiftcowboys-team-project/pull/86)
 -  Updated the app so that the `SleepPageView` is displayed when the app runs. Added the ability to navigate from `DuringSleepView` back to `SleepPageView` when clicking on the `Stop Sleeping` button. Removed unnecessary `ContentView`. The background image now ignores safe areas - [#91](https://github.com/ios-course/swiftcowboys-team-project/pull/91)
--  Created an extension to round individual corners for `View` - [#96](https://github.com/ios-course/swiftcowboys-team-project/pull/96)

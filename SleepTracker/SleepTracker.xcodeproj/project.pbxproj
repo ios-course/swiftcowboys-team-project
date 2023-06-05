@@ -8,18 +8,25 @@
 
 /* Begin PBXBuildFile section */
 		0B5025DA2A063EFF004E3671 /* SleepTrackerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B5025D92A063EFF004E3671 /* SleepTrackerApp.swift */; };
-		0B5025DC2A063F00004E3671 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B5025DB2A063F00004E3671 /* ContentView.swift */; };
 		0B5025DE2A063F06004E3671 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0B5025DD2A063F06004E3671 /* Assets.xcassets */; };
 		0B5025E12A063F06004E3671 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0B5025E02A063F06004E3671 /* Preview Assets.xcassets */; };
 		1CB25E382A20EFFF00510E2B /* Color+AppSchemeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9354B4DE2A0ABDDA0095F1CD /* Color+AppSchemeTests.swift */; };
 		1CB25E392A20F00100510E2B /* Image+AppImageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9363F2DC2A0D67DD0067647F /* Image+AppImageTests.swift */; };
 		1CB25E3A2A20F01200510E2B /* Color+AppScheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9354B4DC2A0ABB4A0095F1CD /* Color+AppScheme.swift */; };
 		1CB25E3B2A20F01500510E2B /* Image+AppImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9363F2DA2A0D44F20067647F /* Image+AppImage.swift */; };
-		1CB25E3D2A20F2A600510E2B /* UserDefaults+SharedAppPreferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB25E3C2A20F2A600510E2B /* UserDefaults+SharedAppPreferences.swift */; };
 		1CB25E3F2A20F35000510E2B /* UserDefaults+SharedAppPreferencesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB25E3E2A20F35000510E2B /* UserDefaults+SharedAppPreferencesTests.swift */; };
 		1CB25E402A20F3D800510E2B /* UserDefaults+SharedAppPreferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB25E3C2A20F2A600510E2B /* UserDefaults+SharedAppPreferences.swift */; };
+		1CD503B82A26806B00B8141A /* SleepPageViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CD503B72A26806B00B8141A /* SleepPageViewModelTests.swift */; };
+		1CD503B92A26808A00B8141A /* SleepPageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE7E9DD2A263EDD000A0509 /* SleepPageViewModel.swift */; };
 		1CE7E9CF2A25CF1B000A0509 /* UserDefaults+DeleteDataForAllTestKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE7E9CE2A25CF1B000A0509 /* UserDefaults+DeleteDataForAllTestKeys.swift */; };
 		1CE7E9D12A25CF48000A0509 /* UserDefaults+TestKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE7E9D02A25CF48000A0509 /* UserDefaults+TestKey.swift */; };
+		1CE7E9D32A25D499000A0509 /* Date+ShortComponentsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE7E9D22A25D499000A0509 /* Date+ShortComponentsTests.swift */; };
+		1CE7E9D52A25D4EE000A0509 /* Date+ShortComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE7E9D42A25D4EE000A0509 /* Date+ShortComponents.swift */; };
+		1CE7E9D62A25D5C6000A0509 /* Date+ShortComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE7E9D42A25D4EE000A0509 /* Date+ShortComponents.swift */; };
+		1CE7E9D82A263530000A0509 /* Date+CurrentTimeZone.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE7E9D72A263530000A0509 /* Date+CurrentTimeZone.swift */; };
+		1CE7E9DC2A263E41000A0509 /* SleepPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE7E9DB2A263E41000A0509 /* SleepPageView.swift */; };
+		1CE7E9DE2A263EDD000A0509 /* SleepPageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE7E9DD2A263EDD000A0509 /* SleepPageViewModel.swift */; };
+		1CE7E9DF2A263F03000A0509 /* UserDefaults+SharedAppPreferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB25E3C2A20F2A600510E2B /* UserDefaults+SharedAppPreferences.swift */; };
 		74B5086A2A0AC98C00B12BE0 /* DuringSleepView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B508692A0AC98C00B12BE0 /* DuringSleepView.swift */; };
 		933ABC102A13779F00D4A485 /* RoundedRectangleBlue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933ABC0F2A13779F00D4A485 /* RoundedRectangleBlue.swift */; };
 		9354B4DD2A0ABB4A0095F1CD /* Color+AppScheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9354B4DC2A0ABB4A0095F1CD /* Color+AppScheme.swift */; };
@@ -40,21 +47,26 @@
 			containerPortal = 0B5025CE2A063EFF004E3671 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 0B5025D52A063EFF004E3671;
-			remoteInfo = "Sleep Tracker";
+			remoteInfo = SleepTracker;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		0B5025D62A063EFF004E3671 /* SleepTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SleepTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B5025D92A063EFF004E3671 /* SleepTrackerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SleepTrackerApp.swift; sourceTree = "<group>"; };
-		0B5025DB2A063F00004E3671 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		0B5025DD2A063F06004E3671 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0B5025E02A063F06004E3671 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		0B5025E62A063F06004E3671 /* SleepTrackerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SleepTrackerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1CB25E3C2A20F2A600510E2B /* UserDefaults+SharedAppPreferences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+SharedAppPreferences.swift"; sourceTree = "<group>"; };
 		1CB25E3E2A20F35000510E2B /* UserDefaults+SharedAppPreferencesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+SharedAppPreferencesTests.swift"; sourceTree = "<group>"; };
+		1CD503B72A26806B00B8141A /* SleepPageViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SleepPageViewModelTests.swift; sourceTree = "<group>"; };
 		1CE7E9CE2A25CF1B000A0509 /* UserDefaults+DeleteDataForAllTestKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+DeleteDataForAllTestKeys.swift"; sourceTree = "<group>"; };
 		1CE7E9D02A25CF48000A0509 /* UserDefaults+TestKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+TestKey.swift"; sourceTree = "<group>"; };
+		1CE7E9D22A25D499000A0509 /* Date+ShortComponentsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+ShortComponentsTests.swift"; sourceTree = "<group>"; };
+		1CE7E9D42A25D4EE000A0509 /* Date+ShortComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+ShortComponents.swift"; sourceTree = "<group>"; };
+		1CE7E9D72A263530000A0509 /* Date+CurrentTimeZone.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+CurrentTimeZone.swift"; sourceTree = "<group>"; };
+		1CE7E9DB2A263E41000A0509 /* SleepPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SleepPageView.swift; sourceTree = "<group>"; };
+		1CE7E9DD2A263EDD000A0509 /* SleepPageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SleepPageViewModel.swift; sourceTree = "<group>"; };
 		74B508692A0AC98C00B12BE0 /* DuringSleepView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DuringSleepView.swift; sourceTree = "<group>"; };
 		933ABC0F2A13779F00D4A485 /* RoundedRectangleBlue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedRectangleBlue.swift; sourceTree = "<group>"; };
 		9354B4DC2A0ABB4A0095F1CD /* Color+AppScheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+AppScheme.swift"; sourceTree = "<group>"; };
@@ -130,8 +142,9 @@
 		0B5025E92A063F07004E3671 /* SleepTrackerTests */ = {
 			isa = PBXGroup;
 			children = (
-				1CE7E9CD2A25CF09000A0509 /* Extensions */,
 				93E238932A0B7EE600B58D0E /* Helpers */,
+				1CD503B62A26803300B8141A /* ViewModel */,
+				1CE7E9CD2A25CF09000A0509 /* Extensions */,
 			);
 			path = SleepTrackerTests;
 			sourceTree = "<group>";
@@ -146,10 +159,8 @@
 		0B5026062A064259004E3671 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				BF6918D62A14B7FC00A5DF33 /* SleepSetupView */,
-				74B508682A0AC97700B12BE0 /* DuringSleepView */,
+				1CE7E9DA2A263BCB000A0509 /* SleepPageView */,
 				93E6DFDF2A142D1F0090EE2F /* ReusableViews */,
-				0B5025DB2A063F00004E3671 /* ContentView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -157,6 +168,7 @@
 		0B5026072A06425F004E3671 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				1CE7E9DD2A263EDD000A0509 /* SleepPageViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -170,6 +182,7 @@
 				BFF1DD892A2616100023D8FF /* RoundedCorner .swift */,
 				BFF1DD8B2A261AA30023D8FF /* View+RoundedCorner.swift */,
 				1CB25E3C2A20F2A600510E2B /* UserDefaults+SharedAppPreferences.swift */,
+				1CE7E9D42A25D4EE000A0509 /* Date+ShortComponents.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -191,13 +204,32 @@
 			path = ButtonStyle;
 			sourceTree = "<group>";
 		};
+		1CD503B62A26803300B8141A /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				1CD503B72A26806B00B8141A /* SleepPageViewModelTests.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		1CE7E9CD2A25CF09000A0509 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
 				1CE7E9CE2A25CF1B000A0509 /* UserDefaults+DeleteDataForAllTestKeys.swift */,
 				1CE7E9D02A25CF48000A0509 /* UserDefaults+TestKey.swift */,
+				1CE7E9D72A263530000A0509 /* Date+CurrentTimeZone.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		1CE7E9DA2A263BCB000A0509 /* SleepPageView */ = {
+			isa = PBXGroup;
+			children = (
+				1CE7E9DB2A263E41000A0509 /* SleepPageView.swift */,
+				74B508682A0AC97700B12BE0 /* DuringSleepView */,
+				BF6918D62A14B7FC00A5DF33 /* SleepSetupView */,
+			);
+			path = SleepPageView;
 			sourceTree = "<group>";
 		};
 		74B508682A0AC97700B12BE0 /* DuringSleepView */ = {
@@ -214,6 +246,7 @@
 				9354B4DE2A0ABDDA0095F1CD /* Color+AppSchemeTests.swift */,
 				9363F2DC2A0D67DD0067647F /* Image+AppImageTests.swift */,
 				1CB25E3E2A20F35000510E2B /* UserDefaults+SharedAppPreferencesTests.swift */,
+				1CE7E9D22A25D499000A0509 /* Date+ShortComponentsTests.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -239,10 +272,10 @@
 		BF6918D72A14B80800A5DF33 /* Subviews */ = {
 			isa = PBXGroup;
 			children = (
+				BF6918E32A1690F500A5DF33 /* AlarmSetupView.swift */,
+				BF6918E12A16865300A5DF33 /* NoAlarmLabelView.swift */,
 				BF6918DD2A14B88800A5DF33 /* RoundedAlarmView.swift */,
 				BF6918DF2A14C20B00A5DF33 /* WheelTimePickerView.swift */,
-				BF6918E12A16865300A5DF33 /* NoAlarmLabelView.swift */,
-				BF6918E32A1690F500A5DF33 /* AlarmSetupView.swift */,
 			);
 			path = Subviews;
 			sourceTree = "<group>";
@@ -265,7 +298,7 @@
 			dependencies = (
 			);
 			name = SleepTracker;
-			productName = "Sleep Tracker";
+			productName = SleepTracker;
 			productReference = 0B5025D62A063EFF004E3671 /* SleepTracker.app */;
 			productType = "com.apple.product-type.application";
 		};
@@ -283,7 +316,7 @@
 				0B5025E82A063F06004E3671 /* PBXTargetDependency */,
 			);
 			name = SleepTrackerTests;
-			productName = "Sleep TrackerTests";
+			productName = SleepTrackerTests;
 			productReference = 0B5025E62A063F06004E3671 /* SleepTrackerTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
@@ -397,12 +430,14 @@
 				9363F2DB2A0D44F20067647F /* Image+AppImage.swift in Sources */,
 				BF6918DE2A14B88800A5DF33 /* RoundedAlarmView.swift in Sources */,
 				BF77C2792A0A78F500BB6656 /* SleepSetupView.swift in Sources */,
-				0B5025DC2A063F00004E3671 /* ContentView.swift in Sources */,
 				BF6918E62A16968F00A5DF33 /* MultilineCenteredLabelView.swift in Sources */,
 				BF6918E02A14C20B00A5DF33 /* WheelTimePickerView.swift in Sources */,
 				0B5025DA2A063EFF004E3671 /* SleepTrackerApp.swift in Sources */,
 				BF6918E22A16865300A5DF33 /* NoAlarmLabelView.swift in Sources */,
-				1CB25E3D2A20F2A600510E2B /* UserDefaults+SharedAppPreferences.swift in Sources */,
+				1CE7E9DE2A263EDD000A0509 /* SleepPageViewModel.swift in Sources */,
+				1CE7E9DC2A263E41000A0509 /* SleepPageView.swift in Sources */,
+				1CE7E9D52A25D4EE000A0509 /* Date+ShortComponents.swift in Sources */,
+				1CE7E9DF2A263F03000A0509 /* UserDefaults+SharedAppPreferences.swift in Sources */,
 				BF6918E42A1690F500A5DF33 /* AlarmSetupView.swift in Sources */,
 				BFF1DD8C2A261AA30023D8FF /* View+RoundedCorner.swift in Sources */,
 			);
@@ -413,9 +448,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				1CE7E9D12A25CF48000A0509 /* UserDefaults+TestKey.swift in Sources */,
+				1CD503B82A26806B00B8141A /* SleepPageViewModelTests.swift in Sources */,
+				1CD503B92A26808A00B8141A /* SleepPageViewModel.swift in Sources */,
 				1CB25E3F2A20F35000510E2B /* UserDefaults+SharedAppPreferencesTests.swift in Sources */,
+				1CE7E9D82A263530000A0509 /* Date+CurrentTimeZone.swift in Sources */,
 				1CE7E9CF2A25CF1B000A0509 /* UserDefaults+DeleteDataForAllTestKeys.swift in Sources */,
+				1CE7E9D62A25D5C6000A0509 /* Date+ShortComponents.swift in Sources */,
 				1CB25E3A2A20F01200510E2B /* Color+AppScheme.swift in Sources */,
+				1CE7E9D32A25D499000A0509 /* Date+ShortComponentsTests.swift in Sources */,
 				1CB25E3B2A20F01500510E2B /* Image+AppImage.swift in Sources */,
 				1CB25E382A20EFFF00510E2B /* Color+AppSchemeTests.swift in Sources */,
 				1CB25E392A20F00100510E2B /* Image+AppImageTests.swift in Sources */,
@@ -467,7 +507,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 0.0.0;
+				CURRENT_PROJECT_VERSION = 0.1.0;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -487,7 +527,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.healthcare-fitness";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
-				MARKETING_VERSION = 0.0.0;
+				MARKETING_VERSION = 0.1.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -530,7 +570,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 0.0.0;
+				CURRENT_PROJECT_VERSION = 0.1.0;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -544,7 +584,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.healthcare-fitness";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
-				MARKETING_VERSION = 0.0.0;
+				MARKETING_VERSION = 0.1.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -560,7 +600,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 0.0.0;
+				CURRENT_PROJECT_VERSION = 0.1.0;
 				DEVELOPMENT_ASSET_PATHS = "\"SleepTracker/Helpers/Resources/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -573,7 +613,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.0.0;
+				MARKETING_VERSION = 0.1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.swiftcowboys.ios.sleeptracker.SleepTracker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -591,7 +631,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 0.0.0;
+				CURRENT_PROJECT_VERSION = 0.1.0;
 				DEVELOPMENT_ASSET_PATHS = "\"SleepTracker/Helpers/Resources/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -604,7 +644,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.0.0;
+				MARKETING_VERSION = 0.1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.swiftcowboys.ios.sleeptracker.SleepTracker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -622,12 +662,12 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 0.0.0;
+				CURRENT_PROJECT_VERSION = 0.1.0;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.healthcare-fitness";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
-				MARKETING_VERSION = 0.0.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.swiftcowboys.ios.sleeptracker.Sleep-TrackerTests";
+				MARKETING_VERSION = 0.1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.swiftcowboys.ios.sleeptracker.SleepTrackerTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
@@ -645,12 +685,12 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 0.0.0;
+				CURRENT_PROJECT_VERSION = 0.1.0;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.healthcare-fitness";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
-				MARKETING_VERSION = 0.0.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.swiftcowboys.ios.sleeptracker.Sleep-TrackerTests";
+				MARKETING_VERSION = 0.1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.swiftcowboys.ios.sleeptracker.SleepTrackerTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;

@@ -6,6 +6,7 @@ The project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html
 ## [Unreleased]
 
 -  Removed space from the project root directory name. Removed space from the `SleepTrackerTests` target product name. Removed the hyphen from the `SleepTrackerTests` target bundle identifier - [#97](https://github.com/ios-course/swiftcowboys-team-project/pull/97)
+-  Created an extension to round individual corners for `View` - [#96](https://github.com/ios-course/swiftcowboys-team-project/pull/96)
 
 ## [Release 0.1.0]
 

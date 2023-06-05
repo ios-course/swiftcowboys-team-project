@@ -5,6 +5,10 @@ The project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html
 
 ## [Unreleased]
 
+-  Removed space from the project root directory name. Removed space from the `SleepTrackerTests` target product name. Removed the hyphen from the `SleepTrackerTests` target bundle identifier - [#97](https://github.com/ios-course/swiftcowboys-team-project/pull/97)
+
+## [Release 0.1.0]
+
 -  Created initial Xcode project with `MVVM` folder architecture. Added `SwiftFormat`, `SwiftLint` with rules as part of the build phase. Added `.gitignore`, this `CHANGELOG.md` and an empty `README.md` file - [#30](https://github.com/ios-course/swiftcowboys-team-project/pull/30)
 -  Filled the `README` with the description and "Authors" section - [#31](https://github.com/ios-course/swiftcowboys-team-project/pull/31)
 -  Fixed the bug after merging when initial information appeared in the`README.md` - [#32](https://github.com/ios-course/swiftcowboys-team-project/pull/32/files)

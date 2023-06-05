@@ -1,6 +1,6 @@
 import SwiftUI
 
-/// A path consisting of a radius and angles that can be displayed in custom views.
+/// A shape with custom-rounded corners.
 struct RoundedCorner: Shape {
     /// The radius to use when drawing rounded corners for the layer’s background.
     var radius: CGFloat = .infinity

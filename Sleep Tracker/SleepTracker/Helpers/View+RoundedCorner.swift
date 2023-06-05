@@ -1,7 +1,7 @@
 import SwiftUI
 
 extension View {
-    /// Clips this view to its bounding frame, with the specified corner radius.
+    /// Clips the view to its bounding frame, with the specified corner radius.
     ///
     /// By default, the bounding box of a view only affects its layout,
     /// so any content that extends beyond the edges of the box remains visible.
@@ -16,7 +16,8 @@ extension View {
     /// - Parameters:
     ///   - radius: The radius to use when drawing rounded corners for the layer’s background.
     ///   - corners: The corners of a rectangle.
-    /// - Returns: A view that pushes that view against its bounding box with the specified corner radius and specified corners.
+    /// - Returns: A view that pushes that view against its bounding box
+    ///            with the specified corner radius and specified corners.
     func cornerRadius(_ radius: CGFloat, corners: UIRectCorner) -> some View {
         clipShape(RoundedCorner(radius: radius, corners: corners))
     }

@@ -45,7 +45,7 @@
 			containerPortal = 0B5025CE2A063EFF004E3671 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 0B5025D52A063EFF004E3671;
-			remoteInfo = "Sleep Tracker";
+			remoteInfo = SleepTracker;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -292,7 +292,7 @@
 			dependencies = (
 			);
 			name = SleepTracker;
-			productName = "Sleep Tracker";
+			productName = SleepTracker;
 			productReference = 0B5025D62A063EFF004E3671 /* SleepTracker.app */;
 			productType = "com.apple.product-type.application";
 		};
@@ -310,7 +310,7 @@
 				0B5025E82A063F06004E3671 /* PBXTargetDependency */,
 			);
 			name = SleepTrackerTests;
-			productName = "Sleep TrackerTests";
+			productName = SleepTrackerTests;
 			productReference = 0B5025E62A063F06004E3671 /* SleepTrackerTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
@@ -659,7 +659,7 @@
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.healthcare-fitness";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MARKETING_VERSION = 0.1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.swiftcowboys.ios.sleeptracker.Sleep-TrackerTests";
+				PRODUCT_BUNDLE_IDENTIFIER = com.swiftcowboys.ios.sleeptracker.SleepTrackerTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
@@ -682,7 +682,7 @@
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.healthcare-fitness";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MARKETING_VERSION = 0.1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.swiftcowboys.ios.sleeptracker.Sleep-TrackerTests";
+				PRODUCT_BUNDLE_IDENTIFIER = com.swiftcowboys.ios.sleeptracker.SleepTrackerTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;

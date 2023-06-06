@@ -1,7 +1,7 @@
 import SwiftUI
 
 /// A view that displays text and a moon icon.
-struct NightSleepView: View {
+struct NightSleepLabelView: View {
     // MARK: - Non-private interface
 
     var body: some View {
@@ -24,9 +24,9 @@ struct NightSleepView: View {
     private let nightSleepText = "Night Sleep"
 }
 
-struct NightSleepView_Previews: PreviewProvider {
+struct NightSleepLabelView_Previews: PreviewProvider {
     static var previews: some View {
-        NightSleepView()
+        NightSleepLabelView()
             .previewLayout(.sizeThatFits)
     }
 }

@@ -15,15 +15,19 @@ struct ReportDetailsView: View {
 
     var body: some View {
         VStack {
-            NightSleepView()
+            NightSleepLabelView()
                 .padding(.top,
                          paddingForNightSleepView)
-
-            ReportInfoView(sleepTimeValueText: sleepTimeValueText,
-                           wakeUpTimeValueText: wakeUpTimeValueText,
-                           sleepDurationValueText: sleepDurationValueText)
-                .padding(.top,
-                         paddingForReportInfoView)
+            VStack {
+                ReportLabelView(text: sleepTimeText,
+                                value: sleepTimeValueText)
+                ReportLabelView(text: wakeUpTimeText,
+                                value: wakeUpTimeValueText)
+                ReportLabelView(text: sleepDurationText,
+                                value: sleepDurationValueText)
+            }
+            .padding(.top,
+                     paddingForReportInfoView)
 
             Button(finishText) {}
                 .buttonStyle(RoundedRectangleBlue())
@@ -44,7 +48,10 @@ struct ReportDetailsView: View {
     private let horizontalPaddingForButton: CGFloat = 36
     private let bottomPaddingForButton: CGFloat = 52
     private let topPaddingForButton: CGFloat = 85
-    private let finishText: String = "Finish"
+    private let finishText = "FINISH"
+    private let sleepTimeText = "Sleep Time"
+    private let wakeUpTimeText = "Wake-up time"
+    private let sleepDurationText = "Sleep duration"
 }
 
 struct ReportDetailsView_Previews: PreviewProvider {

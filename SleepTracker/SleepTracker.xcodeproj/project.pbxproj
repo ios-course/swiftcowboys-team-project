@@ -37,7 +37,7 @@
 		BF6918E42A1690F500A5DF33 /* AlarmSetupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6918E32A1690F500A5DF33 /* AlarmSetupView.swift */; };
 		BF6918E62A16968F00A5DF33 /* MultilineCenteredLabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6918E52A16968F00A5DF33 /* MultilineCenteredLabelView.swift */; };
 		BF7182772A2EF4070004E6CF /* ReportDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF7182762A2EF4070004E6CF /* ReportDetailsView.swift */; };
-		BF71827B2A2F2CF90004E6CF /* NightSleepView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF71827A2A2F2CF90004E6CF /* NightSleepView.swift */; };
+		BF71827B2A2F2CF90004E6CF /* NightSleepLabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF71827A2A2F2CF90004E6CF /* NightSleepLabelView.swift */; };
 		BF71827D2A2F32DF0004E6CF /* ReportLabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF71827C2A2F32DF0004E6CF /* ReportLabelView.swift */; };
 		BF7182812A2F37F90004E6CF /* ReportInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF7182802A2F37F90004E6CF /* ReportInfoView.swift */; };
 		BF77C2792A0A78F500BB6656 /* SleepSetupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF77C2782A0A78F500BB6656 /* SleepSetupView.swift */; };
@@ -83,7 +83,7 @@
 		BF6918E32A1690F500A5DF33 /* AlarmSetupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmSetupView.swift; sourceTree = "<group>"; };
 		BF6918E52A16968F00A5DF33 /* MultilineCenteredLabelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultilineCenteredLabelView.swift; sourceTree = "<group>"; };
 		BF7182762A2EF4070004E6CF /* ReportDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportDetailsView.swift; sourceTree = "<group>"; };
-		BF71827A2A2F2CF90004E6CF /* NightSleepView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NightSleepView.swift; sourceTree = "<group>"; };
+		BF71827A2A2F2CF90004E6CF /* NightSleepLabelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NightSleepLabelView.swift; sourceTree = "<group>"; };
 		BF71827C2A2F32DF0004E6CF /* ReportLabelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportLabelView.swift; sourceTree = "<group>"; };
 		BF7182802A2F37F90004E6CF /* ReportInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportInfoView.swift; sourceTree = "<group>"; };
 		BF77C2782A0A78F500BB6656 /* SleepSetupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SleepSetupView.swift; sourceTree = "<group>"; };
@@ -309,7 +309,7 @@
 		BF7182752A2EF3FF0004E6CF /* Subviews */ = {
 			isa = PBXGroup;
 			children = (
-				BF71827A2A2F2CF90004E6CF /* NightSleepView.swift */,
+				BF71827A2A2F2CF90004E6CF /* NightSleepLabelView.swift */,
 				BF71827C2A2F32DF0004E6CF /* ReportLabelView.swift */,
 				BF7182802A2F37F90004E6CF /* ReportInfoView.swift */,
 			);
@@ -468,7 +468,7 @@
 				BF6918DE2A14B88800A5DF33 /* RoundedAlarmView.swift in Sources */,
 				BF77C2792A0A78F500BB6656 /* SleepSetupView.swift in Sources */,
 				BF6918E62A16968F00A5DF33 /* MultilineCenteredLabelView.swift in Sources */,
-				BF71827B2A2F2CF90004E6CF /* NightSleepView.swift in Sources */,
+				BF71827B2A2F2CF90004E6CF /* NightSleepLabelView.swift in Sources */,
 				BF6918E02A14C20B00A5DF33 /* WheelTimePickerView.swift in Sources */,
 				BF7182772A2EF4070004E6CF /* ReportDetailsView.swift in Sources */,
 				0B5025DA2A063EFF004E3671 /* SleepTrackerApp.swift in Sources */,

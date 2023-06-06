@@ -15,7 +15,7 @@ struct ReportLabelView: View {
             Text(text)
                 .foregroundColor(.black)
                 .multilineTextAlignment(.leading)
-                .frame(width: UIScreen.main.bounds.width / multiplierForText,
+                .frame(width: widthForText,
                        alignment: .leading)
             Text(value)
                 .foregroundColor(.AppScheme.blueViolet)
@@ -34,7 +34,7 @@ struct ReportLabelView: View {
     private let fontSizeForText: CGFloat = 20
     private let leadingPaddingForNightSleepText: CGFloat = 24
     private let topPaddingForNightSleepText: CGFloat = 28
-    private let multiplierForText: CGFloat = 2.5
+    private let widthForText: CGFloat = 150
 }
 
 struct ReportLabelView_Previews: PreviewProvider {

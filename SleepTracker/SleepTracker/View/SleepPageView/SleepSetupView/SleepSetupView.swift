@@ -16,6 +16,9 @@ struct SleepSetupView: View {
     var body: some View {
         VStack {
             Image.AppImage.wakingAstronaut
+                .resizable()
+                .scaledToFit()
+                .frame(width: astronautImageWidth, height: astronautImageHeight)
 
             HStack {
                 RoundedAlarmView(
@@ -36,6 +39,11 @@ struct SleepSetupView: View {
             )
         }
     }
+
+    // MARK: - Private interface
+
+    private let astronautImageWidth: CGFloat = 180
+    private let astronautImageHeight: CGFloat = 180
 }
 
 struct SleepSetupView_Previews: PreviewProvider {

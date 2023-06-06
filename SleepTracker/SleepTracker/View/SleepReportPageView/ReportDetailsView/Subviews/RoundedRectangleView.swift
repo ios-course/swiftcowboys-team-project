@@ -1,6 +1,6 @@
 import SwiftUI
 
-/// A view which has a right upper rounded corner.
+/// A view that has a top right rounded corner.
 struct RoundedRectangleView: View {
     // MARK: - Non-private interface
 

@@ -38,6 +38,8 @@
 		BF6918E62A16968F00A5DF33 /* MultilineCenteredLabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6918E52A16968F00A5DF33 /* MultilineCenteredLabelView.swift */; };
 		BF7182772A2EF4070004E6CF /* ReportDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF7182762A2EF4070004E6CF /* ReportDetailsView.swift */; };
 		BF7182792A2EF4260004E6CF /* RoundedRectangleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF7182782A2EF4260004E6CF /* RoundedRectangleView.swift */; };
+		BF71827B2A2F2CF90004E6CF /* NightSleepView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF71827A2A2F2CF90004E6CF /* NightSleepView.swift */; };
+		BF71827D2A2F32DF0004E6CF /* ReportLabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF71827C2A2F32DF0004E6CF /* ReportLabelView.swift */; };
 		BF77C2792A0A78F500BB6656 /* SleepSetupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF77C2782A0A78F500BB6656 /* SleepSetupView.swift */; };
 		BFF1DD8A2A2616100023D8FF /* RoundedCorner .swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF1DD892A2616100023D8FF /* RoundedCorner .swift */; };
 		BFF1DD8C2A261AA30023D8FF /* View+RoundedCorner.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF1DD8B2A261AA30023D8FF /* View+RoundedCorner.swift */; };
@@ -82,6 +84,8 @@
 		BF6918E52A16968F00A5DF33 /* MultilineCenteredLabelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultilineCenteredLabelView.swift; sourceTree = "<group>"; };
 		BF7182762A2EF4070004E6CF /* ReportDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportDetailsView.swift; sourceTree = "<group>"; };
 		BF7182782A2EF4260004E6CF /* RoundedRectangleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedRectangleView.swift; sourceTree = "<group>"; };
+		BF71827A2A2F2CF90004E6CF /* NightSleepView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NightSleepView.swift; sourceTree = "<group>"; };
+		BF71827C2A2F32DF0004E6CF /* ReportLabelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportLabelView.swift; sourceTree = "<group>"; };
 		BF77C2782A0A78F500BB6656 /* SleepSetupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SleepSetupView.swift; sourceTree = "<group>"; };
 		BFF1DD892A2616100023D8FF /* RoundedCorner .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RoundedCorner .swift"; sourceTree = "<group>"; };
 		BFF1DD8B2A261AA30023D8FF /* View+RoundedCorner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+RoundedCorner.swift"; sourceTree = "<group>"; };
@@ -306,6 +310,8 @@
 			isa = PBXGroup;
 			children = (
 				BF7182782A2EF4260004E6CF /* RoundedRectangleView.swift */,
+				BF71827A2A2F2CF90004E6CF /* NightSleepView.swift */,
+				BF71827C2A2F32DF0004E6CF /* ReportLabelView.swift */,
 			);
 			path = Subviews;
 			sourceTree = "<group>";
@@ -462,6 +468,7 @@
 				BF6918DE2A14B88800A5DF33 /* RoundedAlarmView.swift in Sources */,
 				BF77C2792A0A78F500BB6656 /* SleepSetupView.swift in Sources */,
 				BF6918E62A16968F00A5DF33 /* MultilineCenteredLabelView.swift in Sources */,
+				BF71827B2A2F2CF90004E6CF /* NightSleepView.swift in Sources */,
 				BF6918E02A14C20B00A5DF33 /* WheelTimePickerView.swift in Sources */,
 				BF7182772A2EF4070004E6CF /* ReportDetailsView.swift in Sources */,
 				0B5025DA2A063EFF004E3671 /* SleepTrackerApp.swift in Sources */,
@@ -470,6 +477,7 @@
 				1CE7E9DC2A263E41000A0509 /* SleepPageView.swift in Sources */,
 				1CE7E9D52A25D4EE000A0509 /* Date+ShortComponents.swift in Sources */,
 				1CE7E9DF2A263F03000A0509 /* UserDefaults+SharedAppPreferences.swift in Sources */,
+				BF71827D2A2F32DF0004E6CF /* ReportLabelView.swift in Sources */,
 				BF6918E42A1690F500A5DF33 /* AlarmSetupView.swift in Sources */,
 				BFF1DD8C2A261AA30023D8FF /* View+RoundedCorner.swift in Sources */,
 			);

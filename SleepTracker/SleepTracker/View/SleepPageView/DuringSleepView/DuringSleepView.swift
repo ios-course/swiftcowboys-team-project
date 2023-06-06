@@ -16,7 +16,7 @@ struct DuringSleepView: View {
                     x: 0,
                     y: imageToTextRelativeVerticalOffset
                 )
-            Image.AppImage.sleepingAstronautHorizontal
+            Image.AppImage.sleepingAstronaut
 
             MultilineCenteredLabelView(
                 text: alarmStatusText

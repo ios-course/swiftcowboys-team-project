@@ -23,15 +23,12 @@ struct ReportLabelView: View {
         }
         .font(.system(size: .AppFontSize.base,
                       weight: .bold))
-        .padding(.leading,
-                 leadingPaddingForNightSleepText)
         .padding(.top,
                  topPaddingForNightSleepText)
     }
 
     // MARK: - Private interface
 
-    private let leadingPaddingForNightSleepText: CGFloat = 24
     private let topPaddingForNightSleepText: CGFloat = 28
     private let widthForText: CGFloat = 150
 }

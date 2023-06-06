@@ -18,6 +18,7 @@ struct ReportDetailsView: View {
             NightSleepLabelView()
                 .padding(.top,
                          paddingForNightSleepView)
+                .padding(.leading, leadingPadding)
             VStack {
                 ReportLabelView(text: sleepTimeText,
                                 value: sleepTimeValueText)
@@ -28,6 +29,7 @@ struct ReportDetailsView: View {
             }
             .padding(.top,
                      paddingForReportInfoView)
+            .padding(.leading, leadingPadding)
 
             Button(finishText) {}
                 .buttonStyle(RoundedRectangleBlue())
@@ -48,6 +50,7 @@ struct ReportDetailsView: View {
     private let horizontalPaddingForButton: CGFloat = 36
     private let bottomPaddingForButton: CGFloat = 52
     private let topPaddingForButton: CGFloat = 85
+    private let leadingPadding: CGFloat = 24
     private let finishText = "FINISH"
     private let sleepTimeText = "Sleep Time"
     private let wakeUpTimeText = "Wake-up time"

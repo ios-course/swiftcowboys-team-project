@@ -10,8 +10,6 @@ struct NightSleepLabelView: View {
                 .font(.system(size: fontSizeForNightSleepText,
                               weight: .bold))
                 .foregroundColor(.AppScheme.brightBlue)
-                .padding(.leading,
-                         paddingForNightSleepText)
             Image.AppImage.moonWithStarsSymbolPurple
             Spacer()
         }
@@ -20,7 +18,6 @@ struct NightSleepLabelView: View {
     // MARK: - Private interface
 
     private let fontSizeForNightSleepText: CGFloat = 20
-    private let paddingForNightSleepText: CGFloat = 24
     private let nightSleepText = "Night Sleep"
 }
 

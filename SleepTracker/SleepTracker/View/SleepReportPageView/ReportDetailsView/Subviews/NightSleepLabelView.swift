@@ -7,7 +7,7 @@ struct NightSleepLabelView: View {
     var body: some View {
         HStack {
             Text(nightSleepText)
-                .font(.system(size: fontSizeForNightSleepText,
+                .font(.system(size: .AppFontSize.base,
                               weight: .bold))
                 .foregroundColor(.AppScheme.brightBlue)
             Image.AppImage.moonWithStarsSymbolPurple
@@ -17,7 +17,6 @@ struct NightSleepLabelView: View {
 
     // MARK: - Private interface
 
-    private let fontSizeForNightSleepText: CGFloat = 20
     private let nightSleepText = "Night Sleep"
 }
 

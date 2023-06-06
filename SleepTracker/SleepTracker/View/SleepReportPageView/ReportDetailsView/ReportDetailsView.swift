@@ -61,6 +61,6 @@ struct ReportDetailsView_Previews: PreviewProvider {
     static var previews: some View {
         ReportDetailsView(sleepTimeValueText: "22:00",
                           wakeUpTimeValueText: "06:00",
-                          sleepDurationValueText: "7h30m")
+                          sleepDurationValueText: "7h 30m")
     }
 }

@@ -21,10 +21,10 @@ extension Image {
         static let moonWithStarsSymbolPurple = Image("Moon_with_stars_symbol_purple")
         /// An onboarding background image.
         static let onboardingBackground = Image("Onboarding_background")
-        /// A sleeping astronaut image (horisontally oriented).
-        static let sleepingAstronautHorizontal = Image("Sleeping_astronaut_horizontal")
-        /// A sleeping astronaut image (vertically oriented).
-        static let sleepingAstronautVertical = Image("Sleeping_astronaut_vertical")
+        /// A sleeping astronaut image.
+        static let sleepingAstronaut = Image("Sleeping_astronaut")
+        /// A waking astronaut image.
+        static let wakingAstronaut = Image("Waking_astronaut")
         /// An image of a statistic symbol.
         static let statisticsSymbolPurple = Image("Statistics_symbol_purple")
         /// An image of a colored sun symbol.

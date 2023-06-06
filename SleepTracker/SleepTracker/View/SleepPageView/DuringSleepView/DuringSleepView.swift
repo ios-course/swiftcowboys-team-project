@@ -16,7 +16,10 @@ struct DuringSleepView: View {
                     x: 0,
                     y: imageToTextRelativeVerticalOffset
                 )
-            Image.AppImage.sleepingAstronautHorizontal
+            Image.AppImage.sleepingAstronaut
+                .resizable()
+                .scaledToFit()
+                .frame(width: astronautImageWidth, height: astronautImageHeight)
 
             MultilineCenteredLabelView(
                 text: alarmStatusText
@@ -27,6 +30,8 @@ struct DuringSleepView: View {
     // MARK: - Private interface
 
     private let imageToTextRelativeVerticalOffset: CGFloat = 45
+    private let astronautImageWidth: CGFloat = 180
+    private let astronautImageHeight: CGFloat = 180
     private let sleepSignText = "zZZZzZZZZzZZzzz"
 }
 

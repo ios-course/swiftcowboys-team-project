@@ -15,7 +15,7 @@ struct SleepSetupView: View {
 
     var body: some View {
         VStack {
-            Image.AppImage.sleepingAstronautVertical
+            Image.AppImage.wakingAstronaut
 
             HStack {
                 RoundedAlarmView(

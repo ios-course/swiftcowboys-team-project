@@ -1,5 +1,6 @@
 import SwiftUI
 
+/// A view that has a right upper rounded corner and shows the user's sleep report.
 struct ReportDetailsView: View {
     // MARK: - Non-private interface
 

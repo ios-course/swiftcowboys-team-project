@@ -40,6 +40,7 @@
 		BF7182792A2EF4260004E6CF /* RoundedRectangleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF7182782A2EF4260004E6CF /* RoundedRectangleView.swift */; };
 		BF71827B2A2F2CF90004E6CF /* NightSleepView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF71827A2A2F2CF90004E6CF /* NightSleepView.swift */; };
 		BF71827D2A2F32DF0004E6CF /* ReportLabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF71827C2A2F32DF0004E6CF /* ReportLabelView.swift */; };
+		BF7182812A2F37F90004E6CF /* ReportInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF7182802A2F37F90004E6CF /* ReportInfoView.swift */; };
 		BF77C2792A0A78F500BB6656 /* SleepSetupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF77C2782A0A78F500BB6656 /* SleepSetupView.swift */; };
 		BFF1DD8A2A2616100023D8FF /* RoundedCorner .swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF1DD892A2616100023D8FF /* RoundedCorner .swift */; };
 		BFF1DD8C2A261AA30023D8FF /* View+RoundedCorner.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF1DD8B2A261AA30023D8FF /* View+RoundedCorner.swift */; };
@@ -86,6 +87,7 @@
 		BF7182782A2EF4260004E6CF /* RoundedRectangleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedRectangleView.swift; sourceTree = "<group>"; };
 		BF71827A2A2F2CF90004E6CF /* NightSleepView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NightSleepView.swift; sourceTree = "<group>"; };
 		BF71827C2A2F32DF0004E6CF /* ReportLabelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportLabelView.swift; sourceTree = "<group>"; };
+		BF7182802A2F37F90004E6CF /* ReportInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportInfoView.swift; sourceTree = "<group>"; };
 		BF77C2782A0A78F500BB6656 /* SleepSetupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SleepSetupView.swift; sourceTree = "<group>"; };
 		BFF1DD892A2616100023D8FF /* RoundedCorner .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RoundedCorner .swift"; sourceTree = "<group>"; };
 		BFF1DD8B2A261AA30023D8FF /* View+RoundedCorner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+RoundedCorner.swift"; sourceTree = "<group>"; };
@@ -312,6 +314,7 @@
 				BF7182782A2EF4260004E6CF /* RoundedRectangleView.swift */,
 				BF71827A2A2F2CF90004E6CF /* NightSleepView.swift */,
 				BF71827C2A2F32DF0004E6CF /* ReportLabelView.swift */,
+				BF7182802A2F37F90004E6CF /* ReportInfoView.swift */,
 			);
 			path = Subviews;
 			sourceTree = "<group>";
@@ -459,6 +462,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF7182812A2F37F90004E6CF /* ReportInfoView.swift in Sources */,
 				74B5086A2A0AC98C00B12BE0 /* DuringSleepView.swift in Sources */,
 				9354B4DD2A0ABB4A0095F1CD /* Color+AppScheme.swift in Sources */,
 				933ABC102A13779F00D4A485 /* RoundedRectangleBlue.swift in Sources */,

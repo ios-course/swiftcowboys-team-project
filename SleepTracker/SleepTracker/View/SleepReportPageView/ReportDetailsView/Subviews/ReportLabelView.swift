@@ -24,14 +24,17 @@ struct ReportLabelView: View {
         .font(.system(size: fontSizeForText,
                       weight: .bold))
         .padding(.leading,
-                 paddingForNightSleepText)
+                 leadingPaddingForNightSleepText)
+        .padding(.top,
+                 topPaddingForNightSleepText)
     }
 
     // MARK: - Private interface
 
     private let fontSizeForText: CGFloat = 20
-    private let paddingForNightSleepText: CGFloat = 24
-    private let multiplierForText: CGFloat = 3
+    private let leadingPaddingForNightSleepText: CGFloat = 24
+    private let topPaddingForNightSleepText: CGFloat = 28
+    private let multiplierForText: CGFloat = 2.5
 }
 
 struct ReportLabelView_Previews: PreviewProvider {

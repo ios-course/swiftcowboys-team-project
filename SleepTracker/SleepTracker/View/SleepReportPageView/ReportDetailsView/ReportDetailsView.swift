@@ -28,14 +28,14 @@ struct ReportDetailsView: View {
                                 value: sleepDurationValueText)
             }
             .padding(.top,
-                     paddingForReportLabelViews)
+                     baseTopPadding)
             .padding(.leading, leadingPadding)
 
             Button(finishText) {}
                 .buttonStyle(RoundedRectangleBlue())
                 .padding(.horizontal, horizontalPaddingForButton)
                 .padding(.bottom, bottomPaddingForButton)
-                .padding(.top, topPaddingForButton)
+                .padding(.top, baseTopPadding)
         }
         .background(Color.white)
         .cornerRadius(cornerRadiusForVStackWithRoundedCorner,
@@ -46,10 +46,9 @@ struct ReportDetailsView: View {
 
     private let cornerRadiusForVStackWithRoundedCorner: CGFloat = 80
     private let paddingForNightSleepLabelView: CGFloat = 39
-    private let paddingForReportLabelViews: CGFloat = 85
+    private let baseTopPadding: CGFloat = 85
     private let horizontalPaddingForButton: CGFloat = 36
     private let bottomPaddingForButton: CGFloat = 52
-    private let topPaddingForButton: CGFloat = 85
     private let leadingPadding: CGFloat = 24
     private let finishText = "FINISH"
     private let sleepTimeText = "Sleep Time"

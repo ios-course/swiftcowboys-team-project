@@ -7,17 +7,17 @@ struct ReportDetailsView: View {
     /// A text to show what time the user went to bed.
     var sleepTimeValueText: String
 
-    /// A text to show how long the user sleep.
+    /// A text to show what time the user woke up.
     var wakeUpTimeValueText: String
 
-    /// A text to show as an estimated sleep time.
+    /// A text to show the user’s sleep duration.
     var sleepDurationValueText: String
 
     var body: some View {
         VStack {
             NightSleepLabelView()
                 .padding(.top,
-                         paddingForNightSleepView)
+                         paddingForNightSleepLabelView)
                 .padding(.leading, leadingPadding)
             VStack {
                 ReportLabelView(text: sleepTimeText,
@@ -28,7 +28,7 @@ struct ReportDetailsView: View {
                                 value: sleepDurationValueText)
             }
             .padding(.top,
-                     paddingForReportInfoView)
+                     paddingForReportLabelViews)
             .padding(.leading, leadingPadding)
 
             Button(finishText) {}
@@ -38,15 +38,15 @@ struct ReportDetailsView: View {
                 .padding(.top, topPaddingForButton)
         }
         .background(Color.white)
-        .cornerRadius(cornerRadiusForVStack,
+        .cornerRadius(cornerRadiusForVStackWithRoundedCorner,
                       corners: [.topRight])
     }
 
     // MARK: - Private interface
 
-    private let cornerRadiusForVStack: CGFloat = 80
-    private let paddingForNightSleepView: CGFloat = 39
-    private let paddingForReportInfoView: CGFloat = 85
+    private let cornerRadiusForVStackWithRoundedCorner: CGFloat = 80
+    private let paddingForNightSleepLabelView: CGFloat = 39
+    private let paddingForReportLabelViews: CGFloat = 85
     private let horizontalPaddingForButton: CGFloat = 36
     private let bottomPaddingForButton: CGFloat = 52
     private let topPaddingForButton: CGFloat = 85

@@ -1,6 +1,6 @@
 import SwiftUI
 
-/// A label that shows the name of the sleep report and its meaning.
+/// A label that shows the name of the sleep report and its value.
 struct ReportLabelView: View {
     // MARK: - Non-private interface
 

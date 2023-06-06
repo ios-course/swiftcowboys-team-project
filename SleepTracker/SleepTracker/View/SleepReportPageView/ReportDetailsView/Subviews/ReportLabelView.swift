@@ -21,7 +21,7 @@ struct ReportLabelView: View {
                 .foregroundColor(.AppScheme.blueViolet)
             Spacer()
         }
-        .font(.system(size: fontSizeForText,
+        .font(.system(size: .AppFontSize.base,
                       weight: .bold))
         .padding(.leading,
                  leadingPaddingForNightSleepText)
@@ -31,7 +31,6 @@ struct ReportLabelView: View {
 
     // MARK: - Private interface
 
-    private let fontSizeForText: CGFloat = 20
     private let leadingPaddingForNightSleepText: CGFloat = 24
     private let topPaddingForNightSleepText: CGFloat = 28
     private let widthForText: CGFloat = 150

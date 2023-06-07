@@ -1,7 +1,7 @@
 import SwiftUI
 
 /// A label that shows the name of the sleep report and its value.
-struct ReportLabelView: View {
+struct ReportNameLabelView: View {
     // MARK: - Non-private interface
 
     /// A text to show in the label.
@@ -33,9 +33,9 @@ struct ReportLabelView: View {
     private let widthForText: CGFloat = 150
 }
 
-struct ReportLabelView_Previews: PreviewProvider {
+struct ReportNameLabelView_Previews: PreviewProvider {
     static var previews: some View {
-        ReportLabelView(text: "Sleep time",
-                        value: "22:00")
+        ReportNameLabelView(text: "Sleep time",
+                            value: "22:00")
     }
 }

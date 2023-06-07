@@ -20,12 +20,12 @@ struct ReportDetailsView: View {
                          paddingForNightSleepLabelView)
                 .padding(.leading, leadingPadding)
             VStack {
-                ReportLabelView(text: sleepTimeText,
-                                value: sleepTimeValueText)
-                ReportLabelView(text: wakeUpTimeText,
-                                value: wakeUpTimeValueText)
-                ReportLabelView(text: sleepDurationText,
-                                value: sleepDurationValueText)
+                ReportNameLabelView(text: sleepTimeText,
+                                    value: sleepTimeValueText)
+                ReportNameLabelView(text: wakeUpTimeText,
+                                    value: wakeUpTimeValueText)
+                ReportNameLabelView(text: sleepDurationText,
+                                    value: sleepDurationValueText)
             }
             .padding(.top,
                      baseTopPadding)

@@ -9,6 +9,7 @@ The project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html
 -  Created an extension to round individual corners for `View` - [#96](https://github.com/ios-course/swiftcowboys-team-project/pull/96)
 -  Replaced the image of the sleeping astronaut in `SleepSetupView` with the image of the awake astronaut.  Renamed `sleepingAstronautHorizontal` image to `sleepingAstronaut`. Renamed `sleepingAstronautVertical` image to `wakingAstronaut`. - [#99](https://github.com/ios-course/swiftcowboys-team-project/pull/99)
 -  Added `CGFloat` extension and `AppFontSize` enum with unit tests. Added `AppUIConstant` enum with unit tests - [#65](https://github.com/ios-course/swiftcowboys-team-project/pull/65)
+-  Created `ReportDetailsView` - [#98](https://github.com/ios-course/swiftcowboys-team-project/pull/98)
 
 ## [Release 0.1.0]
 

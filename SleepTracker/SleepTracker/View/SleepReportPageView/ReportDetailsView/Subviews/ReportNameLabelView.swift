@@ -35,7 +35,13 @@ struct ReportNameLabelView: View {
 
 struct ReportNameLabelView_Previews: PreviewProvider {
     static var previews: some View {
-        ReportNameLabelView(text: "Sleep time",
-                            value: "22:00")
+        VStack {
+            ReportNameLabelView(text: "Sleep time",
+                                value: "22:00")
+            ReportNameLabelView(text: "Wake-up time",
+                                value: "06:00")
+            ReportNameLabelView(text: "Sleep duration",
+                                value: "7h 30m")
+        }
     }
 }

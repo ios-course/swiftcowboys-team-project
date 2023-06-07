@@ -5,13 +5,13 @@ struct ReportDetailsView: View {
     // MARK: - Non-private interface
 
     /// A text to show what time the user went to bed.
-    var sleepTimeValueText: String
+    var bedTimeText: String
 
     /// A text to show what time the user woke up.
-    var wakeUpTimeValueText: String
+    var wakeUpTimeText: String
 
     /// A text to show the user’s sleep duration.
-    var sleepDurationValueText: String
+    var sleepDurationTimeText: String
 
     var body: some View {
         VStack {
@@ -19,13 +19,14 @@ struct ReportDetailsView: View {
                 .padding(.top,
                          paddingForNightSleepLabelView)
                 .padding(.leading, leadingPadding)
-            VStack {
-                ReportNameLabelView(text: sleepTimeText,
-                                    value: sleepTimeValueText)
-                ReportNameLabelView(text: wakeUpTimeText,
-                                    value: wakeUpTimeValueText)
-                ReportNameLabelView(text: sleepDurationText,
-                                    value: sleepDurationValueText)
+            VStack(alignment: .center,
+                   spacing: spacingForReportNameLabelViews) {
+                ReportNameLabelView(sleepScoreName: sleepTimeText,
+                                    sleepScore: bedTimeText)
+                ReportNameLabelView(sleepScoreName: wakeUpText,
+                                    sleepScore: wakeUpTimeText)
+                ReportNameLabelView(sleepScoreName: sleepDurationText,
+                                    sleepScore: sleepDurationTimeText)
             }
             .padding(.top,
                      baseTopPadding)
@@ -44,22 +45,23 @@ struct ReportDetailsView: View {
 
     // MARK: - Private interface
 
+    private let spacingForReportNameLabelViews: CGFloat = 28
     private let cornerRadiusForVStackWithRoundedCorner: CGFloat = 80
     private let paddingForNightSleepLabelView: CGFloat = 39
     private let baseTopPadding: CGFloat = 85
     private let horizontalPaddingForButton: CGFloat = 36
-    private let bottomPaddingForButton: CGFloat = 52
+    private let bottomPaddingForButton: CGFloat = 48
     private let leadingPadding: CGFloat = 24
     private let finishText = "FINISH"
     private let sleepTimeText = "Sleep Time"
-    private let wakeUpTimeText = "Wake-up time"
+    private let wakeUpText = "Wake-up time"
     private let sleepDurationText = "Sleep duration"
 }
 
 struct ReportDetailsView_Previews: PreviewProvider {
     static var previews: some View {
-        ReportDetailsView(sleepTimeValueText: "22:00",
-                          wakeUpTimeValueText: "06:00",
-                          sleepDurationValueText: "7h 30m")
+        ReportDetailsView(bedTimeText: "22:00",
+                          wakeUpTimeText: "06:00",
+                          sleepDurationTimeText: "7h 30m")
     }
 }

@@ -4,44 +4,41 @@ import SwiftUI
 struct ReportNameLabelView: View {
     // MARK: - Non-private interface
 
-    /// A text to show in the label.
-    let text: String
+    /// A sleep score name to show in the label.
+    let sleepScoreName: String
 
-    /// A value to show in the label.
-    let value: String
+    /// A sleep score to show in the label.
+    let sleepScore: String
 
     var body: some View {
         HStack {
-            Text(text)
+            Text(sleepScoreName)
                 .foregroundColor(.black)
                 .multilineTextAlignment(.leading)
                 .frame(width: widthForText,
                        alignment: .leading)
-            Text(value)
+            Text(sleepScore)
                 .foregroundColor(.AppScheme.blueViolet)
             Spacer()
         }
         .font(.system(size: .AppFontSize.base,
                       weight: .bold))
-        .padding(.top,
-                 topPaddingForNightSleepText)
     }
 
     // MARK: - Private interface
 
-    private let topPaddingForNightSleepText: CGFloat = 28
     private let widthForText: CGFloat = 150
 }
 
 struct ReportNameLabelView_Previews: PreviewProvider {
     static var previews: some View {
         VStack {
-            ReportNameLabelView(text: "Sleep time",
-                                value: "22:00")
-            ReportNameLabelView(text: "Wake-up time",
-                                value: "06:00")
-            ReportNameLabelView(text: "Sleep duration",
-                                value: "7h 30m")
+            ReportNameLabelView(sleepScoreName: "Sleep time",
+                                sleepScore: "22:00")
+            ReportNameLabelView(sleepScoreName: "Wake-up time",
+                                sleepScore: "06:00")
+            ReportNameLabelView(sleepScoreName: "Sleep duration",
+                                sleepScore: "7h 30m")
         }
     }
 }
